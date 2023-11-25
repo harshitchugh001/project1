@@ -70,7 +70,7 @@ export default function Cms() {
                 <Div className="row align-items-center">
                     <Div className="col-xl-5 col-lg-6">
                         <Div className="cs-radius_15 cs-shine_hover_1">
-                            <img src="/images/service_img_1.jpeg" alt="Service" className='cs-radius_15 w-100' />
+                            <img src="/images/cms.jpg" alt="Service" className='cs-radius_15 w-100' />
                         </Div>
                         <Spacing lg='0' md='40' />
                     </Div>
