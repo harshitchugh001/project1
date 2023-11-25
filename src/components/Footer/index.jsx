@@ -21,20 +21,20 @@ export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
   
   const serviceMenu = [
     {
-      title: 'UI/UX design',
-      href: '/service/service-details'
+      title: 'Digital Marketing',
+      href: '/service/digitalmarketing'
     },
     {
-      title: 'WP development',
-      href: '/service/service-details'
+      title: 'App Development',
+      href: '/service/appdevelopment'
     },
     {
-      title: 'Digital marketing',
-      href: '/service/service-details'
+      title: 'Website Development',
+      href: '/service/websitedevelopment'
     },
     {
-      title: 'React development',
-      href: '/service/service-details'
+      title: 'Brand Strategizing',
+      href: '/service/brandstrategizing'
     },
   ]
 

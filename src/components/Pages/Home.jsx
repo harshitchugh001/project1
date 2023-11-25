@@ -5,7 +5,6 @@ import Hero from '../Hero';
 import Div from '../Div';
 import SectionHeading from '../SectionHeading';
 import Spacing from '../Spacing';
-import Cta from '../Cta';
 import LogoList from '../LogoList';
 import MovingText from '../MovingText';
 import PortfolioSlider from '../Slider/PortfolioSlider';
@@ -256,14 +255,7 @@ export default function Home() {
       {/* End LogoList Section */}
 
       {/* Start CTA Section */}
-      <Div className="container">
-        <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
-        />
-      </Div>
+      
       {/* End CTA Section */}
     </>
   );

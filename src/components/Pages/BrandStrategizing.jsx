@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import { pageTitle } from '../../helper'
 import Accordion from '../BrandAccordian'
 import Button from '../Button'
-import Cta from '../Cta'
 import IconBox from '../IconBox'
 import PageHeading from '../PageHeading'
 import Div from '../Div'
@@ -125,14 +124,7 @@ strategy, ensuring consistency and resonance across all touchpoints.
         </Div>
       </Div>
       <Spacing lg='150' md='80'/>
-      <Div className="container">
-        <Cta 
-          title='Let’s disscuse make <br />something <i>cool</i> together' 
-          btnText='Apply For Meeting' 
-          btnLink='/contact' 
-          bgSrc='/images/cta_bg.jpeg'
-        />
-      </Div>
+     
     </>
   )
 }
