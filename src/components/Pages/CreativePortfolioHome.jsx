@@ -33,7 +33,7 @@ export default function CreativePortfolioHome() {
       subtitle: 'Course 01',
       btnText: 'See Details',
       btnLink: '/whatsaapdetail',
-      imageUrl: '/images/whatsaap.jpg',
+      imageUrl: '/images/whatsaap.jpeg',
       category: 'Marketing',
     },
     {
@@ -41,7 +41,7 @@ export default function CreativePortfolioHome() {
       subtitle: 'Course 02',
       btnText: 'See Details',
       btnLink: '/instagramdetail',
-      imageUrl: '/images/Instagram.jpg',
+      imageUrl: '/images/Instagram.jpeg',
       category: 'Marketing',
     },
     {
@@ -49,7 +49,7 @@ export default function CreativePortfolioHome() {
       subtitle: 'Course 03',
       btnText: 'See Details',
       btnLink: '/facebookdetail',
-      imageUrl: '/images/Facebook.jpg',
+      imageUrl: '/images/Facebook.jpeg',
       category: 'Marketing',
     }
   ];
