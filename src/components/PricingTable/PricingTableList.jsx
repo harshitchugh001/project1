@@ -16,22 +16,22 @@ export default function PricingTableList() {
         <Section className="col-lg-4">
           {tab==='monthly' && (
             <PricingTable 
-              title='Standard'
+              title='WhatsApp Marketing Course'
               price='29'
               currency='$'
               timeline='monthly'
-              features={['Static responsive website', 'Video marketing', 'Keywords research', 'Facebook campaign', 'eCommerce solution', 'Google adword']}
+              features={['Crafting compelling WhatsApp campaigns', 'Building and managing customer lists', 'Measuring the success of your WhatsApp marketing efforts']}
               btnText='Purchase Now'
               btnLink='/'
             />
           )}
           {tab==='yearly' && (
             <PricingTable 
-              title='Standard'
+              title='WhatsApp Marketing Course'
               price='59'
               currency='$'
               timeline='yearly'
-              features={['Static responsive website', 'Video marketing', 'Keywords research', 'Facebook campaign', 'eCommerce solution', 'Google adword']}
+              features={['Crafting compelling WhatsApp campaigns', 'Building and managing customer lists', 'Measuring the success of your WhatsApp marketing efforts']}
               btnText='Purchase Now'
               btnLink='/'
             />
@@ -41,22 +41,22 @@ export default function PricingTableList() {
         <Section className="col-lg-4">
          {tab==='monthly' && (
             <PricingTable 
-              title='Professional'
+              title='Instagram Marketing Course'
               price='199'
               currency='$'
               timeline='monthly'
-              features={['Static responsive website', 'Video marketing', 'Keywords research', 'Facebook campaign', 'eCommerce solution', 'Google adword']}
+              features={['Strategies for growing your Instagram followers', 'Creating eye-catching visuals and stories', 'Utilizing Instagram  advertising features effectively']}
               btnText='Purchase Now'
               btnLink='/'
             />
           )}
           {tab==='yearly' && (
             <PricingTable 
-              title='Professional'
+              title='Instagram Marketing Course'
               price='399'
               currency='$'
               timeline='yearly'
-              features={['Static responsive website', 'Video marketing', 'Keywords research', 'Facebook campaign', 'eCommerce solution', 'Google adword']}
+              features={['Strategies for growing your Instagram followers', 'Creating eye-catching visuals and stories', 'Utilizing Instagram  advertising features effectively']}
               btnText='Purchase Now'
               btnLink='/'
             />
@@ -66,22 +66,22 @@ export default function PricingTableList() {
         <Section className="col-lg-4">
           {tab==='monthly' && (
             <PricingTable 
-              title='Ultimate'
+              title='Facebook Marketing Course'
               price='299'
               currency='$'
               timeline='monthly'
-              features={['Static responsive website', 'Video marketing', 'Keywords research', 'Facebook campaign', 'eCommerce solution', 'Google adword']}
+              features={['Creating and managing Facebook ad campaigns', 'Building a thriving Facebook community', 'Analyzing data to enhance your Facebook marketing ROI']}
               btnText='Purchase Now'
               btnLink='/'
             />
           )}
           {tab==='yearly' && (
             <PricingTable 
-              title='Ultimate'
+              title='Facebook Marketing Course'
               price='599'
               currency='$'
               timeline='yearly'
-              features={['Static responsive website', 'Video marketing', 'Keywords research', 'Facebook campaign', 'eCommerce solution', 'Google adword']}
+              features={['Creating and managing Facebook ad campaigns', 'Building a thriving Facebook community', 'Analyzing data to enhance your Facebook marketing ROI']}
               btnText='Purchase Now'
               btnLink='/'
             />

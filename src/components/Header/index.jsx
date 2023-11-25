@@ -122,41 +122,14 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li >
                       <NavLink
-                        to="service"
-                        onClick={() => setMobileToggle(false)}
+                        to="/courses"
+                        
                       >
                         Courses
                       </NavLink>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link
-                              to="service"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Facebook Marketing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/service/service-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Instagram Marketing
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/service/service-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Whatsapp Marketing
-                            </Link>
-                          </li>
-                        </ul>
-                      </DropDown>
+                      
                     </li>
                     <li className="menu-item-has-children">
                       <NavLink

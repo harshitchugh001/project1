@@ -5,7 +5,7 @@ import BlogDetailsPage from './components/Pages/BlogDetailsPage';
 import ContactPage from './components/Pages/ContactPage';
 import ErrorPage from './components/Pages/ErrorPage';
 import Home from './components/Pages/Home';
-import PortfolioDetailsPage from './components/Pages/PortfolioDetailsPage';
+// import PortfolioDetailsPage from './components/Pages/PortfolioDetailsPage';
 import ServiceDetailsPage from './components/Pages/ServiceDetailsPage';
 import ServicesPage from './components/Pages/ServicesPage';
 import TeamPage from './components/Pages/TeamPage';
@@ -28,6 +28,11 @@ import Cms from './components/Pages/Cms';
 import Erp from './components/Pages/Erp';
 import BlockchainDevelopment from './components/Pages/BlockchainDevelopment';
 import CreativeDirection from './components/Pages/Creativedirection'
+import Facebookdetail from './components/Pages/Facebookdetail';
+import WhatsaapDetail from './components/Pages/whatsaapDetail';
+import InstagramDetail from './components/Pages/InstagramDetail';
+
+
 
 function App() {
   return (
@@ -91,8 +96,16 @@ function App() {
 
           <Route path="portfolio" element={<PortfolioPage />} />
           <Route
-            path="portfolio/:portfolioDetailsId"
-            element={<PortfolioDetailsPage />}
+            path="/instagramdetail"
+            element={<InstagramDetail />}
+          />
+          <Route
+            path="/whatsaapdetail"
+            element={<WhatsaapDetail />}
+          />
+          <Route
+            path="/facebookdetail"
+            element={<Facebookdetail/>}
           />
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} />
@@ -110,7 +123,7 @@ function App() {
           element={<Layout headerVariant="cs-site_header_full_width" />}
         >
           <Route
-            path="creative-portfolio"
+            path="/courses"
             element={<CreativePortfolioHome />}
           />
           <Route

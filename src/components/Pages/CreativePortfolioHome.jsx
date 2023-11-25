@@ -1,25 +1,25 @@
 import React, { useEffect } from 'react';
-import CaseStudy from '../CaseStudy';
-import Cta from '../Cta';
+import SectionHeading from '../SectionHeading';
+
 import Div from '../Div';
 import Hero3 from '../Hero/Hero3';
 import LogoList from '../LogoList';
 import MovingText from '../MovingText';
 import Portfolio2 from '../Portfolio/Portfolio2';
 import Portfolio3 from '../Portfolio/Portfolio3';
-import SectionHeading from '../SectionHeading';
 import TestimonialSlider from '../Slider/TestimonialSlider';
 import Spacing from '../Spacing';
 import { pageTitle } from '../../helper';
+import PricingTableList from '../PricingTable/PricingTableList';
 
 export default function CreativePortfolioHome() {
-  pageTitle('Creative Portfolio');
+  pageTitle('Courses offers');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const heroSocialLinks = [
     {
-      name: 'Behance',
+      name: 'Instagram',
       links: '/',
     },
     {
@@ -29,45 +29,37 @@ export default function CreativePortfolioHome() {
   ];
   const portfolioData = [
     {
-      title: 'Winery eCommerce website design & development',
-      subtitle: 'Project 01',
+      title: 'WhatsApp Marketing Course',
+      subtitle: 'Course 01',
       btnText: 'See Details',
-      btnLink: '/portfolio/portfolio-details',
+      btnLink: '/whatsaapdetail',
       imageUrl: '/images/portfolio_35.jpeg',
-      category: 'Web Development',
+      category: 'Marketing',
     },
     {
-      title: 'Euro corporate agency for healthy environment',
-      subtitle: 'Project 02',
+      title: 'Instagram Marketing Course',
+      subtitle: 'Course 02',
       btnText: 'See Details',
-      btnLink: '/portfolio/portfolio-details',
+      btnLink: '/instagramdetail',
       imageUrl: '/images/portfolio_36.jpeg',
-      category: 'Branding',
+      category: 'Marketing',
     },
     {
-      title: 'Powerful admin dashboard design',
-      subtitle: 'Project 03',
+      title: 'Facebook Marketing Course',
+      subtitle: 'Course 03',
       btnText: 'See Details',
-      btnLink: '/portfolio/portfolio-details',
+      btnLink: '/facebookdetail',
       imageUrl: '/images/portfolio_37.jpeg',
-      category: 'UI Design',
-    },
-    {
-      title: 'Crypto financial trading apps for hedge fund',
-      subtitle: 'Project 04',
-      btnText: 'See Details',
-      btnLink: '/portfolio/portfolio-details',
-      imageUrl: '/images/portfolio_38.jpeg',
-      category: 'Apps Design',
-    },
+      category: 'Marketing',
+    }
   ];
   return (
     <>
       {/* Start Hero Section */}
       <Hero3
-        title="Arino Creative <br />Portfolio"
-        btnLink="contact"
-        btnText={`Let's talk`}
+        title="Explore Our Digital <br>Marketing Courses"
+        
+        // btnText={`Let's talk`}
         socialLinksHeading="Follow Us"
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="./images/hero_bg_4.jpeg"
@@ -107,25 +99,17 @@ export default function CreativePortfolioHome() {
 
       {/* Start Case Study Section */}
       <Spacing lg="45" md="10" />
+      
+      
       <Div className="container">
         <SectionHeading
-          title="Featured case study"
-          subtitle="Case Study"
-          variant="cs-style1 text-center"
+          title="Providing best <br/>pricing for client"
+          subtitle="Pricing & Packaging"
         />
-        <Spacing lg="90" md="45" />
+        <Spacing lg="85" md="40" />
+        <PricingTableList />
       </Div>
-      <CaseStudy
-        title="Analysis lead <br /> more efficiently"
-        bgUrl="/images/case_study_2.jpeg"
-        href="/case-study/case-study-details"
-        variant="cs-style2"
-      />
-      <CaseStudy
-        title="Ubar food app <br /> case study"
-        bgUrl="/images/case_study_1.jpeg"
-        href="/case-study/case-study-details"
-      />
+      <Spacing lg="125" md="55" />
       <Spacing lg="150" md="80" />
       {/* End Case Study Section */}
 
@@ -146,16 +130,8 @@ export default function CreativePortfolioHome() {
       <Spacing lg="150" md="80" />
       {/* End LogoList Section */}
 
-      {/* Start CTA Section */}
-      <Div className="container">
-        <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg_3.jpeg"
-        />
-      </Div>
-      {/* End CTA Section */}
+     
+      
     </>
   );
 }
