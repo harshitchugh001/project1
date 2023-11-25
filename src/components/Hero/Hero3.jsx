@@ -9,8 +9,6 @@ export default function Hero3({
   title,
   socialLinksHeading,
   heroSocialLinks,
-  btnLink,
-  btnText,
   bgImageUrl,
 }) {
   return (
