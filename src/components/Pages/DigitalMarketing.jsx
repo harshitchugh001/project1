@@ -71,7 +71,7 @@ export default function DigitalMarketing() {
                 <Div className="row align-items-center">
                     <Div className="col-xl-5 col-lg-6">
                         <Div className="cs-radius_15 cs-shine_hover_1">
-                            <img src="/images/digital.jpg" alt="Service" className='cs-radius_15 w-100' />
+                            <img src="/images/digital.jpg"  height="150px" width="200px" alt="Service" className='cs-radius_15 w-100' />
                         </Div>
                         <Spacing lg='0' md='40' />
                     </Div>
