@@ -68,7 +68,7 @@ export default function BrandStrategizing() {
         <Div className="row align-items-center">
           <Div className="col-xl-5 col-lg-6">
             <Div className="cs-radius_15 cs-shine_hover_1">
-              <img src="/images/brand.jpg" alt="Service" className='cs-radius_15 w-100' />
+              <img src="/images/brand.jpg" alt="Service"  height="150px" width="200px" className='cs-radius_15 w-100' />
             </Div>
             <Spacing lg='0' md='40'/>
           </Div>
