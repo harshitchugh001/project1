@@ -26,7 +26,7 @@ export default function Cms() {
             <Div className="container">
                 <SectionHeading
                     title='Design working process'
-                    subtitle='Development'
+                    subtitle=''
                     variant='cs-style1 text-center'
                 />
                 <Spacing lg='90' md='45' />

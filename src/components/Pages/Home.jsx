@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from '../Card';
 import FunFact from '../FunFact';
 import Hero from '../Hero';
@@ -16,7 +16,36 @@ import VideoModal from '../VideoModal';
 import { pageTitle } from '../../helper';
 
 export default function Home() {
+
+  const [currentSlide, setCurrentSlide] = useState(1);
   pageTitle('Home');
+
+  const showcaseData = [
+    {
+      title: 'Unlock the Power of <br>Online Marketing',
+      bgImageUrlimgUrl: '/images/hero_bg.jpeg',
+      
+    },
+    {
+      title: 'Transform Your Online Presence,<br> Boost Your Sales',
+      bgImageUrl: '/images/slider_4.jpeg',
+      
+    },
+    {
+      title: 'Navigate the Digital Landscape <br> with Confidence',
+      bgImageUrl: '/images/slider_1.jpeg',
+      
+    },
+    {
+      title: 'Innovative Marketing <br> for the Modern Business',
+      bgImageUrl: '/images/slider_3.jpeg',
+      
+    },
+    {
+      title: 'Unlock the Power of <br>Online Marketing',
+      bgImageUrlimgUrl: '/images/hero_bg.jpeg',
+    },
+  ];
 
   // Hero Social Links
   const heroSocialLinks = [
@@ -51,21 +80,32 @@ export default function Home() {
   ];
 
   useEffect(() => {
+    pageTitle('Home');
     window.scrollTo(0, 0);
-  }, []);
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % showcaseData.length);
+    }, 3000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [showcaseData.length]);
+
+  const currentShowcase = showcaseData[currentSlide];
+
+  
 
   return (
     <>
       {/* Start Hero Section */}
       <Hero
-        title="Unlock the Power of <br>Online Marketing"
+        title={currentShowcase.title}
         subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
         // btnText="Get a Quote"
         // btnLink="/contact"
         scrollDownId="#service"
         socialLinksHeading="Follow Us"
         heroSocialLinks={heroSocialLinks}
-        bgImageUrl="/images/hero_bg.jpeg"
+        bgImageUrl={currentShowcase.bgImageUrl}
       />
       {/* End Hero Section */}
 
@@ -158,29 +198,6 @@ export default function Home() {
       </Div>
       {/* End Portfolio Section */}
 
-      {/* Start Awards Section */}
-      {/* <Spacing lg="150" md="80" />
-      <Div className="cs-shape_wrap_2">
-        <Div className="cs-shape_2">
-          <Div />
-        </Div>
-        <Div className="container">
-          <Div className="row">
-            <Div className="col-xl-4">
-              <SectionHeading
-                title="We get multiple awards"
-                subtitle="Our Awards"
-                variant="cs-style1"
-              />
-              <Spacing lg="90" md="45" />
-            </Div>
-            <Div className="col-xl-7 offset-xl-1">
-              <TimelineSlider />
-            </Div>
-          </Div>
-        </Div>
-      </Div> */}
-      {/* End Awards Section */}
 
       {/* Start Video Block Section */}
       <Spacing lg="130" md="70" />
@@ -254,9 +271,7 @@ export default function Home() {
       <Spacing lg="150" md="80" />
       {/* End LogoList Section */}
 
-      {/* Start CTA Section */}
       
-      {/* End CTA Section */}
     </>
   );
 }

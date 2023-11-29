@@ -132,33 +132,14 @@ export default function Header({ variant }) {
                       </NavLink>
                       
                     </li>
-                    <li className="menu-item-has-children">
+                    <li>
                       <NavLink
                         to="portfolio"
-                        onClick={() => setMobileToggle(false)}
+                        
                       >
                         Portfolio
                       </NavLink>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link
-                              to="portfolio"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Portfolio
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="portfolio/portfolio-details"
-                              onClick={() => setMobileToggle(false)}
-                            >
-                              Portfolio Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </DropDown>
+                      
                     </li>
                     <li className="menu-item-has-children">
                       <NavLink to="blog" onClick={() => setMobileToggle(false)}>
