@@ -28,12 +28,12 @@ export default function Home() {
     },
     {
       title: 'Transform Your Online Presence,<br> Boost Your Sales',
-      bgImageUrl: '/images/slider_4.jpeg',
+      bgImageUrl: '/images/slider_1.jpeg',
       
     },
     {
       title: 'Navigate the Digital Landscape <br> with Confidence',
-      bgImageUrl: '/images/slider_1.jpeg',
+      bgImageUrl: '/images/slider_2.jpeg',
       
     },
     {
@@ -41,10 +41,22 @@ export default function Home() {
       bgImageUrl: '/images/slider_3.jpeg',
       
     },
+    
+    {
+      title: 'Navigate the Digital Landscape <br> with Confidence',
+      bgImageUrl: '/images/slider_4.jpeg',
+      
+    },
+    {
+      title: 'Innovative Marketing <br> for the Modern Business',
+      bgImageUrl: '/images/slider_5.jpeg',
+      
+    },
     {
       title: 'Unlock the Power of <br>Online Marketing',
-      bgImageUrlimgUrl: '/images/hero_bg.jpeg',
+      bgImageUrlimgUrl: '/images/slider_7.jpeg',
     },
+
   ];
 
   // Hero Social Links

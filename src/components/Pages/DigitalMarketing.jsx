@@ -19,7 +19,7 @@ export default function DigitalMarketing() {
         <>
             <PageHeading
                 title='Digital Marketing'
-                bgSrc='/images/service_hero_bg.jpeg'
+                bgSrc='/images/hero_bg_3.jpeg'
                 pageLinkText={params.serviceDetailsId}
             />
             <Spacing lg='145' md='80' />
