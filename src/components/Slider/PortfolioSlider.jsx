@@ -8,7 +8,7 @@ export default function PortfolioSlider() {
     {
       title: 'Rental Website',
       subtitle: 'See Details',
-      href: '/portfolio/s',
+      href: '/portfolio/',
       src: '/images/website1.jpg',
       category: 'Website_Development',
     },
@@ -22,21 +22,21 @@ export default function PortfolioSlider() {
     {
       title: 'App Design',
       subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
+      href: '/portfolio/',
       src: '/images/app4.jpeg',
       category: 'App_Development',
     },
     {
       title: 'App Designs',
       subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
+      href: '/portfolio/',
       src: '/images/app2.jpeg',
       category: 'App_Development',
     },
     {
       title: 'Brand strategies',
       subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
+      href: '/portfolio/',
       src: '/images/brand1.jpeg',
       category: 'Brand_Strategizing',
     },
