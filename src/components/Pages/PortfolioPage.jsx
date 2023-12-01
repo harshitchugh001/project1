@@ -15,59 +15,59 @@ export default function PortfolioPage() {
   const [itemShow, setItemShow] = useState(7);
   const portfolioData = [
     {
-      title: 'Colorful Art Work',
+      title: 'Rental Website',
+      subtitle: 'See Details',
+      href: '/portfolio/s',
+      src: '/images/website1.jpg',
+      category: 'Website_Development',
+    },
+    {
+      title: 'Hearbal cart',
+      subtitle: 'See Details',
+      href: '/portfolio/',
+      src: '/images/website2.jpg',
+      category: 'Website_Development',
+    },
+    {
+      title: 'App Design',
       subtitle: 'See Details',
       href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_4.jpeg',
-      category: 'ui_ux_design',
+      src: '/images/app4.jpeg',
+      category: 'App_Development',
+    },
+    {
+      title: 'App Designs',
+      subtitle: 'See Details',
+      href: '/portfolio/portfolio-details',
+      src: '/images/app2.jpeg',
+      category: 'App_Development',
+    },
+    {
+      title: 'Brand strategies',
+      subtitle: 'See Details',
+      href: '/portfolio/portfolio-details',
+      src: '/images/brand1.jpeg',
+      category: 'Brand_Strategizing',
+    },
+    {
+      title: 'Carpooling In blockchain',
+      subtitle: 'See Details',
+      href: '/portfolio/',
+      src: '/images/block2.jpeg',
+      category: 'BlockChain_Development',
+    },
+    {
+      title: 'Voting System in Blockchain',
+      subtitle: 'See Details',
+      href: '/portfolio/',
+      src: '/images/block1.jpeg',
+      category: 'BlockChain_Development',
     },
     {
       title: 'Colorful Art Work',
       subtitle: 'See Details',
       href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_5.jpeg',
-      category: 'logo_design',
-    },
-    {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_6.jpeg',
-      category: 'web_design',
-    },
-    {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_7.jpeg',
-      category: 'mobile_apps',
-    },
-    {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_8.jpeg',
-      category: 'ui_ux_design',
-    },
-    {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_9.jpeg',
-      category: 'web_design',
-    },
-    {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_10.jpeg',
-      category: 'logo_design',
-    },
-    {
-      title: 'Colorful Art Work',
-      subtitle: 'See Details',
-      href: '/portfolio/portfolio-details',
-      src: '/images/portfolio_4.jpeg',
+      src: '/images/cms1.jpg',
       category: 'ui_ux_design',
     },
     {
@@ -87,21 +87,30 @@ export default function PortfolioPage() {
   ];
   const categoryMenu = [
     {
-      title: 'Web Design',
-      category: 'web_design',
+      title: 'Digital Marketing',
+      category: 'Digital_Marketing',
     },
     {
-      title: 'UI/UX Design',
-      category: 'ui_ux_design',
+      title: 'Website Development',
+      category: 'Website_Development',
     },
     {
-      title: 'Mobile Apps',
-      category: 'mobile_apps',
+      title: 'App Development',
+      category: 'App_Development',
     },
     {
-      title: 'Logo Design',
-      category: 'logo_design',
+      title: 'Brand Strategizing',
+      category: 'Brand_Strategizing',
     },
+    
+    {
+      title:'Content Management Systems',
+      category:'Content Management Systems'
+    },
+    {
+      title:'BlockChain Development',
+      category:'BlockChain_Development'
+    }
   ];
 
   useEffect(() => {
@@ -118,7 +127,7 @@ export default function PortfolioPage() {
       <Spacing lg="145" md="80" />
       <Div className="container">
         <Div className="cs-portfolio_1_heading">
-          <SectionHeading title="Some recent work" subtitle="Our Portfolio" />
+          <SectionHeading title="Some Great Projects" subtitle="Our Portfolio" />
           <Div className="cs-filter_menu cs-style1">
             <ul className="cs-mp0 cs-center">
               <li className={active === 'all' ? 'active' : ''}>
@@ -142,7 +151,7 @@ export default function PortfolioPage() {
           {portfolioData.slice(0, itemShow).map((item, index) => (
             <Div
               className={`${
-                index === 3 || index === 6 ? 'col-lg-8' : 'col-lg-4'
+                index === 4 || index === 8 ? 'col-lg-12' : 'col-lg-6'
               } ${
                 active === 'all'
                   ? ''
@@ -163,6 +172,7 @@ export default function PortfolioPage() {
             </Div>
           ))}
         </Div>
+        <Spacing lg="25" md="25" />
 
         <Div className="text-center">
           {portfolioData.length <= itemShow ? (

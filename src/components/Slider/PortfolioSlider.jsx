@@ -6,30 +6,58 @@ import Slider from 'react-slick';
 export default function PortfolioSlider() {
   const portfolioData = [
     {
-      title:'Colorful Art Work',
-      subtitle:'See Details',
-      href:'/portfolio/portfolio-details',
-      src:'/images/portfolio_1.jpeg'
+      title: 'Rental Website',
+      subtitle: 'See Details',
+      href: '/portfolio/s',
+      src: '/images/website1.jpg',
+      category: 'Website_Development',
     },
     {
-      title:'Colorful Art Work',
-      subtitle:'See Details',
-      href:'/portfolio/portfolio-details',
-      src:'/images/portfolio_2.jpeg'
+      title: 'Hearbal cart',
+      subtitle: 'See Details',
+      href: '/portfolio/',
+      src: '/images/website2.jpg',
+      category: 'Website_Development',
     },
     {
-      title:'Colorful Art Work',
-      subtitle:'See Details',
-      href:'/portfolio/portfolio-details',
-      src:'/images/portfolio_0.jpg'
+      title: 'App Design',
+      subtitle: 'See Details',
+      href: '/portfolio/portfolio-details',
+      src: '/images/app4.jpeg',
+      category: 'App_Development',
     },
     {
-      title:'Colorful Art Work',
-      subtitle:'See Details',
-      href:'/portfolio/portfolio-details',
-      src:'/images/portfolio_3.jpeg'
-    }
-  ]
+      title: 'App Designs',
+      subtitle: 'See Details',
+      href: '/portfolio/portfolio-details',
+      src: '/images/app2.jpeg',
+      category: 'App_Development',
+    },
+    {
+      title: 'Brand strategies',
+      subtitle: 'See Details',
+      href: '/portfolio/portfolio-details',
+      src: '/images/brand1.jpeg',
+      category: 'Brand_Strategizing',
+    },
+    {
+      title: 'Carpooling In blockchain',
+      subtitle: 'See Details',
+      href: '/portfolio/',
+      src: '/images/block2.jpeg',
+      category: 'BlockChain_Development',
+    },
+    {
+      title: 'Voting System in Blockchain',
+      subtitle: 'See Details',
+      href: '/portfolio/',
+      src: '/images/block1.jpeg',
+      category: 'BlockChain_Development',
+    },
+    
+    
+    
+  ];
   
   /** Slider Settings **/
   const settings = {
