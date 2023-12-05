@@ -37,28 +37,7 @@ export default function Sidebar() {
       url:'/'
     },
   ]
-  const archiveData = [
-    {
-      title: 'Archives',
-      url:'/'
-    },
-    {
-      title: '15 Aug 2022',
-      url:'/'
-    },
-    {
-      title: '20 Sep 2021',
-      url:'/'
-    },
-    {
-      title: '11 Dec 2020',
-      url:'/'
-    },
-    {
-      title: '25 jun 2020',
-      url:'/'
-    }
-  ]
+  
   const categoryData = [
     {
       title: 'Corporate',
@@ -83,29 +62,23 @@ export default function Sidebar() {
   ]
   const recentPostData = [
     {
-      title: 'How to studio setup...',
-      thumb: '/images/recent_post_1.jpeg',
-      href: '/blog/blog-details',
-      date: '15 Aug 2022'
+      title: 'Unleashing the Potential...',
+      thumb: '/images/blog1.png',
+      href: '/blog/blog1',
+      date: '07 Mar 2023'
     },
     {
-      title: 'Creative people mind...',
-      thumb: '/images/recent_post_2.jpeg',
-      href: '/blog/blog-details',
-      date: '14 Aug 2022'
+      title: 'Crafting Success...',
+      thumb: '/images/blog2.png',
+      href: '/blog/blog2',
+      date: '05 Mar 2023'
     },
     {
-      title: 'AI take over human...',
-      thumb: '/images/recent_post_3.jpeg',
-      href: '/blog/blog-details',
-      date: '13 Aug 2022'
-    },
-    {
-      title: 'You should now add...',
-      thumb: '/images/recent_post_4.jpeg',
-      href: '/blog/blog-details',
-      date: '12 Aug 2022'
-    },
+      title: 'Navigating the Digital Landscape...',
+      thumb: '/images/blog3.png',
+      href: '/blog/blog3',
+      date: '04 Mar 2023'
+    }
   ]
   return (
     <>
@@ -125,9 +98,9 @@ export default function Sidebar() {
       <Div className="cs-sidebar_item">
         <RecentPost title='Archives' data={recentPostData}/>
       </Div>
-      <Div className="cs-sidebar_item">
+      {/* <Div className="cs-sidebar_item">
         <SideMenuWidget title='Archives' data={archiveData}/>
-      </Div>
+      </Div> */}
       <Div className="cs-sidebar_item">
         <TagWidget title='Tags' data={tagData}/>
       </Div>
