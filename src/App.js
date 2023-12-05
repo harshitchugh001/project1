@@ -31,6 +31,9 @@ import CreativeDirection from './components/Pages/Creativedirection'
 import Facebookdetail from './components/Pages/Facebookdetail';
 import WhatsaapDetail from './components/Pages/whatsaapDetail';
 import InstagramDetail from './components/Pages/InstagramDetail';
+import Blog1 from './components/Blog-detail/Blog1';
+import Blog2 from './components/Blog-detail/Blog2';
+import Blog3 from './components/Blog-detail/Blog3';
 
 
 
@@ -109,6 +112,9 @@ function App() {
           />
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} />
+          <Route path="blog/blog1" element={<Blog1 />} />
+          <Route path="blog/blog2" element={<Blog2 />} />
+          <Route path="blog/blog3" element={<Blog3 />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="team" element={<TeamPage />} />
           <Route path="team/:teamDetails" element={<TeamDetails />} />

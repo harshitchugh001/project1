@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { pageTitle } from '../../helper'
 import Cta from '../Cta'
 import PageHeading from '../PageHeading'
-import Pagination from '../Pagination'
+// import Pagination from '../Pagination'
 import PostStyle2 from '../Post/PostStyle2'
 import Div from '../Div'
 import Sidebar from '../Sidebar.jsx'
@@ -12,32 +12,35 @@ export default function BlogPage() {
   pageTitle('Blog');
   const postData = [
     {
-      thumb:'/images/post_4.jpeg',
-      title:'A.I will take all human job within next year',
-      subtitle:'Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.',
-      date:'07 Mar 2022',
-      category:'Tech',
+      thumb:'/images/blog1.png',
+      title:'Unleashing the Potential: A Deep Dive into Social Media Marketing for Small Businesses',
+      subtitle:'In the fast-evolving realm of digital marketing, small businesses are recognizing the transformative power of social media marketing. This article seeks to explore the multifaceted strategies that can propel small enterprises to new heights by harnessing the full potential of various social media platforms.',
+      date:'07 Mar 2023',
+      category:'Social Media Marketing',
       categoryHref:'/blog',
-      href:'/blog/blog-details'
+      href:'/blog/blog1'
     },
     {
-      thumb:'/images/post_5.jpeg',
-      title:'Creative studio programm coming soon',
-      subtitle:'Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.',
-      date:'05 Mar 2022',
-      category:'Photography',
+      thumb:'/images/blog2.png',
+      title:'Crafting Success: Essential Strategies for Small Businesses in Social Media Marketing',
+      subtitle:'Success in social media marketing hinges on a meticulously crafted strategy. Small businesses must articulate clear objectives, whether its enhancing brand visibility, driving website traffic, or generating leads. The art of crafting a strategy tailored to these objectives lays the groundwork for lasting success.',
+      date:'05 Mar 2023',
+      category:'Marketing',
       categoryHref:'/blog',
-      href:'/blog/blog-details'
+      href:'/blog/blog2'
     },
     {
-      thumb:'/images/post_6.jpeg',
-      title:'Artistic mind will be great for creation',
-      subtitle:'Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.',
-      date:'04 Mar 2022',
-      category:'Tech',
+      thumb:'/images/blog3.png',
+      title:'Navigating the Digital Landscape: Why Social Media is a Game-Changer for Small Enterprises',
+      subtitle:'Social media stands as a game-changer for small enterprises, offering a direct and cost-effective avenue to connect with their target audience. It levels the playing field, enabling smaller businesses to compete with larger counterparts on a more equitable basis.',
+      date:'04 Mar 2023',
+      category:'Social Media',
       categoryHref:'/blog',
-      href:'/blog/blog-details'
-    }
+      href:'/blog/blog3'
+
+    },
+    
+  
   ]
 
   useEffect(() => {
@@ -70,7 +73,7 @@ export default function BlogPage() {
               </Div>
             ))}
             <Spacing lg='60' md='40'/>
-            <Pagination/>
+            {/* <Pagination/> */}
           </Div>
           <Div className="col-xl-3 col-lg-4 offset-xl-1">
             <Spacing lg='0' md='80'/>
