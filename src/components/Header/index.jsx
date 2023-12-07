@@ -123,7 +123,7 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                    <li >
+                    {/* <li >
                       <NavLink
                         to="/courses"
                         
@@ -131,7 +131,7 @@ export default function Header({ variant }) {
                         Courses
                       </NavLink>
                       
-                    </li>
+                    </li> */}
                     <li>
                       <NavLink
                         to="portfolio"

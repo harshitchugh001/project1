@@ -12,7 +12,7 @@ import TeamPage from './components/Pages/TeamPage';
 import PortfolioPage from './components/Pages/PortfolioPage';
 import TeamDetails from './components/Pages/TeamDetails';
 import PhotographyAgencyHome from './components/Pages/PhotographyAgencyHome';
-import CreativePortfolioHome from './components/Pages/CreativePortfolioHome';
+// import CreativePortfolioHome from './components/Pages/CreativePortfolioHome';
 import DigitalAgencyHome from './components/Pages/DigitalAgencyHome';
 import MarketingAgencyHome from './components/Pages/MarketingAgencyHome';
 import ShowcasePortfolioHome from './components/Pages/ShowcasePortfolioHome';
@@ -28,9 +28,9 @@ import Cms from './components/Pages/Cms';
 import Erp from './components/Pages/Erp';
 import BlockchainDevelopment from './components/Pages/BlockchainDevelopment';
 import CreativeDirection from './components/Pages/Creativedirection'
-import Facebookdetail from './components/Pages/Facebookdetail';
-import WhatsaapDetail from './components/Pages/whatsaapDetail';
-import InstagramDetail from './components/Pages/InstagramDetail';
+// import Facebookdetail from './components/Pages/Facebookdetail';
+// import WhatsaapDetail from './components/Pages/whatsaapDetail';
+// import InstagramDetail from './components/Pages/InstagramDetail';
 import Blog1 from './components/Blog-detail/Blog1';
 import Blog2 from './components/Blog-detail/Blog2';
 import Blog3 from './components/Blog-detail/Blog3';
@@ -98,7 +98,7 @@ function App() {
           />
 
           <Route path="portfolio" element={<PortfolioPage />} />
-          <Route
+          {/* <Route
             path="/instagramdetail"
             element={<InstagramDetail />}
           />
@@ -109,7 +109,7 @@ function App() {
           <Route
             path="/facebookdetail"
             element={<Facebookdetail/>}
-          />
+          /> */}
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} />
           <Route path="blog/blog1" element={<Blog1 />} />
@@ -128,10 +128,10 @@ function App() {
           path="/"
           element={<Layout headerVariant="cs-site_header_full_width" />}
         >
-          <Route
+          {/* <Route
             path="/courses"
             element={<CreativePortfolioHome />}
-          />
+          /> */}
           <Route
             path="showcase-portfolio"
             element={<ShowcasePortfolioHome />}
