@@ -34,6 +34,9 @@ import CreativeDirection from './components/Pages/Creativedirection'
 import Blog1 from './components/Blog-detail/Blog1';
 import Blog2 from './components/Blog-detail/Blog2';
 import Blog3 from './components/Blog-detail/Blog3';
+import WebDesignBlog from './components/Pages/WebDesignBlogs';
+import SeoBlog from './components/Pages/SeoGuideBlog';
+import AppDevelopmentBlog from './components/Pages/AppDevelopmentBlog';
 
 
 
@@ -111,6 +114,10 @@ function App() {
             element={<Facebookdetail/>}
           /> */}
           <Route path="blog" element={<BlogPage />} />
+          <Route path="Websiteblog" element={<WebDesignBlog/>}/>
+          <Route path="AppBlog" element={<AppDevelopmentBlog/>}/>
+          <Route path="SeoBlog" element={<SeoBlog/>}/>
+
           <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} />
           <Route path="blog/blog1" element={<Blog1 />} />
           <Route path="blog/blog2" element={<Blog2 />} />

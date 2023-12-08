@@ -40,25 +40,22 @@ export default function Sidebar() {
   
   const categoryData = [
     {
-      title: 'Corporate',
-      url:'/'
+      title: 'Social Media',
+      url:'/blog'
     },
     {
-      title: 'Company',
-      url:'/'
+      title: 'Website Design',
+      url:'/Websiteblog'
     },
     {
-      title: 'Search Engine',
-      url:'/'
+      title: 'Seo Guide',
+      url:'/Seoblog'
     },
     {
-      title: 'Information',
-      url:'/'
+      title: 'App Development Blogs',
+      url:'/AppBlog'
     },
-    {
-      title: 'Painting',
-      url:'/'
-    }
+    
   ]
   const recentPostData = [
     {

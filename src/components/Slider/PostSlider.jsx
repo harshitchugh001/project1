@@ -6,46 +6,39 @@ import Post from '../Post';
 export default function PostSlider() {
   const postData = [
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_1.jpeg', 
+      url:'/blog', 
+      src:'/images/blog1.png', 
       alt:'Post', 
       date:'07 Mar 2022', 
-      title:'How to keep fear from ruining your art business with confident'
+      title:'Unleashing the Potential: A Deep Dive into Social Media Marketing for Small Businesses'
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_2.jpeg', 
+      url:'/Websiteblog', 
+      src:'/images/webblog1.png', 
       alt:'Post', 
       date:'10 Feb 2022',
-      title:'Artistic mind will be great for creation anything'
+      title:'Responsive Web Design: Ensuring a Seamless User Experience'
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_3.jpeg', 
+      url:'/SeoBlog', 
+      src:'/images/seoblog2.png', 
       alt:'Post', 
       date:'05 Mar 2022',
-      title:'A.I will take over all job for human within next year'
+      title:'Learn how to identify and optimise keywords for improved search engine visibility.'
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_1.jpeg', 
+      url:'/AppBlog', 
+      src:'/images/Appblog1.png', 
       alt:'Post', 
       date:'07 Mar 2022', 
-      title:'How to keep fear from ruining your art business with confident'
+      title:'Emerging Technologies Shaping the Future'
     },
     {
-      url:'/blog/blog-details', 
-      src:'/images/post_2.jpeg', 
-      alt:'Post', 
-      date:'10 Feb 2022',
-      title:'Artistic mind will be great for creation anything'
-    },
-    {
-      url:'/blog/blog-details', 
-      src:'/images/post_3.jpeg', 
+      url:'/Websiteblog', 
+      src:'/images/websiteblog3.png', 
       alt:'Post', 
       date:'05 Mar 2022',
-      title:'A.I will take over all job for human within next year'
+      title:'Advantages of Responsive Design'
     }
   ]
   

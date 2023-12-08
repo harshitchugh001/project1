@@ -141,10 +141,46 @@ export default function Header({ variant }) {
                       </NavLink>
                       
                     </li>
-                    <li>
-                      <NavLink to="blog" onClick={() => setMobileToggle(false)}>
+                    <li className="menu-item-has-children">
+                      <Link to="blog" onClick={() => setMobileToggle(false)}>
                         Blog
-                      </NavLink>
+                      </Link>
+                      <DropDown>
+                        <ul>
+                          <li>
+                            <Link
+                              to="blog"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Social Media
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/Websiteblog"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Web Design
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/SeoBlog"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              Seo Guide
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="AppBlog"
+                              onClick={() => setMobileToggle(false)}
+                            >
+                              App Development
+                            </Link>
+                          </li>
+                        </ul>
+                      </DropDown>
                       
                     </li>
                     <li className="menu-item-has-children">
