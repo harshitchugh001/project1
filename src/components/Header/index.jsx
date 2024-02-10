@@ -34,7 +34,7 @@ export default function Header({ variant }) {
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" to="/">
                   <img src="/images/logo_only.png"  alt="Logo"></img>
-                  <img src="/images/logo1.png" className='mx-4' alt="Logo" />
+                  {/* <img src="/images/logo1.png" className='mx-4' alt="Logo" /> */}
                 </Link>
               </Div>
               <Div className="cs-main_header_center mx-2">
@@ -287,7 +287,7 @@ export default function Header({ variant }) {
         <Div className="cs-side_header_in">
           <Div className="cs-side_header_shape" />
           <Link className="cs-site_branding" to="/">
-            <img src="/images/logo_side.png" height="100px" width="100px" alt="Logo" />
+            <img src="/images/logo_only.png" height="100px" width="100px" alt="Logo" />
           </Link>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
