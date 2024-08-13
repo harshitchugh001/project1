@@ -64,8 +64,8 @@ export default function Sidebar() {
       <Div className="cs-sidebar_item">
         <AuthorWidget 
           src='/images/avatar_1.png'
-          name='Kuber Jontra' 
-          description='At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.'
+          name='Harshit chugh' 
+          // description='At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.'
         />
       </Div>
       <Div className="cs-sidebar_item">
