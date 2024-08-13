@@ -32,6 +32,10 @@ export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
       title: 'Website Development',
       href: ''
     },
+    {
+      title: 'BlockChain Development',
+      href: ''
+    },
     
   ]
 
