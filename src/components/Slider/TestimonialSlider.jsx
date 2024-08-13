@@ -13,7 +13,7 @@ export default function TestimonialSlider() {
       testimonialText:
         'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
       avatarName: 'Ahon Monsery',
-      avatarDesignation: 'CEO AT TECH',
+      // avatarDesignation: 'CEO AT TECH',
       ratings: '4',
     },
     {
@@ -21,7 +21,7 @@ export default function TestimonialSlider() {
       testimonialText:
         'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
       avatarName: 'Ahon Monsery',
-      avatarDesignation: 'CEO AT TECH',
+      // avatarDesignation: 'CEO AT TECH',
       ratings: '5',
     },
     {
@@ -29,7 +29,7 @@ export default function TestimonialSlider() {
       testimonialText:
         'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
       avatarName: 'Ahon Monsery',
-      avatarDesignation: 'CEO AT TECH',
+      // avatarDesignation: 'CEO AT TECH',
       ratings: '4.5',
     },
     {
@@ -37,7 +37,7 @@ export default function TestimonialSlider() {
       testimonialText:
         'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
       avatarName: 'Ahon Monsery',
-      avatarDesignation: 'CEO AT TECH',
+      // avatarDesignation: 'CEO AT TECH',
       ratings: '3.5',
     },
   ];
