@@ -11,7 +11,7 @@ export default function IconBox({title, subtitle, icon,require}) {
       </Div>
       <h2 className="cs-iconbox_title">{parse(title)}</h2>
       <Div className="cs-iconbox_subtitle">{parse(subtitle)}</Div>
-      {/* <Div className="cs-iconbox_subtitle">{parse(require)}</Div> */}
+      <p className="cs-iconbox_subtitle">{require}</p>
     </Div>
   )
 }
