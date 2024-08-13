@@ -72,7 +72,7 @@ export default function CareersPage() {
                 </Div>
                 
             </Div>
-            <MovingText text="Email your resume at " />
+            <MovingText text="Email your resume at info@shatantech.com" />
      
     </>
   );
