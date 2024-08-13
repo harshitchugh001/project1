@@ -5,37 +5,37 @@ import Post from '../Post';
 
 export default function PostSlider() {
   const postData = [
-    {
-      url:'/blog', 
-      src:'/images/blog1.png', 
-      alt:'Post', 
-      date:'07 Mar 2022', 
-      title:'Unleashing the Potential: A Deep Dive into Social Media Marketing for Small Businesses'
-    },
+    // {
+    //   url:'/blog', 
+    //   src:'/images/blog1.png', 
+    //   alt:'Post', 
+    //   date:'07 Mar 2024', 
+    //   title:'Unleashing the Potential: A Deep Dive into Social Media Marketing for Small Businesses'
+    // },
     {
       url:'/Websiteblog', 
       src:'/images/webblog1.png', 
       alt:'Post', 
-      date:'10 Feb 2022',
+      date:'10 Feb 2024',
       title:'Responsive Web Design: Ensuring a Seamless User Experience'
     },
-    {
-      url:'/SeoBlog', 
-      src:'/images/seoblog2.png', 
-      alt:'Post', 
-      date:'05 Mar 2022',
-      title:'Learn how to identify and optimise keywords for improved search engine visibility.'
-    },
+    // {
+    //   url:'/SeoBlog', 
+    //   src:'/images/seoblog2.png', 
+    //   alt:'Post', 
+    //   date:'05 Mar 2024',
+    //   title:'Learn how to identify and optimise keywords for improved search engine visibility.'
+    // },
     {
       url:'/AppBlog', 
       src:'/images/Appblog1.png', 
       alt:'Post', 
-      date:'07 Mar 2022', 
+      date:'07 Mar 2024', 
       title:'Emerging Technologies Shaping the Future'
     },
     {
       url:'/Websiteblog', 
-      src:'/images/websiteblog3.png', 
+      src:'/images/websiteblog4.png', 
       alt:'Post', 
       date:'05 Mar 2022',
       title:'Advantages of Responsive Design'
