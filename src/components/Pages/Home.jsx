@@ -38,11 +38,11 @@ export default function Home() {
   const funfaceData = [
     {
       title: 'Global Happy Clients',
-      factNumber: '40',
+      factNumber: '10',
     },
     {
       title: 'Project Completed',
-      factNumber: '50',
+      factNumber: '20',
     },
     {
       title: 'Team Members',

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import SocialWidget from '../Widget/SocialWidget';
-import Newsletter from '../Widget/Newsletter';
+// import Newsletter from '../Widget/Newsletter';
 import './header.scss';
 import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import Div from '../Div';
@@ -33,7 +33,7 @@ export default function Header({ variant }) {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" to="/">
-                <img src="/images/logo_yaman.png" alt="Logo" height="80" width="80"/>
+                <img src="/images/logo_yaman.png" alt="Logo" height="100" width="80"/>
 
                   {/* <img src="/images/logo1.png" className='mx-4' alt="Logo" /> */}
                 </Link>
@@ -288,7 +288,7 @@ export default function Header({ variant }) {
         <Div className="cs-side_header_in">
           <Div className="cs-side_header_shape" />
           <Link className="cs-site_branding" to="/">
-            <img src="/images/logo_only.png" height="100px" width="100px" alt="Logo" />
+            <img src="/images/logo_yaman.png" height="100px" width="100px" alt="Logo" />
           </Link>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
@@ -299,11 +299,11 @@ export default function Header({ variant }) {
             <ContactInfoWidget title="Contact Us" withIcon />
           </Div>
           <Div className="cs-side_header_box">
-            <Newsletter
+            {/* <Newsletter
               title="Subscribe"
               subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
               placeholder="example@gmail.com"
-            />
+            /> */}
           </Div>
           <Div className="cs-side_header_box">
             <SocialWidget />
