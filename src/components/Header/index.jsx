@@ -5,6 +5,7 @@ import SocialWidget from '../Widget/SocialWidget';
 import './header.scss';
 import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import Div from '../Div';
+import TextWidget from '../Widget/TextWidget'
 // import DropDown from './DropDown';
 
 export default function Header({ variant }) {
@@ -31,12 +32,20 @@ export default function Header({ variant }) {
         <Div className="cs-main_header">
           <Div className="container">
             <Div className="cs-main_header_in">
-              <Div className="cs-main_header_left">
-                <Link className="cs-site_branding" to="/">
-                <img src="/images/logo_yaman_final.png" alt="Logo" height="200" width="80"/>
+              {/* <Div className="cs-main_header_left"> */}
+                {/* <Link className="cs-site_branding" to="/">
+                <img src="/images/logo_yaman_final.png" alt="Logo" height="200" width="80"/> */}
 
                   {/* <img src="/images/logo1.png" className='mx-4' alt="Logo" /> */}
-                </Link>
+                {/* </Link>
+              </Div> */}
+              <Div className="lg:cs-footer_item">
+                <TextWidget
+                  logoSrc='/images/logo_yaman.png' 
+                  logoAlt='Logo'
+                  // text ='Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.'
+                />
+                {/* <SocialWidget/> */}
               </Div>
               <Div className="cs-main_header_center mx-2">
                 <Div className="cs-nav cs-primary_font cs-medium">
@@ -287,9 +296,14 @@ export default function Header({ variant }) {
         />
         <Div className="cs-side_header_in">
           <Div className="cs-side_header_shape" />
-          <Link className="cs-site_branding" to="/">
-            <img src="/images/logo_yaman_final.png" height="100px" width="100px" alt="Logo" />
-          </Link>
+          <Div className="lg:cs-footer_item">
+                <TextWidget
+                  logoSrc='/images/logo_yaman.png' 
+                  logoAlt='Logo'
+                  // text ='Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.'
+                />
+                {/* <SocialWidget/> */}
+              </Div>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
               Do you have a project in your <br /> mind? Keep connect us.
