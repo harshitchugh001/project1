@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { pageTitle } from '../../helper'
-import Cta from '../Cta'
+// import Cta from '../Cta'
 import PageHeading from '../PageHeading'
 // import Pagination from '../Pagination'
 import PostStyle2 from '../Post/PostStyle2'
@@ -80,7 +80,7 @@ export default function BlogPage() {
           </Div>
         </Div>
       </Div>
-      <Spacing lg='150' md='80'/>
+      {/* <Spacing lg='150' md='80'/>
       <Div className="container">
         <Cta 
           title='Let’s disscuse make <br />something <i>cool</i> together' 
@@ -88,7 +88,7 @@ export default function BlogPage() {
           btnLink='/contact' 
           bgSrc='/images/cta_bg.jpeg'
         />
-      </Div>
+      </Div> */}
     </>
   )
 }

@@ -19,13 +19,13 @@ export default function PostSlider() {
       date:'10 Feb 2024',
       title:'Responsive Web Design: Ensuring a Seamless User Experience'
     },
-    // {
-    //   url:'/SeoBlog', 
-    //   src:'/images/seoblog2.png', 
-    //   alt:'Post', 
-    //   date:'05 Mar 2024',
-    //   title:'Learn how to identify and optimise keywords for improved search engine visibility.'
-    // },
+    {
+      url:'/SeoBlog', 
+      src:'/images/seoblog2.png', 
+      alt:'Post', 
+      date:'05 Mar 2024',
+      title:'Learn how to identify and optimise keywords for improved search engine visibility.'
+    },
     {
       url:'/AppBlog', 
       src:'/images/Appblog1.png', 
