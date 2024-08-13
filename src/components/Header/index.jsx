@@ -33,7 +33,7 @@ export default function Header({ variant }) {
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" to="/">
-                <img src="/images/logo_yaman.png" alt="Logo" height="200" width="80"/>
+                <img src="/images/logo_yaman_final.png" alt="Logo" height="200" width="80"/>
 
                   {/* <img src="/images/logo1.png" className='mx-4' alt="Logo" /> */}
                 </Link>
@@ -288,7 +288,7 @@ export default function Header({ variant }) {
         <Div className="cs-side_header_in">
           <Div className="cs-side_header_shape" />
           <Link className="cs-site_branding" to="/">
-            <img src="/images/logo_yaman.png" height="100px" width="100px" alt="Logo" />
+            <img src="/images/logo_yaman_final.png" height="100px" width="100px" alt="Logo" />
           </Link>
           <Div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">
