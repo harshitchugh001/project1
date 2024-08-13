@@ -163,24 +163,20 @@ export default function AboutPage() {
       <Div className="container">
         <Div className="row">
         <SectionHeading
-              title="Highly experienced pepole with us"
-              subtitle="Why Choose Us"
+              title="Shatan Tech Expertise"
+              subtitle=""
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+              At Shatan Tech, our expertise is the foundation that distinguishes us from the competition. Our team’s extensive knowledge and hands-on experience enable us to provide specialized technology solutions tailored to each client’s unique needs. We apply our comprehensive understanding of the tech landscape to develop strategies that deliver exceptional results. Over the years, we’ve learned that while every project is different, our commitment to innovation and excellence remains constant, ensuring that we consistently exceed expectations.
               </p>
               <Spacing lg="15" md="15" />
-              <p className="cs-m0">
+              {/* <p className="cs-m0">
                 This is the main factor that sets us apart from our competition
                 and allows us to deliver a specialist business consultancy
                 service. Our team applies its wide-ranging experience to
                 determining.
-              </p>
+              </p> */}
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
               <Spacing lg="25" md="0" />
