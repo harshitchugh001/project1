@@ -229,7 +229,7 @@ export default function Home() {
       {/* End Team Section */}
 
       {/* Start Testimonial Section */}
-      <TestimonialSlider />
+      {/* <TestimonialSlider /> */}
       {/* End Testimonial Section */}
 
       {/* Start Blog Section */}
