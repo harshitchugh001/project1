@@ -3,8 +3,8 @@ import Div from '../Div'
 
 export default function TextWidget({logoSrc, logoAlt, text}) {
   return (
-    <Div className="cs-text_widget">
-      <img src={logoSrc} alt={logoAlt} />
+    <Div className="cs-text_widget {">
+      <img src={logoSrc} alt={logoAlt}  className="sample"/>
       <p>{text}</p>
     </Div>
   )
