@@ -135,7 +135,7 @@ export default function Header({ variant }) {
                     </li> */}
                     <li>
                       <NavLink
-                        to="portfolio"
+                        to="careers"
                         
                       >
                         Careers

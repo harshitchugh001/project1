@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import AboutPage from './components/Pages/AboutPage';
+import CareersPage from './components/Pages/CareersPage';
 import BlogPage from './components/Pages/BlogPage';
 import BlogDetailsPage from './components/Pages/BlogDetailsPage';
 import ContactPage from './components/Pages/ContactPage';
@@ -53,6 +54,7 @@ function App() {
           <Route path="digital-agency" element={<DigitalAgencyHome />} />
           <Route path="marketing-agency" element={<MarketingAgencyHome />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="careers" element={<CareersPage />} />
           <Route path="service" element={<ServicesPage />} />
           <Route
             key={1}
