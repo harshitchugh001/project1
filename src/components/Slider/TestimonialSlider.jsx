@@ -11,7 +11,7 @@ export default function TestimonialSlider() {
     {
       testimonialThumb: '/images/testimonial_1.jpeg',
       testimonialText:
-        'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
+        'Shatan Tech transformed our business operations with their cutting-edge technology solutions. Their expertise and commitment to excellence are unparalleled. The results speak for themselves—our efficiency has skyrocketed, and we couldn’t be more pleased with the partnership.',
       avatarName: 'Ahon Monsery',
       // avatarDesignation: 'CEO AT TECH',
       ratings: '4',
@@ -19,7 +19,7 @@ export default function TestimonialSlider() {
     {
       testimonialThumb: '/images/testimonial_2.jpeg',
       testimonialText:
-        'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
+        'Working with Shatan Tech has been a game-changer for our company. Their team’s in-depth knowledge and innovative approach provided us with tailored solutions that met all our business needs. They truly understand the technology landscape and deliver beyond expectations.',
       avatarName: 'Ahon Monsery',
       // avatarDesignation: 'CEO AT TECH',
       ratings: '5',
@@ -27,7 +27,7 @@ export default function TestimonialSlider() {
     {
       testimonialThumb: '/images/testimonial_3.jpeg',
       testimonialText:
-        'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
+        'We approached Shatan Tech for a complex project, and they delivered with precision and expertise. Their ability to seamlessly integrate advanced technology into our existing systems has significantly improved our operational efficiency. We highly recommend their services.',
       avatarName: 'Ahon Monsery',
       // avatarDesignation: 'CEO AT TECH',
       ratings: '4.5',
@@ -35,7 +35,7 @@ export default function TestimonialSlider() {
     {
       testimonialThumb: '/images/testimonial_1.jpeg',
       testimonialText:
-        'I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff  is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.',
+        'Shatan Tech is a reliable partner who truly understands our business challenges. Their strategic approach and technical proficiency have helped us achieve our goals faster and more effectively. We’re incredibly impressed with the quality of service they provide.',
       avatarName: 'Ahon Monsery',
       // avatarDesignation: 'CEO AT TECH',
       ratings: '3.5',
