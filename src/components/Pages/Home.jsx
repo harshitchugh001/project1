@@ -83,8 +83,8 @@ export default function Home() {
       <div className="container">
         <FunFact
           variant="cs-type1"
-          title="Our fun fact"
-          subtitle="Empowering Your Business Journey: From Digital Visibility to Operational Excellence. Unleash the Power of Tailored Digital Marketing, App & Website Development, Strategic Branding, Creative Solutions, and Advanced Tech Integrations with Our Expertise."
+          title="Our Commitment to Excellence"
+          subtitle="Empowering Your Business Transformation: From Digital Excellence to Operational Mastery. Harness Our Expertise in Tailored Digital Solutions, Strategic Branding, Innovative App & Website Development, and Cutting-Edge Technology Integrations to Drive Your Success."
           data={funfaceData}
         />
       </div>
