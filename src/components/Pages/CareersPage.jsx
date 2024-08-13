@@ -8,6 +8,7 @@ import IconBox from '../IconBox'
 // import SectionHeading from '../SectionHeading';
 // import TeamSlider from '../Slider/TeamSlider';
 import Spacing from '../Spacing';
+import MovingText from '../MovingText';
 
 import SectionHeading from '../SectionHeading'
 
@@ -66,8 +67,12 @@ export default function CareersPage() {
                         />
                         <Spacing lg='30' md='30' />
                     </Div>
+
+                    
                 </Div>
+                
             </Div>
+            <MovingText text="Email your resume at " />
      
     </>
   );
