@@ -5,7 +5,7 @@ import Newsletter from '../Widget/Newsletter';
 import './header.scss';
 import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import Div from '../Div';
-import DropDown from './DropDown';
+// import DropDown from './DropDown';
 
 export default function Header({ variant }) {
   const [isSticky, setIsSticky] = useState(false);
@@ -49,14 +49,14 @@ export default function Header({ variant }) {
                       </NavLink>
                       
                     </li>
-                    <li className="menu-item-has-children" >
-                      <NavLink
+                    {/* <li className="" > */}
+                      {/* <NavLink
                         to="service/blockchaindevelopment"
                         onClick={() => setMobileToggle(false)}
                       >
                         Services
-                      </NavLink>
-                      <DropDown>
+                      </NavLink> */}
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link to="/service/digitalmarketing" onClick={() => setMobileToggle(false)}>
@@ -78,7 +78,7 @@ export default function Header({ variant }) {
                             >
                              Web Development
                             </Link>
-                          </li>
+                          </li> */}
                           {/* <li>
                             <Link
                               to="service/brandstrategizing"
@@ -111,7 +111,7 @@ export default function Header({ variant }) {
                               ERP (Enterprise Resource Planning)
                             </Link>
                           </li> */}
-                          <li>
+                          {/* <li>
                             <Link
                               to="service/blockchaindevelopment"
                               onClick={() => setMobileToggle(false)}
@@ -121,8 +121,8 @@ export default function Header({ variant }) {
                           </li>
                           
                         </ul>
-                      </DropDown>
-                    </li>
+                      </DropDown> */}
+                    {/* </li> */}
                     {/* <li >
                       <NavLink
                         to="/courses"
@@ -137,15 +137,15 @@ export default function Header({ variant }) {
                         to="portfolio"
                         
                       >
-                        Portfolio
+                        Careers
                       </NavLink>
                       
                     </li>
-                    <li className="menu-item-has-children">
+                    <li className="">
                       <Link to="blog" onClick={() => setMobileToggle(false)}>
                         Blog
                       </Link>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link
@@ -180,7 +180,7 @@ export default function Header({ variant }) {
                             </Link>
                           </li>
                         </ul>
-                      </DropDown>
+                      </DropDown> */}
                       
                     </li>
                     <li >

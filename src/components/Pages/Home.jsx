@@ -21,16 +21,17 @@ export default function Home() {
   pageTitle('Home');
 
   const showcaseData = [
-    {
-      title: 'Unlock the Power of <br>Online Marketing',
-      bgImageUrlimgUrl: '/images/hero_bg.jpeg',
+    // {
+    //   title: 'Unlock the Power of <br>Online Marketing',
+    //   bgImageUrlimgUrl: '/images/hero_bg.jpeg',
       
-    },
+    // },
     {
       title: 'Transform Your Online Presence,<br> Boost Your Sales',
       bgImageUrl: '/images/slider_1.jpeg',
       
-    },
+    }
+    ,
     {
       title: 'Navigate the Digital Landscape <br> with Confidence',
       bgImageUrl: '/images/slider_2.jpeg',
@@ -52,10 +53,7 @@ export default function Home() {
       bgImageUrl: '/images/slider_5.jpeg',
       
     },
-    {
-      title: 'Unlock the Power of <br>Online Marketing',
-      bgImageUrlimgUrl: '/images/slider_7.jpeg',
-    },
+   
 
   ];
 
