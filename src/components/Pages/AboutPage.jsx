@@ -216,7 +216,7 @@ export default function AboutPage() {
       {/* End Team Section */}
 
       {/* Start CTA Section */}
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" /> */}
       {/* <Div className="container">
         <Cta
           title="Let’s disscuse make <br />something <i>cool</i> together"
