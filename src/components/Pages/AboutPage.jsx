@@ -48,22 +48,38 @@ export default function AboutPage() {
         <Div className="row">
           <Div className="col-xl-5 col-lg-7">
             <SectionHeading
-              title="Your trusted partner for business"
+              title="Our Mission"
               subtitle="About Our Agency"
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
                 This is the main factor that sets us apart from our competition
                 and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+                service.
               </p>
-              <Spacing lg="30" md="30" />
+
+              {/* <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
-              <Spacing lg="25" md="40" />
+              <Spacing lg="25" md="40" /> */}
+            </SectionHeading>
+            <SectionHeading
+              title="Our Mission"
+              subtitle=""
+            >
+              <Spacing lg="30" md="20" />
+              <p className="cs-m0">
+                This is the main factor that sets us apart from our competition
+                and allows us to deliver a specialist business consultancy
+                service.
+              </p>
+              
+              {/* <Spacing lg="30" md="30" />
+              <Div className="cs-separator cs-accent_bg"></Div>
+              <Spacing lg="25" md="40" /> */}
             </SectionHeading>
           </Div>
+          
+          
           <Div className="col-lg-5 offset-xl-2">
             <img
               src="/images/about_img_1.jpeg"
