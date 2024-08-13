@@ -35,9 +35,9 @@ export default function PostSlider() {
     },
     {
       url:'/Websiteblog', 
-      src:'/images/websiteblog4.png', 
+      src:'/images/websiteblog3.png', 
       alt:'Post', 
-      date:'05 Mar 2022',
+      date:'05 Mar 2024',
       title:'Advantages of Responsive Design'
     }
   ]
