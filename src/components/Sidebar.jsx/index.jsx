@@ -3,7 +3,7 @@ import Div from '../Div'
 import AuthorWidget from '../Widget/AuthorWidget'
 import RecentPost from '../Widget/RecentPost'
 import SearchWidget from '../Widget/SearchWidget'
-import SideMenuWidget from '../Widget/SideMenuWidget'
+// import SideMenuWidget from '../Widget/SideMenuWidget'
 import TagWidget from '../Widget/TagWidget'
 
 export default function Sidebar() {
@@ -38,43 +38,25 @@ export default function Sidebar() {
     },
   ]
   
-  const categoryData = [
-    {
-      title: 'Social Media',
-      url:'/blog'
-    },
-    {
-      title: 'Website Design',
-      url:'/Websiteblog'
-    },
-    {
-      title: 'Seo Guide',
-      url:'/Seoblog'
-    },
-    {
-      title: 'App Development Blogs',
-      url:'/AppBlog'
-    },
-    
-  ]
+  
   const recentPostData = [
     {
       title: 'Unleashing the Potential...',
       thumb: '/images/blog1.png',
       href: '/blog/blog1',
-      date: '07 Mar 2023'
+      date: '07 Mar 2024'
     },
     {
       title: 'Crafting Success...',
       thumb: '/images/blog2.png',
       href: '/blog/blog2',
-      date: '05 Mar 2023'
+      date: '05 Mar 2024'
     },
     {
       title: 'Navigating the Digital Landscape...',
       thumb: '/images/blog3.png',
       href: '/blog/blog3',
-      date: '04 Mar 2023'
+      date: '04 Mar 2024'
     }
   ]
   return (
@@ -90,7 +72,7 @@ export default function Sidebar() {
         <SearchWidget title='Search'/>
       </Div>
       <Div className="cs-sidebar_item">
-        <SideMenuWidget title='Categories' data={categoryData}/>
+        {/* <SideMenuWidget title='Categories' data={categoryData}/> */}
       </Div>
       <Div className="cs-sidebar_item">
         <RecentPost title='Archives' data={recentPostData}/>

@@ -15,7 +15,7 @@ export default function BlogPage() {
       thumb:'/images/seoblog1.png',
       title:'Delve into the foundational principles that underpin successful SEO strategies.',
       subtitle:'Embarking on a successful SEO journey requires a solid understanding of its fundamentals. From comprehending search engine algorithms to grasping the importance of user intent, this exploration lays the groundwork for effective SEO strategies.      ',
-      date:'07 Mar 2023',
+      date:'07 Mar 2024',
       category:'Seo',
       // categoryHref:'/blog',
       // href:'/blog/blog1'
@@ -24,7 +24,7 @@ export default function BlogPage() {
       thumb:'/images/seoblog2.png',
       title:'Learn how to identify and optimise keywords for improved search engine visibility.',
       subtitle:'Unravel the mystery behind effective keyword research. Discover tools and techniques to identify high-impact keywords relevant to your content. Learn how strategic placement and optimization can significantly boost your websites visibility on search engines.      ',
-      date:'05 Mar 2023',
+      date:'05 Mar 2024',
       category:'Seo',
       // categoryHref:'/blog',
       // href:'/blog/blog2'
@@ -33,7 +33,7 @@ export default function BlogPage() {
       thumb:'/images/seoblog3.png',
       title:'Uncover the secrets of on-page optimization, from meta tags to content structuring.      ',
       subtitle:'Creating content that appeals to both users and search engines is an art. Explore the intricacies of on-page optimization, including the artful use of meta tags, headers, and content structuring. Learn how to strike the perfect balance for content that captivates readers and ranks well.      ',
-      date:'04 Mar 2023',
+      date:'04 Mar 2024',
       category:'Seo',
       // categoryHref:'/blog',
       // href:'/blog/blog3'

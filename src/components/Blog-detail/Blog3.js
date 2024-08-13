@@ -37,7 +37,7 @@ export default function BlogDetailsPage() {
               </Div>
               <Div className="cs-post_info">
                 <Div className="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
-                  <span className="cs-posted_by">04 Mar 2023</span>
+                  <span className="cs-posted_by">04 Mar 2024</span>
                   <Link to="/blog" className="cs-post_avatar">Social Media</Link>
                 </Div>
                 <h2 className="cs-post_title">Navigating the Digital Landscape: Why Social Media is a Game-Changer for Small Enterprises</h2>

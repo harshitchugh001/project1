@@ -15,7 +15,7 @@ export default function BlogPage() {
       thumb:'/images/blog1.png',
       title:'Unleashing the Potential: A Deep Dive into Social Media Marketing for Small Businesses',
       subtitle:'In the fast-evolving realm of digital marketing, small businesses are recognizing the transformative power of social media marketing. This article seeks to explore the multifaceted strategies that can propel small enterprises to new heights by harnessing the full potential of various social media platforms.',
-      date:'07 Mar 2023',
+      date:'07 Mar 2024',
       category:'Social Media Marketing',
       categoryHref:'/blog',
       href:'/blog/blog1'
@@ -24,7 +24,7 @@ export default function BlogPage() {
       thumb:'/images/blog2.png',
       title:'Crafting Success: Essential Strategies for Small Businesses in Social Media Marketing',
       subtitle:'Success in social media marketing hinges on a meticulously crafted strategy. Small businesses must articulate clear objectives, whether its enhancing brand visibility, driving website traffic, or generating leads. The art of crafting a strategy tailored to these objectives lays the groundwork for lasting success.',
-      date:'05 Mar 2023',
+      date:'05 Mar 2024',
       category:'Marketing',
       categoryHref:'/blog',
       href:'/blog/blog2'
@@ -33,7 +33,7 @@ export default function BlogPage() {
       thumb:'/images/blog3.png',
       title:'Navigating the Digital Landscape: Why Social Media is a Game-Changer for Small Enterprises',
       subtitle:'Social media stands as a game-changer for small enterprises, offering a direct and cost-effective avenue to connect with their target audience. It levels the playing field, enabling smaller businesses to compete with larger counterparts on a more equitable basis.',
-      date:'04 Mar 2023',
+      date:'04 Mar 2024',
       category:'Social Media',
       categoryHref:'/blog',
       href:'/blog/blog3'
