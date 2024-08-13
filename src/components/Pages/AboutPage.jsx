@@ -94,13 +94,13 @@ export default function AboutPage() {
       {/* End About Section */}
 
       {/* Start Fun Fact Section */}
-      <Div className="container">
+      {/* <Div className="container">
         <FunFact
           title="Our fun fact"
           subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
           data={funfaceData}
         />
-      </Div>
+      </Div> */}
       {/* End Fun Fact Section */}
 
       {/* Start Why Choose Section */}
@@ -149,7 +149,7 @@ export default function AboutPage() {
       {/* End Why Choose Section */}
 
       {/* Start Team Section */}
-      <Spacing lg="145" md="80" />
+      {/* <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading
           title="Awesome team <br/>members"
@@ -158,19 +158,19 @@ export default function AboutPage() {
         />
         <Spacing lg="85" md="45" />
         <TeamSlider />
-      </Div>
+      </Div> */}
       {/* End Team Section */}
 
       {/* Start CTA Section */}
       <Spacing lg="150" md="80" />
-      <Div className="container">
+      {/* <Div className="container">
         <Cta
           title="Let’s disscuse make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />
-      </Div>
+      </Div> */}
       {/* End CTA Section */}
     </>
   );
