@@ -185,16 +185,46 @@ export default function Home() {
       {/* End Video Block Section */}
 
       {/* Start Team Section */}
-      <Spacing lg="145" md="80" />
+      {/* Start Why Choose Section */}
+      <Spacing lg="100" md="80" />
       <Div className="container">
-        <SectionHeading
-          title="Awesome team <br/>members"
-          subtitle="Our Team"
-          variant="cs-style1"
-        />
-        <Spacing lg="85" md="45" />
-        <TeamSlider />
+        <Div className="row">
+          <Div className="col-xl-5 col-lg-6">
+            <Div className="cs-image_layer cs-style1">
+              <Div className="cs-image_layer_in">
+                <img
+                  src="/images/about_img_4.jpeg"
+                  alt="About"
+                  className="w-100 cs-radius_15"
+                />
+              </Div>
+            </Div>
+            <Spacing lg="0" md="40" />
+          </Div>
+          <Div className="col-xl-5 offset-xl-1 col-lg-6">
+            <SectionHeading
+              title="Highly experienced pepole with at Shatan Tech"
+              subtitle="Why Choose Us"
+            >
+              <Spacing lg="30" md="20" />
+              <p className="cs-m0">
+              At Shatan Tech, our team of seasoned professionals is the driving force behind our ability to deliver exceptional technology solutions. Their vast experience and specialized knowledge are what distinguish us from the competition, enabling us to provide tailored services that meet the unique needs of each client. With a focus on innovation and excellence, our experts apply their deep industry insights to every project, ensuring success and satisfaction.
+              </p>
+              <Spacing lg="15" md="15" />
+              {/* <p className="cs-m0">
+                This is the main factor that sets us apart from our competition
+                and allows us to deliver a specialist business consultancy
+                service. Our team applies its wide-ranging experience to
+                determining.
+              </p> */}
+              <Spacing lg="30" md="30" />
+              <Div className="cs-separator cs-accent_bg"></Div>
+              <Spacing lg="25" md="0" />
+            </SectionHeading>
+          </Div>
+        </Div>
       </Div>
+      {/* End Why Choose Section */}
       <Spacing lg="150" md="80" />
       {/* End Team Section */}
 
@@ -229,9 +259,11 @@ export default function Home() {
       {/* End Blog Section */}
 
       {/* Start MovingText Section */}
+
       <Spacing lg="125" md="70" />
-      <MovingText text="Our reputed world wide partners" />
-      <Spacing lg="105" md="70" />
+      
+      {/* <MovingText text="Our reputed world wide partners" />
+      <Spacing lg="105" md="70" /> */}
       {/* End MovingText Section */}
 
       {/* Start LogoList Section */}
