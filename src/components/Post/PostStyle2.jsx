@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Button from '../Button'
+// import Button from '../Button'
 import Div from '../Div'
 import './post.scss'
 
@@ -17,7 +17,7 @@ export default function PostStyle2({thumb, title, subtitle, date, category, cate
         </Div>
         <h2 className="cs-post_title"><Link to={href}>{title}</Link></h2>
         <Div className="cs-post_sub_title">{subtitle}</Div>
-        <Button btnLink={href} btnText='See More' />
+        {/* <Button btnLink={href} btnText='See More' /> */}
       </Div>
     </Div>
   )
