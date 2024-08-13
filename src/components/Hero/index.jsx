@@ -3,7 +3,7 @@ import parse from 'html-react-parser';
 import './hero.scss';
 // import Button from '../Button';
 import Div from '../Div';
-import VerticalLinks from '../VerticalLinks';
+// import VerticalLinks from '../VerticalLinks';
 
 export default function Hero({
   title,
@@ -36,7 +36,7 @@ export default function Hero({
           </Div>
         </Div>
       </Div>
-      <VerticalLinks data={heroSocialLinks} title={socialLinksHeading} />
+      {/* <VerticalLinks data={heroSocialLinks} title={socialLinksHeading} /> */}
       <a href={scrollDownId} className="cs-down_btn">
         .
       </a>
