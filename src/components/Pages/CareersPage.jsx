@@ -44,27 +44,25 @@ export default function CareersPage() {
                             icon='/images/icons/service_icon_1.svg'
                             title='Web Developer'
                             subtitle='Join our team as a Web Developer to create dynamic and responsive websites using the latest technologies. '
-                            require='Proficiency in HTML, CSS, JavaScript, and experience with front-end frameworks like React or Angular.'
+                            require='Requirements: Proficiency in HTML, CSS, JavaScript, and experience with front-end frameworks like React or Angular.'
                         />
                         <Spacing lg='30' md='30' />
                     </Div>
                     <Div className="col-lg-4">
                         <IconBox
                             icon='/images/icons/service_icon_2.svg'
-                            title='Content Marketing'
-                            subtitle='Our content marketing experts craft compelling, high-quality
-              content that resonates with your target audience. From blog posts to infographics, we
-              help you tell your brand story effectively.'
+                            title='IT Project Manager'
+                            subtitle='We are seeking an experienced IT Project Manager to oversee the planning and execution of technology projects. Your role will be to ensure projects are delivered on time, within scope, and within budget.'
+                            require='Requirements: Strong organizational skills, experience in project management, and familiarity with project management tools like Jira or Trello.'
                         />
                         <Spacing lg='30' md='30' />
                     </Div>
                     <Div className="col-lg-4">
                         <IconBox
                             icon='/images/icons/service_icon_3.svg'
-                            title='Social Media Marketing'
-                            subtitle='Harness the power of social media to engage with your
-              audience, build brand loyalty, and drive conversions. Our social media specialists create
-              and execute tailored strategies across various platforms..'
+                            title='UI/UX Designer'
+                            subtitle='As a UI/UX Designer, you will create intuitive and visually appealing interfaces that enhance user experience. You will work closely with product managers and developers to design and prototype user-centered solutions.'
+              require='Requirements: Proficiency in design tools like Adobe XD, Sketch, or Figma, and a strong portfolio demonstrating your design process.'
                         />
                         <Spacing lg='30' md='30' />
                     </Div>
