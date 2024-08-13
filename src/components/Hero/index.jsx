@@ -1,7 +1,7 @@
 import React from 'react';
 import parse from 'html-react-parser';
 import './hero.scss';
-import Button from '../Button';
+// import Button from '../Button';
 import Div from '../Div';
 import VerticalLinks from '../VerticalLinks';
 
@@ -28,7 +28,7 @@ export default function Hero({
           <h1 className="cs-hero_title">{parse(title)}</h1>
           <Div className="cs-hero_info">
             <Div>
-              <Button btnLink={btnLink} btnText={btnText} />
+              {/* <Button btnLink={btnLink} btnText={btnText} /> */}
             </Div>
             <Div>
               <Div className="cs-hero_subtitle">{subtitle}</Div>

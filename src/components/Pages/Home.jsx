@@ -1,61 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, {  useEffect } from 'react';
 import Card from '../Card';
 import FunFact from '../FunFact';
 import Hero from '../Hero';
 import Div from '../Div';
 import SectionHeading from '../SectionHeading';
 import Spacing from '../Spacing';
-import LogoList from '../LogoList';
+// import LogoList from '../LogoList';
 import MovingText from '../MovingText';
-import PortfolioSlider from '../Slider/PortfolioSlider';
+// import PortfolioSlider from '../Slider/PortfolioSlider';
 import PostSlider from '../Slider/PostSlider';
 import TestimonialSlider from '../Slider/TestimonialSlider';
 import TeamSlider from '../Slider/TeamSlider';
-import VideoModal from '../VideoModal';
+// import VideoModal from '../VideoModal';
 // import TimelineSlider from '../Slider/TimelineSlider';
 import { pageTitle } from '../../helper';
 
 export default function Home() {
 
-  const [currentSlide, setCurrentSlide] = useState(1);
+  
   pageTitle('Home');
 
-  const showcaseData = [
-    // {
-    //   title: 'Unlock the Power of <br>Online Marketing',
-    //   bgImageUrlimgUrl: '/images/hero_bg.jpeg',
-      
-    // },
-    {
-      title: 'Transform Your Online Presence,<br> Boost Your Sales',
-      bgImageUrl: '/images/slider_1.jpeg',
-      
-    }
-    ,
-    {
-      title: 'Navigate the Digital Landscape <br> with Confidence',
-      bgImageUrl: '/images/slider_2.jpeg',
-      
-    },
-    {
-      title: 'Innovative Marketing <br> for the Modern Business',
-      bgImageUrl: '/images/slider_3.jpeg',
-      
-    },
-    
-    {
-      title: 'Navigate the Digital Landscape <br> with Confidence',
-      bgImageUrl: '/images/slider_4.jpeg',
-      
-    },
-    {
-      title: 'Innovative Marketing <br> for the Modern Business',
-      bgImageUrl: '/images/slider_5.jpeg',
-      
-    },
-   
-
-  ];
+  
 
   // Hero Social Links
   const heroSocialLinks = [
@@ -93,14 +58,9 @@ export default function Home() {
     pageTitle('Home');
     window.scrollTo(0, 0);
 
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % showcaseData.length);
-    }, 3000); // Change slide every 5 seconds
+  }, []);
 
-    return () => clearInterval(interval);
-  }, [showcaseData.length]);
-
-  const currentShowcase = showcaseData[currentSlide];
+  // const currentShowcase = showcaseData[currentSlide];
 
   
 
@@ -108,14 +68,14 @@ export default function Home() {
     <>
       {/* Start Hero Section */}
       <Hero
-        title={currentShowcase.title}
+        title="Transform Your Online Presence,<br> Boost Your Sales"
         subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
         // btnText="Get a Quote"
         // btnLink="/contact"
         scrollDownId="#service"
         socialLinksHeading="Follow Us"
         heroSocialLinks={heroSocialLinks}
-        bgImageUrl={currentShowcase.bgImageUrl}
+        bgImageUrl="/images/slider_1.jpeg"
       />
       {/* End Hero Section */}
 
@@ -194,7 +154,7 @@ export default function Home() {
       {/* End Service Section */}
 
       {/* Start Portfolio Section */}
-      <Spacing lg="150" md="50" />
+      {/* <Spacing lg="150" md="50" />
       <Div>
         <Div className="container">
           <SectionHeading
@@ -205,12 +165,12 @@ export default function Home() {
           <Spacing lg="90" md="45" />
         </Div>
         <PortfolioSlider />
-      </Div>
+      </Div> */}
       {/* End Portfolio Section */}
 
 
       {/* Start Video Block Section */}
-      <Spacing lg="130" md="70" />
+      {/* <Spacing lg="130" md="70" />
       <Div className="container">
         <h2 className="cs-font_50 cs-m0 text-center cs-line_height_4">
           Our agile process is ability to adapt and respond to change. Agile
@@ -221,7 +181,7 @@ export default function Home() {
           videoSrc="https://www.youtube.com/watch?v=VcaAVWtP48A"
           bgUrl="/images/video_bg.jpeg"
         />
-      </Div>
+      </Div> */}
       {/* End Video Block Section */}
 
       {/* Start Team Section */}
@@ -275,10 +235,10 @@ export default function Home() {
       {/* End MovingText Section */}
 
       {/* Start LogoList Section */}
-      <Div className="container">
+      {/* <Div className="container">
         <LogoList />
-      </Div>
-      <Spacing lg="150" md="80" />
+      </Div> */}
+      {/* <Spacing lg="150" md="80" /> */}
       {/* End LogoList Section */}
 
       

@@ -1,6 +1,6 @@
 import React from 'react'
 import parse from 'html-react-parser';
-import Button from '../Button'
+// import Button from '../Button'
 import Spacing from '../Spacing'
 import Div from '../Div';
 
@@ -13,7 +13,7 @@ export default function SectionHeading({title, subtitle, btnLink, btnText, varia
       {btnText && (
         <>
           <Spacing lg='45' md='20'/>
-          <Button btnLink={btnLink} btnText={btnText}/>
+          {/* <Button btnLink={btnLink} btnText={btnText}/> */}
         </>
       )}
     </Div>
