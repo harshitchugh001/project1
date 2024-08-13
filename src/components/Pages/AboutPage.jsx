@@ -53,9 +53,7 @@ export default function AboutPage() {
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service.
+              At Shatan Tech, our mission is to empower businesses through innovative technology solutions, driving growth and efficiency. We are committed to delivering exceptional value through cutting-edge services that align with our clients' goals.
               </p>
 
               {/* <Spacing lg="30" md="30" />
@@ -63,14 +61,12 @@ export default function AboutPage() {
               <Spacing lg="25" md="40" /> */}
             </SectionHeading>
             <SectionHeading
-              title="Our Mission"
+              title="Our Vision"
               subtitle=""
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service.
+              Our vision is to be a leading force in the tech industry, recognized for our excellence in innovation and our unwavering commitment to exceeding client expectations. We strive to shape the future by setting new standards in technology and service delivery.
               </p>
               
               {/* <Spacing lg="30" md="30" />
@@ -137,24 +133,20 @@ export default function AboutPage() {
           </Div>
           <Div className="col-xl-5 offset-xl-1 col-lg-6">
             <SectionHeading
-              title="Highly experienced pepole with us"
+              title="Highly experienced pepole with at Shatan Tech"
               subtitle="Why Choose Us"
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+              At Shatan Tech, our team of seasoned professionals is the driving force behind our ability to deliver exceptional technology solutions. Their vast experience and specialized knowledge are what distinguish us from the competition, enabling us to provide tailored services that meet the unique needs of each client. With a focus on innovation and excellence, our experts apply their deep industry insights to every project, ensuring success and satisfaction.
               </p>
               <Spacing lg="15" md="15" />
-              <p className="cs-m0">
+              {/* <p className="cs-m0">
                 This is the main factor that sets us apart from our competition
                 and allows us to deliver a specialist business consultancy
                 service. Our team applies its wide-ranging experience to
                 determining.
-              </p>
+              </p> */}
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
               <Spacing lg="25" md="0" />
