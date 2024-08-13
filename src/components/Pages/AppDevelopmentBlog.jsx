@@ -91,7 +91,7 @@ export default function BlogPage() {
           </Div>
         </Div>
       </Div>
-      http://localhost:3000/Appblog
+      {/* http://localhost:3000/Appblog */}
     </>
   )
 }
