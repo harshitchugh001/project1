@@ -68,7 +68,7 @@ export default function Home() {
     <>
       {/* Start Hero Section */}
       <Hero
-        title="Transform Your Online Presence,<br> Boost Your Sales"
+        title="Elevate Your Business,<br> with Shatan Tech"
         subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
         // btnText="Get a Quote"
         // btnLink="/contact"
