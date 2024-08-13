@@ -42,10 +42,9 @@ export default function CareersPage() {
                     <Div className="col-lg-4">
                         <IconBox
                             icon='/images/icons/service_icon_1.svg'
-                            title='Search Engine Optimization (SEO)'
-                            subtitle='Enhance your online visibility and organic search
-              rankings with our SEO services. We employ industry-leading strategies to optimize your
-              website, increase organic traffic, and drive results'
+                            title='Web Developer'
+                            subtitle='Join our team as a Web Developer to create dynamic and responsive websites using the latest technologies. '
+                            // require='Proficiency in HTML, CSS, JavaScript, and experience with front-end frameworks like React or Angular.'
                         />
                         <Spacing lg='30' md='30' />
                     </Div>

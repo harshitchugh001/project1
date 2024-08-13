@@ -40,7 +40,7 @@ export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
       <Div className="cs-fooer_main">
         <Div className="container">
           <Div className="row">
-            <Div className="col-lg-3 col-sm-6">
+            <Div className="col-lg-2 col-sm-5">
               <Div className="cs-footer_item">
                 <TextWidget 
                   logoSrc='/images/logo_yaman.png' 
