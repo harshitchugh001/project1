@@ -156,6 +156,44 @@ export default function AboutPage() {
       </Div>
       {/* End Why Choose Section */}
 
+
+
+      {/* Start Why Choose Section */}
+      <Spacing lg="100" md="80" />
+      <Div className="container">
+        <Div className="row">
+        <SectionHeading
+              title="Highly experienced pepole with us"
+              subtitle="Why Choose Us"
+            >
+              <Spacing lg="30" md="20" />
+              <p className="cs-m0">
+                This is the main factor that sets us apart from our competition
+                and allows us to deliver a specialist business consultancy
+                service. Our team applies its wide-ranging experience to
+                determining. Through our years of experience, we’ve also learned
+                that while each channel.
+              </p>
+              <Spacing lg="15" md="15" />
+              <p className="cs-m0">
+                This is the main factor that sets us apart from our competition
+                and allows us to deliver a specialist business consultancy
+                service. Our team applies its wide-ranging experience to
+                determining.
+              </p>
+              <Spacing lg="30" md="30" />
+              <Div className="cs-separator cs-accent_bg"></Div>
+              <Spacing lg="25" md="0" />
+            </SectionHeading>
+          </Div>
+          <Div className="col-xl-5 offset-xl-1 col-lg-6">
+            
+           
+          </Div>
+        </Div>
+      {/* </Div> */}
+      {/* End Why Choose Section */}
+
       {/* Start Team Section */}
       {/* <Spacing lg="145" md="80" />
       <Div className="container">
@@ -170,7 +208,7 @@ export default function AboutPage() {
       {/* End Team Section */}
 
       {/* Start CTA Section */}
-      <Spacing lg="150" md="80" />
+      {/* <Spacing lg="150" md="80" /> */}
       {/* <Div className="container">
         <Cta
           title="Let’s disscuse make <br />something <i>cool</i> together"
