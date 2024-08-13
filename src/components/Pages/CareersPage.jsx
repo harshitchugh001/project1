@@ -3,10 +3,13 @@ import { pageTitle } from '../../helper';
 // import Cta from '../Cta';
 // import FunFact from '../FunFact';
 import PageHeading from '../PageHeading';
-// import Div from '../Div';
+import Div from '../Div';
+import IconBox from '../IconBox'
 // import SectionHeading from '../SectionHeading';
 // import TeamSlider from '../Slider/TeamSlider';
-// import Spacing from '../Spacing';
+import Spacing from '../Spacing';
+
+import SectionHeading from '../SectionHeading'
 
 export default function CareersPage() {
   pageTitle('Careers');
@@ -23,9 +26,51 @@ export default function CareersPage() {
         bgSrc="images/about_hero_bg.jpeg"
         pageLinkText="Careers"
       />
+      <Spacing lg='60' md='25' />
       {/* End Page Heading Section */}
 
       {/* Start About Section */}
+
+      <Div className="container">
+                <SectionHeading
+                    title='Current Openings'
+                    subtitle=''
+                    variant='cs-style1 text-center'
+                />
+                <Spacing lg='90' md='45' />
+                <Div className="row">
+                    <Div className="col-lg-4">
+                        <IconBox
+                            icon='/images/icons/service_icon_1.svg'
+                            title='Search Engine Optimization (SEO)'
+                            subtitle='Enhance your online visibility and organic search
+              rankings with our SEO services. We employ industry-leading strategies to optimize your
+              website, increase organic traffic, and drive results'
+                        />
+                        <Spacing lg='30' md='30' />
+                    </Div>
+                    <Div className="col-lg-4">
+                        <IconBox
+                            icon='/images/icons/service_icon_2.svg'
+                            title='Content Marketing'
+                            subtitle='Our content marketing experts craft compelling, high-quality
+              content that resonates with your target audience. From blog posts to infographics, we
+              help you tell your brand story effectively.'
+                        />
+                        <Spacing lg='30' md='30' />
+                    </Div>
+                    <Div className="col-lg-4">
+                        <IconBox
+                            icon='/images/icons/service_icon_3.svg'
+                            title='Social Media Marketing'
+                            subtitle='Harness the power of social media to engage with your
+              audience, build brand loyalty, and drive conversions. Our social media specialists create
+              and execute tailored strategies across various platforms..'
+                        />
+                        <Spacing lg='30' md='30' />
+                    </Div>
+                </Div>
+            </Div>
      
     </>
   );
