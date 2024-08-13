@@ -16,7 +16,7 @@ export default function ContactInfoWidget({withIcon, title}) {
         </li>
         <li>
           {withIcon?<span className='cs-accent_color'><Icon icon="mdi:map-marker" /></span>:''}
-          6110 MacFarland station dr #701 Alpharetta GA 30004 <br/>Canada
+          6110 MacFarland station dr #701 Alpharetta GA 30004 <br/>
         </li>
       </ul>
     </>
