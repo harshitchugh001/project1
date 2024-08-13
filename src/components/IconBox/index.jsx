@@ -5,7 +5,8 @@ import Div from '../Div';
 
 export default function IconBox({ title, subtitle, icon, require }) {
   
-  const mailtoLink = `mailto:your-email@example.com?subject=Applying for ${title}`;
+  // const mailtoLink = `mailto:your-email@example.com?subject=Applying for ${title}`;
+  const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=harshitchugh001@gmail.com&su=Applying for ${title}`;
 
   return (
     <Div className="cs-iconbox cs-style1 text-center">
