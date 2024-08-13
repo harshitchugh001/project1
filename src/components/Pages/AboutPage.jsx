@@ -55,6 +55,7 @@ export default function AboutPage() {
               {/* <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
               <Spacing lg="25" md="40" /> */}
+              <Spacing lg="30" md="20" />
             </SectionHeading>
           </Div>
           
