@@ -8421,10 +8421,6 @@ Animation CSS
   .banner-content .banner-btn {
     margin-top: 20px;
   }
-  .banner-content .banner-btn .get-btn {
-    margin: 5px;
-    padding: 8px 15px 8px 45px;
-  }
   .banner-content .banner-btn .get-btn i {
     width: 30px;
     height: 30px;
@@ -10386,6 +10382,9 @@ Animation CSS
     display: none;
   }
   /* Coming Soon End */
+}
+.about-content {
+  text-align: center; /* Center text on smaller screens */
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-nav nav .navbar-nav .nav-item a {

@@ -121,7 +121,7 @@
     // Team Slider Two
     $('.team-slider-two').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 25,
         nav: true,
         rtl: true,
         dots: false,
@@ -138,7 +138,7 @@
                 items: 3
             },
             1000:{
-                items: 4
+                items: 3
             },
         },
         navText: [

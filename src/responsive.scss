@@ -145,8 +145,8 @@
             margin-top: 20px;
 
             .get-btn {
-                margin: 5px;
-                padding: 8px 15px 8px 45px;
+                // margin: 5px;
+                // padding: 8px 15px 0px 45px;
 
                 i {
                     width: 30px;
@@ -2535,6 +2535,11 @@
     }
     /* Coming Soon End */
 
+}
+
+
+.about-content {
+    text-align: center; /* Center text on smaller screens */
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px) {

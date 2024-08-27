@@ -752,7 +752,7 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
     // Team Slider Two
     $('.team-slider-two').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 25,
         nav: true,
         rtl: true,
         dots: false,
@@ -769,7 +769,7 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
                 items: 3
             },
             1000:{
-                items: 4
+                items: 3
             },
         },
         navText: [

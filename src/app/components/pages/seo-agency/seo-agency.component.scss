@@ -1,0 +1,37 @@
+.team-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    // padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+    margin-bottom: 15px;
+}
+
+.team-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b4b80;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.team-content p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.owl-carousel .team-item {
+    padding: 15px;
+}
