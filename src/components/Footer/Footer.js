@@ -70,7 +70,7 @@ export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
       <Div className="container">
         <Div className="cs-bottom_footer">
           <Div className="cs-bottom_footer_left">
-            <Div className="cs-copyright">Copyright © 2022 Laralink.</Div>
+            <Div className="cs-copyright">Copyright © 2024 Futurity.</Div>
           </Div>
           <Div className="cs-bottom_footer_right">
             

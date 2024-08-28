@@ -9,7 +9,7 @@ export default function Header() {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 {/* Logo */}
                 <a href="/" className="flex items-center space-x-3">
-                    <img src={logo} className="h-10" alt="Logo" />
+                    <img src={logo} className="h-20" alt="Logo" />
                 </a>
                 
                 {/* Hamburger Button */}
@@ -45,40 +45,40 @@ export default function Header() {
                     } w-full md:flex md:w-auto md:order-1`}
                     id="navbar-sticky"
                 >
-                    <ul className="flex flex-col md:flex-row p-4 md:p-0 mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-8 font-medium text-blue-700 bg-gray-50 md:bg-white rounded-lg md:border-0">
+                    <ul className="flex flex-col md:flex-row p-4 md:p-0 mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-8 font-bold text-gray-700 bg-gray-50 md:bg-white rounded-lg md:border-0">
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
-                                Home
+                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black hover:underline">
+                            Services
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                            <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
                                 Product
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
-                                Client
+                            <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
+                                About Us
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
+                            <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
+                                Team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
+                                Clients 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
                                 Careers
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
-                                Contact us 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">
-                                About us 
+                            <a href="/" className="block py-2 px-3 rounded md:hover:bg-transparent hover:text-black hover:underline" >
+                                Contact
                             </a>
                         </li>
                     </ul>
