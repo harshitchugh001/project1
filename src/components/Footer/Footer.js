@@ -8,35 +8,35 @@ import Div from '../Div'
 // import './footer.scss'
 
 export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
-  const copyrightLinks = [
-    {
-      title: 'Terms of Use',
-      href: '/'
-    },
-    {
-      title: 'Privacy Policy',
-      href: '/'
-    }
-  ]
+  // const copyrightLinks = [
+  //   {
+  //     title: 'Terms of Use',
+  //     href: '/'
+  //   },
+  //   {
+  //     title: 'Privacy Policy',
+  //     href: '/'
+  //   }
+  // ]
   
-  const serviceMenu = [
-    {
-      title: 'Digital Marketing',
-      href: '/service/digitalmarketing'
-    },
-    {
-      title: 'App Development',
-      href: '/service/appdevelopment'
-    },
-    {
-      title: 'Website Development',
-      href: '/service/websitedevelopment'
-    },
-    {
-      title: 'Brand Strategizing',
-      href: '/service/brandstrategizing'
-    },
-  ]
+  // const serviceMenu = [
+  //   {
+  //     title: 'Digital Marketing',
+  //     href: '/service/digitalmarketing'
+  //   },
+  //   {
+  //     title: 'App Development',
+  //     href: '/service/appdevelopment'
+  //   },
+  //   {
+  //     title: 'Website Development',
+  //     href: '/service/websitedevelopment'
+  //   },
+  //   {
+  //     title: 'Brand Strategizing',
+  //     href: '/service/brandstrategizing'
+  //   },
+  // ]
 
   return (
     <footer className="cs-fooer">

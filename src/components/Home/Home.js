@@ -9,6 +9,8 @@ import Compliance from '../../assets/Compliance.png'
 import Valuation from '../../assets/Valuation.png'
 import Consulting from '../../assets/Consulting.png'
 import zoom from '../../assets/zoom_logo.svg'
+
+import { Clock, Handshake, SearchCheck } from 'lucide-react'
 export default function Home() {
   const navigate = useNavigate();
 
@@ -95,7 +97,7 @@ export default function Home() {
           <Slider {...settings}>
             {clients.map((client, index) => (
               <div key={index} className="p-4">
-                <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className=" p-6 rounded-lg  text-center">
                   <img
                     src={client}
                     alt="Client Logo"
@@ -112,8 +114,8 @@ export default function Home() {
       {/* //ourservices section */}
       <div className="bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-8">
-            <span className="text-gray-700 font-semibold">___Services__</span>
+          <div className="text-center my-8 gap-y-4 flex flex-col ">
+            <span className="text-gray-700 text-2xl font-semibold">___Services__</span>
             <h2 className="text-3xl text-gray-700 font-bold mt-2">
               We’re Flexible to <b>Provide You Best</b>
             </h2>
@@ -144,7 +146,7 @@ export default function Home() {
       <div className="flex justify-center items-center">
         <button
           onClick={handleClick}
-          className="px-6 py-3 bg-gray-700 font-semibold text-white rounded-lg shadow-lg hover:bg-gray-600 transition duration-300"
+          className="font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500"
         >
           Learn More
         </button>
@@ -152,7 +154,7 @@ export default function Home() {
 
 
       {/* //working process */}
-      <section className="flex flex-col items-center py-12 px-4">
+      <section className="flex flex-col items-center py-12 px-4 container mx-auto">
 
         <h2 className="text-3xl font-bold mb-2 text-center">Working Process</h2>
 
@@ -160,29 +162,16 @@ export default function Home() {
 
 
         <div className="text-center mb-8">
-          <p className="text-lg text-gray-600 mb-2">Our experienced team understands that each client has a distinct set of needs. We are dedicated to refining and implementing the most effective strategies for conducting valuations, assessing risk, and identifying business opportunities, all with the goal of helping our clients achieve success.</p>
+          <p className="text-lg text-gray-600 mb-2  ">Our experienced team understands that each client has a distinct set of needs. We are dedicated to refining and implementing the most effective strategies for conducting valuations, assessing risk, and identifying business opportunities, all with the goal of helping our clients achieve success.</p>
           {/* <p className="text-lg text-gray-600">Second line of text</p> */}
         </div>
 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl w-full">
-          <div className="p-6 text-center">
+          <div className="p-6 text-center flex flex-col items-center">
             <div className="mb-4">
               {/* Replace with your icon component or an image */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 mx-auto text-gray-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
+              <Clock size={60} color='gray' />
             </div>
             <h3 className="text-lg font-semibold mb-2">Timely</h3>
             <p className="text-gray-600">
@@ -191,23 +180,10 @@ export default function Home() {
 
           </div>
 
-          <div className="p-6 text-center">
+          <div className="p-6 text-center flex flex-col items-center">
             <div className="mb-4">
               {/* Replace with your icon component or an image */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 mx-auto text-gray-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
+              <Handshake size={60} color='gray' />
             </div>
             <h3 className="text-lg font-semibold mb-2">Communication</h3>
             <p className="text-gray-600">
@@ -215,23 +191,9 @@ export default function Home() {
             </p>
 
           </div>
-          <div className="p-6 text-center">
+          <div className="p-6 text-center flex flex-col items-center">
             <div className="mb-4">
-              {/* Replace with your icon component or an image */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 mx-auto text-gray-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
+              <SearchCheck size={60} color='gray'/>
             </div>
             <h3 className="text-lg font-semibold mb-2">Accuracy</h3>
             <p className="text-gray-600">
