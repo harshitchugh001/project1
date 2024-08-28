@@ -22,8 +22,8 @@ const Working = () => {
                         <Clock size={60} color='gray' />
                     </div>
                     <h3 className="text-lg text-gray-700 font-semibold mb-2">Timely</h3>
-                    <p className="text-gray-600">
-                    <h3 className="text-lg font-semibold mb-2">Timely</h3>
+                    {/* <p className="text-gray-600"> */}
+                    {/* <h3 className="text-lg font-semibold mb-2">Timely</h3> */}
                     <p className="text-gray-500">
                         Futurity goes the extra mile to meet any tight timelines or deadlines set by our clients.
                     </p>
