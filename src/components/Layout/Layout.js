@@ -10,7 +10,7 @@ export default function Layout({ headerVariant }) {
   }, []);
   return (
     <>
-      <Header variant={headerVariant} />
+      <div className='mb-4'><Header variant={headerVariant} /></div>
       <Outlet />
       
       <Footer />

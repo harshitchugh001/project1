@@ -3,9 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link, useNavigate } from 'react-router-dom';
+import Lottie from 'lottie-react';
+import animationData from '../../assets/Animation - 1724827126639.json';
 
 export default function Home() {
   const navigate = useNavigate();
+
+
 
   const settings = {
     dots: true,
@@ -71,9 +75,12 @@ export default function Home() {
 
 
   return (
-    <div>
-      <div>gif section</div>
-      {/* //selected-section */}
+    <div className='mt-28'>
+      <div className='flex justify-center text-center items-center'>
+        <Lottie animationData={animationData} loop={true}
+          style={{ width: 600, height: 600 }} />
+      </div>
+
       <div className="py-12 bg-gray-100 mt-8">
         <h2 className="text-3xl text-gray-700  font-bold text-center mb-8 mt-10 ">Selected Clients</h2>
         <div className="container mx-auto">
@@ -121,13 +128,13 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center items-center">
-      <button
-        onClick={handleClick}
-        className="px-6 py-3 bg-gray-700 text-white rounded-lg shadow-lg hover:bg-gray-600 transition duration-300"
-      >
-        Learn More
-      </button>
-    </div>
+        <button
+          onClick={handleClick}
+          className="px-6 py-3 bg-gray-700 text-white rounded-lg shadow-lg hover:bg-gray-600 transition duration-300"
+        >
+          Learn More
+        </button>
+      </div>
     </div>
   )
 }
