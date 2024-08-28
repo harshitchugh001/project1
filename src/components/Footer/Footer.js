@@ -17,14 +17,14 @@ const Footer = () => {
           {/* Right Section - Navigation Links */}
           <div className="footer-right font-semibold first-line:">
             <ul className="flex flex-wrap space-x-6 md:space-x-10 justify-start md:justify-end">
-              <li><a href="#" className="hover:underline">Services</a></li>
-              <li><a href="#" className="hover:underline">Product</a></li>
-              <li><a href="#" className="hover:underline">News</a></li>
-              <li><a href="#" className="hover:underline">About Us</a></li>
-              <li><a href="#" className="hover:underline">Team</a></li>
-              <li><a href="#" className="hover:underline">Careers</a></li>
-              <li><a href="#" className="hover:underline">Clients</a></li>
-              <li><a href="#" className="hover:underline">Contact</a></li>
+              <li><a href="/" className="hover:underline">Services</a></li>
+              <li><a href="/" className="hover:underline">Product</a></li>
+              <li><a href="/" className="hover:underline">News</a></li>
+              <li><a href="/" className="hover:underline">About Us</a></li>
+              <li><a href="/" className="hover:underline">Team</a></li>
+              <li><a href="/" className="hover:underline">Careers</a></li>
+              <li><a href="/" className="hover:underline">Clients</a></li>
+              <li><a href="/" className="hover:underline">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -33,14 +33,14 @@ const Footer = () => {
         <div className="footer-bottom mt-8 border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="social-icons flex space-x-4">
             {/* You can replace these with actual icons */}
-            <a href="#" className="hover:underline">Twitter</a>
-            <a href="#" className="hover:underline">LinkedIn</a>
+            <a href="/" className="hover:underline">Twitter</a>
+            <a href="/" className="hover:underline">LinkedIn</a>
           </div>
           <p className="text-sm mt-4 md:mt-0">© Futurity 2024. All Rights Reserved.</p>
           <div className="footer-links mt-4 md:mt-0 flex space-x-4">
-            <a href="#" className="hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:underline">Terms of Service</a>
-            <a href="#" className="hover:underline">Security</a>
+            <a href="/" className="hover:underline">Privacy Policy</a>
+            <a href="/" className="hover:underline">Terms of Service</a>
+            <a href="/" className="hover:underline">Security</a>
           </div>
         </div>
       </div>
