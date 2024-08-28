@@ -84,8 +84,18 @@ export default function Home() {
     <div className='mt-28'>
       <div className='flex flex-col justify-center text-center items-center'>
         {/* style={{ width: 600, height: 600 }} */}
-        <div className="w-48 h-48 lg:w-96 lg:h-96">
-          <Lottie animationData={animationData} loop={true} />
+        <div className="block md:hidden">
+          <Lottie animationData={animationData} loop={true} style={{
+            width: 300,
+            height: 300,
+          }} />
+        </div>
+        <div className="hidden md:block">
+          <Lottie animationData={animationData} loop={true} style={{
+            width: 600,
+            height: 600,
+
+          }} />
         </div>
         <button className='font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500'>
           Let's Connect
@@ -194,7 +204,7 @@ export default function Home() {
           </div>
           <div className="p-6 text-center flex flex-col items-center">
             <div className="mb-4">
-              <Target size={60} color='gray'/>
+              <Target size={60} color='gray' />
             </div>
             <h3 className="text-lg font-semibold mb-2">Accuracy</h3>
             <p className="text-gray-600">
