@@ -8,7 +8,7 @@ import animationData from '../../assets/Animation - 1724827126639.json';
 import Compliance from '../../assets/Compliance.png'
 import Valuation from '../../assets/Valuation.png'
 import Consulting from '../../assets/Consulting.png'
-
+import zoom from '../../assets/zoom_logo.svg'
 export default function Home() {
   const navigate = useNavigate();
 
@@ -39,11 +39,11 @@ export default function Home() {
   };
 
   const clients = [
-    "Client 1",
-    "Client 2",
-    "Client 3",
-    "Client 4",
-    "Client 5",
+    zoom,
+    zoom,
+    zoom,
+    zoom,
+    zoom,
   ];
 
   const services = [
@@ -80,9 +80,9 @@ export default function Home() {
   return (
     <div className='mt-28'>
       <div className='flex flex-col justify-center text-center items-center'>
-        <div>
-          <Lottie animationData={animationData} loop={true}
-            style={{ width: 600, height: 600 }} />
+        {/* style={{ width: 600, height: 600 }} */}
+        <div className="w-48 h-48 lg:w-96 lg:h-96">
+          <Lottie animationData={animationData} loop={true} />
         </div>
         <button className='font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500'>
           Let's Connect
@@ -96,7 +96,12 @@ export default function Home() {
             {clients.map((client, index) => (
               <div key={index} className="p-4">
                 <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                  {client}
+                  <img
+                    src={client}
+                    alt="Client Logo"
+                    className="w-32 h-32 mx-auto mb-4"
+                  />
+
                 </div>
               </div>
             ))}
