@@ -57,11 +57,10 @@ const Services = () => {
                                             className="mb-4 mx-auto h-32"
                                         />
                                     </Link>
-                                    <h3 className="text-base text-gray-950 text-center font-semibold mb-3">
+                                    <h3 className="text-base text-gray-700 text-center font-semibold mb-3">
                                         <Link to={service.link}>{service.title}</Link>
                                     </h3>
-                                    <p>{service.description}</p>
-
+                                    <p className='text-gray-600'>{service.description}</p>
                                 </div>
                             </div>
                         ))}

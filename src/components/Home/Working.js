@@ -10,7 +10,7 @@ const Working = () => {
 
 
             <div className="text-center mb-8">
-                <p className="text-lg text-gray-600 mb-2  ">Our experienced team understands that each client has a distinct set of needs. We are dedicated to refining and implementing the most effective strategies for conducting valuations, assessing risk, and identifying business opportunities, all with the goal of helping our clients achieve success.</p>
+                <p className="text-lg text-gray-500 mb-2  ">Our experienced team understands that each client has a distinct set of needs. We are dedicated to refining and implementing the most effective strategies for conducting valuations, assessing risk, and identifying business opportunities, all with the goal of helping our clients achieve success.</p>
                 {/* <p className="text-lg text-gray-600">Second line of text</p> */}
             </div>
 
@@ -23,6 +23,8 @@ const Working = () => {
                     </div>
                     <h3 className="text-lg text-gray-700 font-semibold mb-2">Timely</h3>
                     <p className="text-gray-600">
+                    <h3 className="text-lg font-semibold mb-2">Timely</h3>
+                    <p className="text-gray-500">
                         Futurity goes the extra mile to meet any tight timelines or deadlines set by our clients.
                     </p>
 
@@ -33,8 +35,8 @@ const Working = () => {
                         {/* Replace with your icon component or an image */}
                         <Handshake size={60} color='gray' />
                     </div>
-                    <h3 className="text-lg text-gray-700 font-semibold mb-2">Communication</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-lg font-semibold mb-2">Communication</h3>
+                    <p className="text-gray-500">
                         Futurity prides itself in keeping its clients informed throughout the valuation process.
                     </p>
 

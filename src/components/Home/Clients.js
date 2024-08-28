@@ -39,7 +39,7 @@ const Clients = () => {
 
     return (
         <div className="py-12 bg-gray-100 mt-8">
-            <h2 className="text-3xl text-gray-700  font-bold text-center mb-8 mt-10 ">Selected Clients</h2>
+            <h2 className="text-3xl text-gray-500  font-bold text-center mb-8 mt-10 ">Selected Clients</h2>
             <div className="container mx-auto">
                 <Slider {...settings}>
                     {clients.map((client, index) => (
