@@ -5,6 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link, useNavigate } from 'react-router-dom';
 import Lottie from 'lottie-react';
 import animationData from '../../assets/Animation - 1724827126639.json';
+import Compliance from '../../assets/Compliance.png'
+import Valuation from '../../assets/Valuation.png'
+import Consulting from '../../assets/Consulting.png'
 
 export default function Home() {
   const navigate = useNavigate();
@@ -45,20 +48,20 @@ export default function Home() {
 
   const services = [
     {
-      imgSrc: 'assets/img/service/service-icon1.png',
-      title: 'VALUATION SERVICES FOR COMPLIANCE REQUIREMENTS',
+      imgSrc: Compliance,
+      title: 'Compliance',
       description: 'Ensure your business meets regulatory requirements with our comprehensive valuation services. We specialize in valuations under the Companies Act 2013, SEBI Regulations, SARFAESI Act 2002, and financial reporting regulations.',
       link: '/services-details',
     },
     {
-      imgSrc: 'assets/img/service/service-icon2.png',
-      title: 'Independent Valuation Services',
+      imgSrc: Valuation,
+      title: 'Valuation',
       description: 'Support your financial and strategic decisions with our independent valuation services. We offer expert valuations for angel investment, venture capital, private equity, foreign direct investment, and franchise arrangements.',
       link: '/services-details',
     },
     {
-      imgSrc: 'assets/img/service/service-icon3.png',
-      title: 'OTHER CONSULTING SERVICES',
+      imgSrc: Consulting,
+      title: 'Consulting',
       description: 'Optimize project feasibility and asset management with our consulting services. We conduct techno-economic viability studies, independent engineer studies, and physical verification of assets.',
       link: '/services-details',
     },
@@ -119,13 +122,13 @@ export default function Home() {
                     <img
                       src={service.imgSrc}
                       alt="Service Icon"
-                      className="mb-4 mx-auto"
+                      className="mb-4 mx-auto h-32"
                     />
                   </Link>
-                  <h3 className="text-xl text-gray-700 font-bold mb-3">
+                  <h3 className="text-base text-gray-950 text-center font-semibold mb-3">
                     <Link to={service.link}>{service.title}</Link>
                   </h3>
-                  <p className="text-gray-700">{service.description}</p>
+
                 </div>
               </div>
             ))}
