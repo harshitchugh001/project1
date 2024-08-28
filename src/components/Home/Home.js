@@ -76,9 +76,14 @@ export default function Home() {
 
   return (
     <div className='mt-28'>
-      <div className='flex justify-center text-center items-center'>
-        <Lottie animationData={animationData} loop={true}
-          style={{ width: 600, height: 600 }} />
+      <div className='flex flex-col justify-center text-center items-center'>
+        <div>
+          <Lottie animationData={animationData} loop={true}
+            style={{ width: 600, height: 600 }} />
+        </div>
+        <button className='font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500'>
+          Let's Connect
+        </button>
       </div>
 
       <div className="py-12 bg-gray-100 mt-8">
@@ -130,7 +135,7 @@ export default function Home() {
       <div className="flex justify-center items-center">
         <button
           onClick={handleClick}
-          className="px-6 py-3 bg-gray-700 text-white rounded-lg shadow-lg hover:bg-gray-600 transition duration-300"
+          className="px-6 py-3 bg-gray-700 font-semibold text-white rounded-lg shadow-lg hover:bg-gray-600 transition duration-300"
         >
           Learn More
         </button>
