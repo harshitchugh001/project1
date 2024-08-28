@@ -4,7 +4,7 @@ const Working = () => {
     return (
         <section className="flex flex-col items-center py-12 px-4 container mx-auto my-8">
 
-            <h2 className="text-3xl font-bold mb-2 text-center">Working Process</h2>
+            <h2 className="text-3xl text-gray-700 font-bold mb-2 text-center">Working Process</h2>
 
             <div className="w-24 h-1 bg-gray-400 mb-8"></div>
 
@@ -21,7 +21,7 @@ const Working = () => {
                         {/* Replace with your icon component or an image */}
                         <Clock size={60} color='gray' />
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">Timely</h3>
+                    <h3 className="text-lg text-gray-700 font-semibold mb-2">Timely</h3>
                     <p className="text-gray-600">
                         Futurity goes the extra mile to meet any tight timelines or deadlines set by our clients.
                     </p>
@@ -33,7 +33,7 @@ const Working = () => {
                         {/* Replace with your icon component or an image */}
                         <Handshake size={60} color='gray' />
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">Communication</h3>
+                    <h3 className="text-lg text-gray-700 font-semibold mb-2">Communication</h3>
                     <p className="text-gray-600">
                         Futurity prides itself in keeping its clients informed throughout the valuation process.
                     </p>
@@ -43,7 +43,7 @@ const Working = () => {
                     <div className="mb-4">
                         <Target size={60} color='gray' />
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">Accuracy</h3>
+                    <h3 className="text-lg text-gray-700 font-semibold mb-2">Accuracy</h3>
                     <p className="text-gray-600">
                         Futurity multi-tiered review system ensures pinpoint accuracy for its deliverables.
                     </p>
