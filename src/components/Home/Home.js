@@ -35,12 +35,12 @@ export default function Home() {
     "Client 3",
     "Client 4",
     "Client 5",
-  ]; // Replace with real client names later
+  ]; 
   return (
     <div>
       <div>gif section</div>
-      <div className="py-12 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center mb-8">Selected Clients</h2>
+      <div className="py-12 bg-gray-100 mt-8">
+      <h2 className="text-3xl text-gray-700  font-bold text-center mb-8 mt-10 ">Selected Clients</h2>
       <div className="container mx-auto">
         <Slider {...settings}>
           {clients.map((client, index) => (
