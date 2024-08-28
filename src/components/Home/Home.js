@@ -2,9 +2,10 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  const navigate = useNavigate();
 
   const settings = {
     dots: true,
@@ -59,6 +60,11 @@ export default function Home() {
     },
   ];
 
+  const handleClick = () => {
+    navigate('/services');
+  };
+
+
 
 
 
@@ -84,7 +90,7 @@ export default function Home() {
       </div>
 
       {/* //ourservices section */}
-      <div className="bg-white py-12">
+      <div className="bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-8">
             <span className="text-gray-700 font-semibold">___Services__</span>
@@ -96,7 +102,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-between pt-12">
             {services.map((service, index) => (
               <div key={index} className="w-full lg:w-1/3 md:w-full px-4 mb-8">
-                <div className="bg-white p-6 rounded-lg shadow-md h-full">
+                <div className="bg-white p-4 rounded-lg shadow-md h-full">
                   <Link to={service.link}>
                     <img
                       src={service.imgSrc}
@@ -114,6 +120,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="flex justify-center items-center">
+      <button
+        onClick={handleClick}
+        className="px-6 py-3 bg-gray-700 text-white rounded-lg shadow-lg hover:bg-gray-600 transition duration-300"
+      >
+        Learn More
+      </button>
+    </div>
     </div>
   )
 }
