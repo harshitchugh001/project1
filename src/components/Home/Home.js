@@ -128,6 +128,7 @@ export default function Home() {
                   <h3 className="text-base text-gray-950 text-center font-semibold mb-3">
                     <Link to={service.link}>{service.title}</Link>
                   </h3>
+                  <p>{service.description}</p>
 
                 </div>
               </div>
@@ -143,6 +144,99 @@ export default function Home() {
           Learn More
         </button>
       </div>
+
+
+      {/* //working process */}
+      <section className="flex flex-col items-center py-12 px-4">
+
+        <h2 className="text-3xl font-bold mb-2 text-center">Working Process</h2>
+
+        <div className="w-24 h-1 bg-gray-400 mb-8"></div>
+
+
+        <div className="text-center mb-8">
+          <p className="text-lg text-gray-600 mb-2">Our experienced team understands that each client has a distinct set of needs. We are dedicated to refining and implementing the most effective strategies for conducting valuations, assessing risk, and identifying business opportunities, all with the goal of helping our clients achieve success.</p>
+          {/* <p className="text-lg text-gray-600">Second line of text</p> */}
+        </div>
+
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl w-full">
+          <div className="p-6 text-center">
+            <div className="mb-4">
+              {/* Replace with your icon component or an image */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-12 w-12 mx-auto text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Timely</h3>
+            <p className="text-gray-600">
+              Futurity goes the extra mile to meet any tight timelines or deadlines set by our clients.
+            </p>
+
+          </div>
+
+          <div className="p-6 text-center">
+            <div className="mb-4">
+              {/* Replace with your icon component or an image */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-12 w-12 mx-auto text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Communication</h3>
+            <p className="text-gray-600">
+              Futurity prides itself in keeping its clients informed throughout the valuation process.
+            </p>
+
+          </div>
+          <div className="p-6 text-center">
+            <div className="mb-4">
+              {/* Replace with your icon component or an image */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-12 w-12 mx-auto text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Accuracy</h3>
+            <p className="text-gray-600">
+              Futurity multi-tiered review system ensures pinpoint accuracy for its deliverables.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
     </div>
   )
 }
