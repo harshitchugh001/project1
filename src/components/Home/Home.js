@@ -10,7 +10,8 @@ import Valuation from '../../assets/Valuation.png'
 import Consulting from '../../assets/Consulting.png'
 import zoom from '../../assets/zoom_logo.svg'
 
-import { Clock, Handshake, SearchCheck } from 'lucide-react'
+
+import { Clock, Handshake, Target } from 'lucide-react'
 export default function Home() {
   const navigate = useNavigate();
 
@@ -193,7 +194,7 @@ export default function Home() {
           </div>
           <div className="p-6 text-center flex flex-col items-center">
             <div className="mb-4">
-              <SearchCheck size={60} color='gray'/>
+              <Target size={60} color='gray'/>
             </div>
             <h3 className="text-lg font-semibold mb-2">Accuracy</h3>
             <p className="text-gray-600">
