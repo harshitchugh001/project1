@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Right Section - Navigation Links */}
           <div className="footer-right font-semibold first-line:">
             <ul className="flex flex-wrap space-x-6 md:space-x-10 justify-start md:justify-end">
-              <li><a href="/" className="hover:underline">Services</a></li>
+              <li><a href="/services" className="hover:underline">Services</a></li>
               <li><a href="/" className="hover:underline">Product</a></li>
               <li><a href="/" className="hover:underline">News</a></li>
               <li><a href="/" className="hover:underline">About Us</a></li>

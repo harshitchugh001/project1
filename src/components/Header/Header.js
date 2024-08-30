@@ -47,7 +47,7 @@ export default function Header() {
                 >
                     <ul className="flex flex-col md:flex-row p-4 md:p-0 mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-8 font-bold text-gray-500 bg-gray-50 md:bg-white rounded-lg md:border-0">
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black hover:underline">
+                            <a href="/services" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black hover:underline">
                             Services
                             </a>
                         </li>
