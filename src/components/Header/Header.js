@@ -52,7 +52,7 @@ export default function Header() {
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
+                            <a href="/product" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
                                 Product
                             </a>
                         </li>
