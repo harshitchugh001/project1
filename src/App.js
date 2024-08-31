@@ -6,6 +6,8 @@ import Layout from './components/Layout/Layout';
 import Services from './components/Services/Services';
 import Product from './components/Product/Product';
 import Contact from './components/Contact/Contact';
+import About from './components/About/About';
+import Team from './components/Team/Team'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="services" element={<Services/>} />
           <Route path="product" element={<Product/>} />
           <Route path="contact" element={<Contact/>}/>
+          <Route path="aboutus" element={<About/>}/>
+          <Route path='team' element={<Team/>}/>
           {/* <Route
             path="photography-agency"
             element={<PhotographyAgencyHome />}

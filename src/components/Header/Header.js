@@ -58,27 +58,27 @@ export default function Header() {
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
+                            <a href="/about" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
+                            <a href="/team" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
                                 Team
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
                                 Clients
                             </a>
-                        </li>
+                        </li> */}
                         <li>
                             <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
                                 Careers
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded md:hover:bg-transparent hover:text-black hover:underline" >
+                            <a href="/contact" className="block py-2 px-3 rounded md:hover:bg-transparent hover:text-black hover:underline" >
                                 Contact
                             </a>
                         </li>
