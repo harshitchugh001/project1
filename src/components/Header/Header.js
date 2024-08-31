@@ -4,6 +4,9 @@ import logo from '../../assets/logo.png';
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
+
+    console.log(isOpen, "hhh")
+
     return (
         <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b shadow-sm">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -11,7 +14,7 @@ export default function Header() {
                 <a href="/" className="flex items-center space-x-3">
                     <img src={logo} className="h-20" alt="Logo" />
                 </a>
-                
+
                 {/* Hamburger Button */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
@@ -40,15 +43,13 @@ export default function Header() {
 
                 {/* Navbar Items */}
                 <div
-                    className={`${
-                        isOpen ? "block" : "hidden"
-                    } w-full md:flex md:w-auto md:order-1`}
+                    className={`${isOpen ? "block" : "hidden"} w-full md:flex md:w-auto md:order-1`}
                     id="navbar-sticky"
                 >
                     <ul className="flex flex-col md:flex-row p-4 md:p-0 mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-8 font-bold text-gray-500 bg-gray-50 md:bg-white rounded-lg md:border-0">
                         <li>
                             <a href="/services" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black hover:underline">
-                            Services
+                                Services
                             </a>
                         </li>
                         <li>
@@ -68,7 +69,7 @@ export default function Header() {
                         </li>
                         <li>
                             <a href="/" className="block py-2 px-3 rounded  md:hover:bg-transparent hover:text-black hover:underline">
-                                Clients 
+                                Clients
                             </a>
                         </li>
                         <li>

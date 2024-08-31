@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="footer-left">
             <h2 className="text-3xl font-bold mb-4">Futurity</h2>
             <p> E-12, 2nd Floor, Naraina<br />Vihar, New Delhi 110028</p>
-            <p className="mt-4">Email: <a href="mailto:info@scalar.io" className="underline"> info@futurity.co.in </a></p>
+            <p className="mt-4">Email: <a href="mailto:info@futurity.co.in" className="underline"> info@futurity.co.in </a></p>
             <p>Phone: +91-9811284282</p>
           </div>
 
