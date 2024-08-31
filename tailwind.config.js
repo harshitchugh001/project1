@@ -7,4 +7,8 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  animation: {
+    fadeIn: 'fadeIn 2s ease-in-out',
+    slideUp: 'slideUp 1.5s ease-in-out',
+  },
 }
