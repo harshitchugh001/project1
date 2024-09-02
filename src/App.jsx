@@ -10,7 +10,7 @@ import Team from './components/team/Team';
 import Contact from './components/Contact/Contact';
 const App = () => {
   return (
-    <div className='mx-auto'>
+    <div className='mx-auto font-OpenSans'>
       <Router>
         <Navbar />
         <Routes>

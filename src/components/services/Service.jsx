@@ -3,12 +3,13 @@ import Women from '../../assets/women.jpg'
 import { useNavigate } from 'react-router-dom';
 import GreyButton from '../buttons/GreyButton'
 import { ServicesData } from '../content/services';
-
+import { LiquidationSvg, InOutTestingSvg, FairnessOpinionSvg, INDAScomplianceSvg, allocationSvg, ImpairmentTestingSvg, ExpertWitnessTestimonySvg, FamilySettlementSvg, LigitationSvg, DissentingShareholderSvg, ClaimsDamageAssessmentSvg, MergersAcquisationSvg, CorporateRestructoringSvg, FundNavComputationSvg, EsopValuationSvg, DebtRestructoringSvg } from '../svgs/SvgData';
 export default function Services() {
 
 
 
     const navigate = useNavigate();
+
 
 
     const handleClick = () => {
@@ -17,7 +18,7 @@ export default function Services() {
 
     return (
 
-        <div className='mt-28 px-4 md:px-0 mb-10'>
+        <div className='mt-28 px-4 md:px-0 mb-10 font-OpenSans'>
             {/* //upper section */}
             <div className="flex flex-col md:flex-row items-center justify-between bg-gray-100 p-6 shadow-md">
 
@@ -50,18 +51,23 @@ export default function Services() {
                 </div>
             </div>
 
+
             <div className='mt-10'>
                 <h2 className="text-center text-2xl font-bold text-gray-700 mb-6">Futurity specializes in the following areas</h2>
 
+
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-16 px-4 md:px-0 lg:px-4  container mx-auto ">
-                    {ServicesData.map((service, index) => (
-                        <div key={index} className="flex flex-col items-center bg-gray-100 p-2 rounded-lg shadow-md">
-                            <div key={index}>
-                                {service.image}
+
+                    {
+                        ServicesData.map((service, index) => (
+                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-gray-100 p-2 rounded-lg shadow-md">
+                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-28 '>{service.image}</span>
+                                <h3 className="text-center text-base font-medium text-gray-800">{service.name}</h3>
                             </div>
-                            <h3 className="text-center text-sm font-medium text-gray-800">{service.name}</h3>
-                        </div>
-                    ))}
+                        ))
+                    }
+
+
                 </div>
             </div>
 
@@ -75,3 +81,4 @@ export default function Services() {
         </div>
     )
 }
+
