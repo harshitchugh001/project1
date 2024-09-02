@@ -62,8 +62,8 @@ export default function Services() {
                     {
                         ServicesData.map((service, index) => (
                             <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-gray-100 p-2 rounded-lg shadow-md" data-aos="fade-up">
-                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-28 '>{service.image}</span>
-                                <h3 className="text-center text-sm md:text-base font-medium text-gray-800">{service.name}</h3>
+                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-16 md:w-28 '>{service.image}</span>
+                                <h3 className="text-center text-xs md:text-base font-medium text-gray-800">{service.name}</h3>
                             </div>
                         ))
                     }
