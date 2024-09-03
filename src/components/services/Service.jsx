@@ -54,7 +54,7 @@ export default function Services() {
 
 
             <div className='mt-10'>
-                <h2 className="text-center text-2xl font-bold text-gray-700 mb-6">Futurity specializes in the following areas</h2>
+                <h2 className="text-center text-4xl font-bold text-gray-700 my-8 italic">Futurity specializes in the following areas</h2>
 
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  container mx-auto ">
@@ -74,7 +74,7 @@ export default function Services() {
             </div>
 
             <div className='mt-10'>
-                <h2 className='text-center text-2xl font-bold text-gray-700 mb-6'>Ready to move forward?</h2>
+                <h2 className='text-center text-3xl font-bold text-gray-700 mb-6'>Ready to move forward?</h2>
                 <div className="flex justify-center items-center">
                     <GreyButton Content={`Contact Us`} onClick={handleClick} />
                 </div>

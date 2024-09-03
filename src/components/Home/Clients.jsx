@@ -2,15 +2,23 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
-import zoom from '../../assets/zoom_logo.svg';
+import Hyundai from '../../assets/Clients/Hyundai.svg'
+import AshokLeyland from '../../assets/Clients/AshokLeyland.svg'
+import BankOfBaroda from '../../assets/Clients/BankOfBaroda.svg'
+import CarDekho from '../../assets/Clients/CarDekho.svg'
+import Fortis from '../../assets/Clients/Fortis.svg'
+import ICICI from '../../assets/Clients/ICICI.svg'
+import SBI from '../../assets/Clients/SBI.svg'
 
 const Clients = () => {
     const clients = [
-        zoom,
-        zoom,
-        zoom,
-        zoom,
-        zoom,
+        AshokLeyland,
+        Hyundai,
+        BankOfBaroda,
+        CarDekho,
+        Fortis,
+        ICICI,
+        SBI,
     ];
 
     return (
@@ -47,7 +55,7 @@ const Clients = () => {
                                     <img
                                         src={client}
                                         alt="Client Logo"
-                                        className="w-32 h-32 mx-auto mb-4"
+                                        className="w-auto h-32 mx-auto mb-4"
                                     />
                                 </div>
                             </div>
