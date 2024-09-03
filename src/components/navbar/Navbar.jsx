@@ -65,7 +65,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
+                            <a href="/career" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
                                 Careers
                             </a>
                         </li>
@@ -106,7 +106,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="/" className="py-2 px-3 hover:font-semibold">
+                            <a href="/career" className="py-2 px-3 hover:font-semibold">
                                 Careers
                             </a>
                         </li>

@@ -8,6 +8,9 @@ import Services from './components/services/Service';
 import Product from './components/Product/Product';
 import Team from './components/team/Team';
 import Contact from './components/Contact/Contact';
+import Career from './components/Career/Career';
+
+
 const App = () => {
   return (
     <div className='mx-auto font-OpenSans'>
@@ -20,6 +23,7 @@ const App = () => {
           <Route path="/product" element={<Product />} />
           <Route path="/team" element={<Team />} />
           <Route path="/client" element={<Team />} />
+          <Route path="/career" element={<Career/>} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
