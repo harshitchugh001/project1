@@ -1,6 +1,7 @@
 import React from 'react'
 import Lottie from 'lottie-react';
-import animationData from '../../assets/Animation - 1724827126639.json';
+// import animationData from '../../assets/Animation - 1724827126639.json';
+import Test from '../../assets/Test.json'
 import GreyButton from '../buttons/GreyButton';
 import { useNavigate } from 'react-router-dom';
 const Hero = () => {
@@ -10,17 +11,17 @@ const Hero = () => {
         navigate('/contact');
     }
     return (
-        <div className='flex flex-col justify-center text-center items-center h-[400px] md:h-[700px]'>
+        <div className='flex flex-col justify-center text-center items-center h-[400px] md:h-[850px]'>
             <div className="block md:hidden">
-                <Lottie animationData={animationData} loop={true} style={{
-                    width: 300,
-                    height: 300,
+                <Lottie animationData={Test} loop={true} style={{
+                    width: 400,
+                    height: 400,
                 }} />
             </div>
             <div className="hidden md:block">
-                <Lottie animationData={animationData} loop={true} style={{
-                    width: 600,
-                    height: 600,
+                <Lottie animationData={Test} loop={true} style={{
+                    width: 800,
+                    height: 800,
 
                 }} />
             </div>

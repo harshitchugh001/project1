@@ -19,7 +19,7 @@ export default function Services() {
 
     return (
 
-        <div className='mt-28 px-4 md:px-0 mb-10 font-OpenSans'>
+        <div className='mt-28 px-4 md:px-0 mb-10'>
             {/* //upper section */}
             <div className="flex flex-col md:flex-row items-center justify-between bg-gray-100 p-6 shadow-md">
 
@@ -34,14 +34,14 @@ export default function Services() {
 
                 <div className="md:w-2/5 w-full gap-y-8 flex flex-col justify-evenly items-center ">
 
-                    <h1 className='text-gray-700 py-8 text-4xl font-semibold'>Expert Valuations for Strategic Insights</h1>
-                    <p className="text-gray-800 text-justify text-xl mb-4">
+                    <h1 className='text-gray-700 py-8 text-3xl font-semibold'>Expert Valuations for Strategic Insights</h1>
+                    <p className="text-gray-800 text-justify text-basel mb-4">
                         Our experienced and capable team provides comprehensive solutions tailored for sizeable operations.
                         We specialize in transactions disputes, compliance, valuations, liquidation (IBC), inward & outward
                         transfers, fairness opinions, IND-AS compliances, purchase price allocations, impairment testing,
                         and expert witness testimony.
                     </p>
-                    <p className="text-gray-800 text-justify text-xl">
+                    <p className="text-gray-800 text-justify text-basel">
                         From family settlements and litigation support to dissenting shareholder’s claims and damage assessments,
                         we assist in complex areas such as mergers and acquisitions, corporate restructurings, fund NAV computations,
                         ESOP/sweat equity valuations, and debt restructurings. We have expertise in valuing instruments like shares,
@@ -54,7 +54,7 @@ export default function Services() {
 
 
             <div className='mt-10'>
-                <h2 className="text-center text-4xl font-bold text-gray-700 my-8 italic">Futurity specializes in the following areas</h2>
+                <h2 className="text-center text-3xl font-bold text-gray-700 my-8 italic">Futurity specializes in the following areas</h2>
 
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  container mx-auto ">

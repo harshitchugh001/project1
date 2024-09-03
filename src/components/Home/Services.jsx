@@ -41,10 +41,8 @@ const Services = () => {
             <div className="bg-white">
                 <div className="container mx-auto">
                     <div className="text-center my-8 gap-y-4 flex flex-col ">
-                        <span className="text-gray-700 text-2xl font-semibold">___Services__</span>
-                        <h2 className="text-3xl text-gray-700 font-bold mt-2">
-                            We’re Flexible to <b>Provide You Best</b>
-                        </h2>
+                        <span className="text-gray-700 text-3xl font-semibold italic">Our Services</span>
+        
                     </div>
 
                     <div className="flex flex-wrap justify-between pt-12">

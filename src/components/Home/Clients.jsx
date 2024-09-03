@@ -23,7 +23,7 @@ const Clients = () => {
 
     return (
         <div className="py-12 bg-gray-100 mt-8 w-full">
-            <h2 className="text-3xl text-gray-500 font-bold text-center mb-8 mt-10">
+            <h2 className="text-3xl text-gray-500 font-bold text-center mb-8 mt-10 italic">
                 Selected Clients
             </h2>
             <div className="container mx-auto">
@@ -55,7 +55,7 @@ const Clients = () => {
                                     <img
                                         src={client}
                                         alt="Client Logo"
-                                        className="w-auto h-32 mx-auto mb-4"
+                                        className="w-48 h-32 mx-auto mb-4"
                                     />
                                 </div>
                             </div>

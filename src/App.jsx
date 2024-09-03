@@ -14,7 +14,7 @@ import Client from './components/Client/Client'
 
 const App = () => {
   return (
-    <div className='mx-auto font-OpenSans'>
+    <div className='mx-auto font-Mons'>
       <Router>
         <Navbar />
         <Routes>
