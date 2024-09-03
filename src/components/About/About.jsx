@@ -1,12 +1,13 @@
 import React from 'react';
 import Whyfuturity from './Whyfuturity'
+import { CoherenceSvg, DiligenceSvg, InnovationSvg, IntegritySvg } from './AboutSvg';
 
 const About = () => {
   return (
     <div className="  mt-28 container mx-auto p-6">
       {/* Who We Are Section */}
       <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-4 animate-fadeIn">Who We Are</h2>
+        <h2 className="text-4xl font-semibold mb-8 animate-fadeIn text-center">Who We Are</h2>
         <p className="text-lg text-gray-700 animate-fadeIn">
           <strong>Futurity</strong> is a unified team of leading technocommercial experts dedicated to delivering
           simple solutions to complex issues within a seamless and time-bound framework. Operating under the aegis of
@@ -14,13 +15,54 @@ const About = () => {
           leveraging diverse domain expertise, scale, and a deep understanding to offer exceptional and tailored
           services to our clients.
         </p>
-        <h3 className="text-2xl font-semibold mt-6 mb-2 animate-fadeIn">Our Core Values</h3>
-        <ul className="list-disc list-inside text-gray-700 animate-fadeIn">
-          <li>Integrity</li>
-          <li>Innovation</li>
-          <li>Coherence</li>
-          <li>Diligence</li>
-        </ul>
+        <h3 className="text-3xl font-semibold mt-10 mb-4 animate-fadeIn text-center">Our Core Values</h3>
+        <div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-4">
+            <div className='flex flex-col justify-center items-center'>
+              <span className='w-48 h-48'>
+                {IntegritySvg}
+              </span>
+
+              <span className='font-medium text-xl'>
+                Integrity
+              </span>
+
+            </div>
+
+            <div className='flex flex-col justify-center items-center'>
+              <span className='w-48 h-48'>
+                {InnovationSvg}
+              </span>
+
+              <span className='font-medium text-xl'>
+                Innovation
+              </span>
+
+            </div>
+
+            <div className='flex flex-col justify-center items-center'>
+              <span className='w-48 h-48'>
+                {CoherenceSvg}
+              </span>
+
+              <span className='font-medium text-xl'>
+                Coherence
+              </span>
+
+            </div>
+
+            <div className='flex flex-col justify-center items-center gap-y-4'>
+              <span className='w-48 h-48'>
+                {DiligenceSvg}
+              </span>
+
+              <span className='font-medium text-xl'>
+                Diligence
+              </span>
+
+            </div>
+          </div>
+        </div>
       </div>
 
       <Whyfuturity></Whyfuturity>
