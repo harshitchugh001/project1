@@ -1,10 +1,18 @@
 import React from 'react';
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
+import VarunSharma from '../../assets/Team/VarunSharma.png'
+import SumitSharma from '../../assets/Team/SumitSharma.png'
+import BrahmpalBhardwaj from '../../assets/Team/BrahmpalBhardwaj.png'
+import DeepanshuTyagi from '../../assets/Team/DeepanshuTyagi.png'
+import VarunSharma2 from '../../assets/Team/VarunSharma2.png'
+import MLSareen from '../../assets/Team/MLSareen.png'
+import VaibhavJain from '../../assets/Team/VaibhavJain.png'
 // import Image from '../../assets/image.png'
 
 const experts = [
     {
         name: "Varun Sharma",
+        image: VarunSharma,
         title: "Founder & Partner – Futurity Valuation Advisory LLP.",
         roles: [
             "Partner & National Leader - K G Somani & Co LLP.",
@@ -15,6 +23,7 @@ const experts = [
     },
     {
         name: "Brahmpal Bhardwaj",
+        image: BrahmpalBhardwaj,
         title: "Partner – Futurity Valuation Advisory LLP.",
         roles: [
             "Associate Member – Institute of Valuers.",
@@ -24,6 +33,7 @@ const experts = [
     },
     {
         name: "Varun Sharma",
+        image: VarunSharma2,
         title: "Partner – Futurity Valuation Advisory LLP.",
         roles: [
             "Registered Valuer – Wealth Tax.",
@@ -34,6 +44,7 @@ const experts = [
     },
     {
         name: "M L Sareen",
+        image: MLSareen,
         title: "Sr. Advisor – Futurity Valuation Advisory LLP.",
         roles: [
             "Ex-Deputy Chief – Housing & Urban Development Corporation.",
@@ -44,6 +55,7 @@ const experts = [
     },
     {
         name: "Sumit Sharma",
+        image: SumitSharma,
         title: "Head (Automotive), Vice-President – Futurity Valuation Advisory LLP.",
         roles: [
             "Previous Engagements: Associate Director – PwC, Audit Head – Sona Koyo."
@@ -52,6 +64,7 @@ const experts = [
     },
     {
         name: "Deepanshu Tyagi",
+        image: DeepanshuTyagi,
         title: "Asst Vice President – Futurity Valuation Advisory LLP.",
         roles: [
             "Associate Member – Institute of Valuers.",
@@ -62,6 +75,7 @@ const experts = [
     },
     {
         name: "Vaibhav Jain",
+        image: VaibhavJain,
         title: "Sr. Manager – Futurity Valuation Advisory LLP.",
         roles: [
             "Chartered Accountant"
@@ -74,7 +88,7 @@ const Team = () => {
     return (
         <section className="py-12 bg-gray-100">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-10">Our Experts</h2>
+                <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-10 mt-24">Our Experts</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {experts.map((expert, index) => (
                         <motion.div
@@ -85,6 +99,11 @@ const Team = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
+                            <img
+                                src={expert.image}
+                                alt={expert.name}
+                                className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+                            />
                             <h3 className="text-xl font-semibold text-gray-700 mb-2">{expert.name}</h3>
                             <p className="text-gray-600 mb-4">{expert.title}</p>
                             <ul className="text-gray-600 mb-4">
