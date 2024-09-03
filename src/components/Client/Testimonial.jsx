@@ -2,17 +2,17 @@ import React from 'react';
 
 const testimonials = [
   {
-    logo: 'https://via.placeholder.com/100', // Replace with your client's logo URL
+    logo: 'https://via.placeholder.com/100', 
     text: '“I’ve worked with Scalar on multiple valuation engagements and each time they exceeded my expectations. Their team is very responsive, thorough, and informative. I appreciated all of their hard work, their exceptional service has been invaluable.”',
     client: 'John Doe, CEO of Company A',
   },
   {
-    logo: 'https://via.placeholder.com/100', // Replace with your client's logo URL
+    logo: 'https://via.placeholder.com/100', 
     text: '“I’ve worked with Scalar on multiple valuation engagements and each time they exceeded my expectations. Their team is very responsive, thorough, and informative. I appreciated all of their hard work, their exceptional service has been invaluable.”',
     client: 'Jane Smith, CFO of Company B',
   },
   {
-    logo: 'https://via.placeholder.com/100', // Replace with your client's logo URL
+    logo: 'https://via.placeholder.com/100', 
     text: '“I’ve worked with Scalar on multiple valuation engagements and each time they exceeded my expectations. Their team is very responsive, thorough, and informative. I appreciated all of their hard work, their exceptional service has been invaluable.”',
     client: 'Bob Johnson, COO of Company C',
   },
