@@ -1,4 +1,5 @@
 import React from 'react';
+import Whyfuturity from './Whyfuturity'
 
 const About = () => {
   return (
@@ -22,8 +23,10 @@ const About = () => {
         </ul>
       </div>
 
+      <Whyfuturity></Whyfuturity>
+
       {/* Why Futurity Section */}
-      <div className="animate-slideUp">
+      {/* <div className="animate-slideUp">
         <h2 className="text-3xl font-bold mb-4">Why Futurity</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white border border-gray-200 shadow-md rounded-lg">
@@ -73,7 +76,7 @@ const About = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

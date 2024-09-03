@@ -2,9 +2,10 @@ import React, { useEffect } from 'react'
 import Women from '../../assets/women.jpg'
 import { useNavigate } from 'react-router-dom';
 import GreyButton from '../buttons/GreyButton'
-import { ServicesData } from '../content/services';
+// import { ServicesData } from '../content/services';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import ServiceVarient from './ServiceVarient'
 
 
 export default function Services() {
@@ -51,9 +52,10 @@ export default function Services() {
                     </p>
                 </div>
             </div>
+            <ServiceVarient></ServiceVarient>
 
 
-            <div className='mt-10'>
+            {/* <div className='mt-10'>
                 <h2 className="text-center text-2xl font-bold text-gray-700 mb-6">Futurity specializes in the following areas</h2>
 
 
@@ -70,7 +72,7 @@ export default function Services() {
 
 
                 </div>
-            </div>
+            </div> */}
 
             <div className='mt-10'>
                 <h2 className='text-center text-2xl font-bold text-gray-700 mb-6'>Ready to move forward?</h2>

@@ -70,6 +70,11 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
+                            <a href="/client" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
+                                Clients
+                            </a>
+                        </li>
+                        <li>
                             <a href="/contact" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline" >
                                 Contact
                             </a>
@@ -103,6 +108,11 @@ const Navbar = () => {
                         <li>
                             <a href="/" className="py-2 px-3 hover:font-semibold">
                                 Careers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/client" className="py-2 px-3 hover:font-semibold">
+                                Clients
                             </a>
                         </li>
                         <li>
