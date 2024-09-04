@@ -1,19 +1,22 @@
 import React from 'react';
+import Reckit from '../../assets/Clients/Reckit.svg'
+import Bptp from '../../assets/Clients/Bptp.svg'
+import LG from '../../assets/Clients/LG.svg'
 
 const testimonials = [
   {
-    logo: 'https://via.placeholder.com/100', 
-    text: '“I’ve worked with Scalar on multiple valuation engagements and each time they exceeded my expectations. Their team is very responsive, thorough, and informative. I appreciated all of their hard work, their exceptional service has been invaluable.”',
+    logo: Reckit, 
+    text: `Expert appointed by Reckitt in dissenting shareholder's case`,
     client: 'John Doe, CEO of Company A',
   },
   {
-    logo: 'https://via.placeholder.com/100', 
-    text: '“I’ve worked with Scalar on multiple valuation engagements and each time they exceeded my expectations. Their team is very responsive, thorough, and informative. I appreciated all of their hard work, their exceptional service has been invaluable.”',
+    logo: Bptp, 
+    text: 'Expert in arbitration between BPTP Limited and Citi Bank',
     client: 'Jane Smith, CFO of Company B',
   },
   {
-    logo: 'https://via.placeholder.com/100', 
-    text: '“I’ve worked with Scalar on multiple valuation engagements and each time they exceeded my expectations. Their team is very responsive, thorough, and informative. I appreciated all of their hard work, their exceptional service has been invaluable.”',
+    logo: LG, 
+    text: '“Expert Witness for domestic arbitration with one of their largest vendor”',
     client: 'Bob Johnson, COO of Company C',
   },
 ];
@@ -22,7 +25,7 @@ export default function Testimonials() {
   return (
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">What Our Clients Say</h2>
+        <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">Our Clients</h2>
         
         {testimonials.map((testimonial, index) => (
           <div 
@@ -39,7 +42,7 @@ export default function Testimonials() {
             {/* Testimonial Text */}
             <div className="w-full md:w-2/3 bg-white p-6 rounded-lg shadow-lg">
               <p className="text-lg italic text-gray-600">"{testimonial.text}"</p>
-              <p className="mt-4 text-right font-bold text-gray-800">{testimonial.client}</p>
+              {/* <p className="mt-4 text-right font-bold text-gray-800">{testimonial.client}</p> */}
             </div>
           </div>
         ))}
