@@ -2,6 +2,7 @@ import React from 'react'
 import Productimage from '../../assets/product.jpg';
 import CoreValues from './CoreValues'
 import OpenPositions from './OpenPosition';
+import GreyButton from '../buttons/GreyButton';
 
 export default function Career() {
     return (
@@ -14,11 +15,9 @@ export default function Career() {
                     Join the premier business
                     valuation team
                     </h2>
-                    {/* <div className="flex justify-center items-center mt-4">
-                        <GreyButton Content={`Request Demo`} />
-                    </div> */}
+                    
                 </div>
-                {/* Right Side Content */}
+                
                 <div className="md:w-3/5 w-full">
                     <img
                         src={Productimage}
