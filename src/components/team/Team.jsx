@@ -87,36 +87,36 @@ const experts = [
 const Team = () => {
     return (
         <section className="py-12 bg-gray-100">
-            <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-10 mt-24">Our Experts</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {experts.map((expert, index) => (
-                        <motion.div
-                            key={index}
-                            className="bg-white p-6 rounded-lg shadow-lg"
-                            whileHover={{ scale: 1.05 }}
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                        >
-                            <img
-                                src={expert.image}
-                                alt={expert.name}
-                                className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
-                            />
-                            <h3 className="text-xl font-semibold text-gray-700 mb-2">{expert.name}</h3>
-                            <p className="text-gray-600 mb-4">{expert.title}</p>
-                            <ul className="text-gray-600 mb-4">
-                                {expert.roles.map((role, i) => (
-                                    <li key={i} className="list-disc list-inside">{role}</li>
-                                ))}
-                            </ul>
-                            <p className="text-gray-600">{expert.description}</p>
-                        </motion.div>
-                    ))}
-                </div>
+        <div className="container mx-auto px-6">
+            <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-10 mt-24">Our Experts</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+                {experts.map((expert, index) => (
+                    <motion.div
+                        key={index}
+                        className={`bg-white p-6 rounded-lg shadow-lg ${index === experts.length - 1 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''}`}
+                        whileHover={{ scale: 1.05 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
+                        <img
+                            src={expert.image}
+                            alt={expert.name}
+                            className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+                        />
+                        <h3 className="text-xl font-semibold text-gray-700 mb-2">{expert.name}</h3>
+                        <p className="text-gray-600 mb-4">{expert.title}</p>
+                        <ul className="text-gray-600 mb-4">
+                            {expert.roles.map((role, i) => (
+                                <li key={i} className="list-disc list-inside">{role}</li>
+                            ))}
+                        </ul>
+                        <p className="text-gray-600">{expert.description}</p>
+                    </motion.div>
+                ))}
             </div>
-        </section>
+        </div>
+    </section>
     );
 }
 
