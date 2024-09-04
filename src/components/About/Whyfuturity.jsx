@@ -62,7 +62,7 @@ export default function WhyFuturity() {
                         <div className="card">
                             <div className="front bg-gray-300 text-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
                                 <div className="text-4xl mb-4">{strength.icon}</div>
-                                <h3 className="text-xl font-semibold mb-2">{strength.title}</h3>
+                                <h3 className="text-xl font-semibold mb-2 text-center">{strength.title}</h3>
                                 <p className="text-center">{strength.details}</p>
                             </div>
                             <div className="back bg-gray-800 text-gray-300 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
