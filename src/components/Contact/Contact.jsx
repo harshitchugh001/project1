@@ -206,12 +206,12 @@ const Contact = () => {
 
 
             </section>
-            <div className='flex justify-center items-center text-center'>
-                <span><Dot size={30} /></span>
-                <p className="text-gray-700 text-xs md:text-xl font-medium ">
-                    For any inquiries about Futurity and the services we provide, please fill out the form below. We will respond shortly.
-                </p>
-            </div>
+
+
+            <p className="text-gray-700 text-xs md:text-xl font-medium text-center">
+                <span className='font-bold'>Note:</span> For any inquiries about Futurity and the services we provide, please fill out the form above. We will respond shortly.
+            </p>
+
         </div>
     );
 };
