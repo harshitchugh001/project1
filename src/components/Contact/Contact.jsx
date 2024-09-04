@@ -147,15 +147,36 @@ const Contact = () => {
                                                 <div>-- Select a Service --</div>
                                             )}
                                         </option>
-                                        <option value="Fairness Opinion">Fairness Opinion</option>
-                                        <option value="Enterprise Valuation">Enterprise Valuation</option>
-                                        <option value="Valuation Consulting">Valuation Consulting</option>
-                                        <option value="Solvency Opinions">Solvency Opinions</option>
-                                        <option value="409A">409A</option>
-                                        <option value="Gift & Estate">Gift & Estate</option>
-                                        <option value="ESOP">ESOP</option>
-                                        <option value="Entity Conversion">Entity Conversion</option>
-                                        <option value="General Litigation Support">General Litigation Support</option>
+                                        <option value="Liquidation (IBC)">Liquidation (IBC)</option>
+                                        <option value="Inward & Outward Transfers">Inward & Outward Transfers</option>
+                                        <option value="Fairness Opinions">Fairness Opinions</option>
+                                        <option value="IND-AS Compliances">IND-AS Compliances</option>
+                                        <option value="Purchase Price Allocations">Purchase Price Allocations</option>
+                                        <option value="Impairment Testing">Impairment Testing</option>
+
+                                        {/* Disputes */}
+                                        <option value="Expert Witness Testimony">Expert Witness Testimony</option>
+                                        <option value="Family Settlements">Family Settlements</option>
+                                        <option value="Litigation Support">Litigation Support</option>
+                                        <option value="Dissenting Shareholder's">Dissenting Shareholder's</option>
+                                        <option value="Claims-Damage assessments">Claims-Damage assessments</option>
+
+                                        {/* Transactions */}
+                                        <option value="Mergers & Acquisitions">Mergers & Acquisitions</option>
+                                        <option value="Corporate Restructurings">Corporate Restructurings</option>
+                                        <option value="Fund NAV Computations">Fund NAV Computations</option>
+                                        <option value="ESOP-Sweat Equity Valuations">ESOP-Sweat Equity Valuations</option>
+                                        <option value="Debt Restructurings">Debt Restructurings</option>
+
+                                        {/* Instruments - Assets */}
+                                        <option value="Shares">Shares</option>
+                                        <option value="Debt Products-Derivatives">Debt Products-Derivatives</option>
+                                        <option value="Disputes - Arbitrations">Disputes - Arbitrations</option>
+                                        <option value="Property, Plant & Equipment">Property, Plant & Equipment</option>
+                                        <option value="Intangible Assets (Goodwill, Customer relations, Brands)">Intangible Assets (Goodwill, Customer relations, Brands)</option>
+                                        <option value="Claims">Claims</option>
+                                        <option value="Losses - Financial Evaluations">Losses - Financial Evaluations</option>
+                                        <option value="Distress Deals">Distress Deals</option>
                                     </select>
                                 </div>
                                 <div className="md:col-span-2">
