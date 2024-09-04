@@ -52,7 +52,7 @@ export const ServicesData = [
         area: 'Disputes'
     },
     {
-        name: 'Claims/Damage assessments',
+        name: 'Claims-Damage assessments',
         image: ClaimsDamageAssessmentSvg,
         area: 'Disputes'
     },
@@ -72,7 +72,7 @@ export const ServicesData = [
         area: 'Transactions'
     },
     {
-        name: 'ESOP/Sweat Equity Valuations',
+        name: 'ESOP-Sweat Equity Valuations',
         image: EsopValuationSvg,
         area: 'Transactions'
     },
@@ -84,42 +84,42 @@ export const ServicesData = [
     {
         name: 'Shares',
         image: sharesSvg,
-        area: 'Instruments / Assets'
+        area: 'Instruments - Assets'
     },
     {
-        name: 'Debt Products/Derivatives',
+        name: 'Debt Products-Derivatives',
         image: debtDerivativeSvg,
-        area: 'Instruments / Assets'
+        area: 'Instruments - Assets'
     },
     {
-        name: 'Disputes / Arbitrations',
+        name: 'Disputes - Arbitrations',
         image: disputeArbitrationSvg,
-        area: 'Instruments / Assets'
+        area: 'Instruments - Assets'
     },
     {
         name: 'Property, Plant & Equipment',
         image: PropertyPlantSvg,
-        area: 'Instruments / Assets'
+        area: 'Instruments - Assets'
     },
     {
         name: 'Intangible Assets (Goodwill, Customer relations, Brands)',
         image: intangibleSvg,
-        area: 'Instruments / Assets'
+        area: 'Instruments - Assets'
     },
     {
         name: 'Claims',
         image: claimsSvg,
-        area: 'Instruments / Assets'
+        area: 'Instruments - Assets'
     },
     {
-        name: 'Losses / Financial Evaluations',
+        name: 'Losses - Financial Evaluations',
         image: LossEvaluationSvg,
-        area: 'Instruments / Assets'
+        area: 'Instruments - Assets'
     },
     {
         name: 'Distress Deals',
         image: DistressSvg,
-        area: 'Instruments / Assets'
+        area: 'Instruments - Assets'
     },
 
 ]

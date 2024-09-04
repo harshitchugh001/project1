@@ -1,6 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import ContactAnimate from '../../assets/ContactAnimate.json';
+import Lottie from 'lottie-react';
+import { Dot } from 'lucide-react';
+
+const useQuery = () => {
+    return new URLSearchParams(useLocation().search);
+};
 
 const Contact = () => {
+    const query = useQuery();
+    const serviceFromQuery = query.get('service');
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -11,138 +21,178 @@ const Contact = () => {
         referral: ''
     });
 
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (serviceFromQuery) {
+            setFormData(prevState => ({
+                ...prevState,
+                service: decodeURIComponent(serviceFromQuery.replace(/-/g, ' '))
+            }));
+        }
+    }, [serviceFromQuery]);
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
         console.log('Form data submitted:', formData);
     };
 
     return (
-        <div className='mt-28 px-4 md:px-0 mb-10'>
+        <div className="mt-28 px-4 md:px-0 mb-10">
             <section className="container mx-auto px-6 py-12">
                 <div className="flex justify-center">
                     <h2 className="text-3xl text-gray-700 font-bold mb-4">Contact Us</h2>
                 </div>
 
+                {/* Align the animation and the form side by side */}
                 <div className="flex flex-col lg:flex-row justify-between items-start">
-                    {/* Description */}
-                    <div className="lg:w-1/3 mb-8 lg:mb-0">
+                    {/* Animation Container */}
+                    <div className="lg:w-1/2 mb-8 lg:mb-0 flex flex-col justify-start">
+                        <div className="hidden md:block">
+                            <Lottie
+                                animationData={ContactAnimate}
+                                loop={true}
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    maxWidth: '1200px', // Control the width of the animation
+                                    maxHeight: '1200px', // Control the height of the animation
+                                }}
+                            />
+                        </div>
 
-                        <p className="text-gray-700">
-                            For any inquiries about Futurity and the services we provide, please fill out the form below. We ask for the following details so we can contact you and better serve you. We will respond shortly.
-                        </p>
                     </div>
 
-                    {/* Contact Form */}
-                    <form onSubmit={handleSubmit} className="lg:w-2/3 bg-white shadow-lg rounded-lg p-8">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label htmlFor="fullName" className="block text-gray-700">Full Name</label>
-                                <input
-                                    type="text"
-                                    id="fullName"
-                                    name="fullName"
-                                    value={formData.fullName}
-                                    onChange={handleChange}
-                                    className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
-                                    required
-                                />
+                    {/* Contact Form Container */}
+                    <div className="lg:w-1/2">
+                        <form onSubmit={handleSubmit} className="bg-white shadow-lg rounded-lg p-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label htmlFor="fullName" className="block text-gray-700">Full Name</label>
+                                    <input
+                                        type="text"
+                                        id="fullName"
+                                        name="fullName"
+                                        value={formData.fullName}
+                                        onChange={handleChange}
+                                        className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="email" className="block text-gray-700">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="phone" className="block text-gray-700">Phone</label>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="companyName" className="block text-gray-700">Company Name</label>
+                                    <input
+                                        type="text"
+                                        id="companyName"
+                                        name="companyName"
+                                        value={formData.companyName}
+                                        onChange={handleChange}
+                                        className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
+                                        required
+                                    />
+                                </div>
+                                <div className="md:col-span-2">
+                                    <label htmlFor="referral" className="block text-gray-700">How did you hear about us?</label>
+                                    <input
+                                        type="text"
+                                        id="referral"
+                                        name="referral"
+                                        value={formData.referral}
+                                        onChange={handleChange}
+                                        className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
+                                    />
+                                </div>
+                                <div className="md:col-span-2">
+                                    <label htmlFor="service" className="block text-gray-700">Select a Service</label>
+                                    <select
+                                        id="service"
+                                        name="service"
+                                        value={formData.service}
+                                        onChange={handleChange}
+                                        className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
+                                        required
+                                    >
+                                        <option value="">
+                                            {formData.service ? (
+                                                <div>{formData.service}</div>
+                                            ) : (
+                                                <div>-- Select a Service --</div>
+                                            )}
+                                        </option>
+                                        <option value="Fairness Opinion">Fairness Opinion</option>
+                                        <option value="Enterprise Valuation">Enterprise Valuation</option>
+                                        <option value="Valuation Consulting">Valuation Consulting</option>
+                                        <option value="Solvency Opinions">Solvency Opinions</option>
+                                        <option value="409A">409A</option>
+                                        <option value="Gift & Estate">Gift & Estate</option>
+                                        <option value="ESOP">ESOP</option>
+                                        <option value="Entity Conversion">Entity Conversion</option>
+                                        <option value="General Litigation Support">General Litigation Support</option>
+                                    </select>
+                                </div>
+                                <div className="md:col-span-2">
+                                    <label htmlFor="message" className="block text-gray-700">Message</label>
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
+                                        rows="5"
+                                        required
+                                    ></textarea>
+                                </div>
                             </div>
-                            <div>
-                                <label htmlFor="email" className="block text-gray-700">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="phone" className="block text-gray-700">Phone</label>
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleChange}
-                                    className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="companyName" className="block text-gray-700">Company Name</label>
-                                <input
-                                    type="text"
-                                    id="companyName"
-                                    name="companyName"
-                                    value={formData.companyName}
-                                    onChange={handleChange}
-                                    className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
-                                    required
-                                />
-                            </div>
-                            <div className="md:col-span-2">
-                                <label htmlFor="referral" className="block text-gray-700">How did you hear about us?</label>
-                                <input
-                                    type="text"
-                                    id="referral"
-                                    name="referral"
-                                    value={formData.referral}
-                                    onChange={handleChange}
-                                    className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
-                                />
-                            </div>
-                            <div className="md:col-span-2">
-                                <label htmlFor="service" className="block text-gray-700">Select a Service</label>
-                                <select
-                                    id="service"
-                                    name="service"
-                                    value={formData.service}
-                                    onChange={handleChange}
-                                    className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
-                                    required
+                            <div className="mt-8 flex justify-center">
+                                <button
+                                    type="submit"
+                                    className="font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500"
                                 >
-                                    <option value="">-- Select a Service --</option>
-                                    <option value="consulting">Consulting</option>
-                                    <option value="development">Development</option>
-                                    <option value="support">Support</option>
-                                    {/* Add more options as needed */}
-                                </select>
+                                    Submit
+                                </button>
                             </div>
-                            <div className="md:col-span-2">
-                                <label htmlFor="message" className="block text-gray-700">Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    className="mt-2 block w-full p-3 border border-gray-300 rounded-lg"
-                                    rows="5"
-                                    required
-                                ></textarea>
-                            </div>
-                        </div>
-                        <div className="mt-8">
-                            <button
-                                type="submit"
-                                className="font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500"
-                            >
-                                Submit
-                            </button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </section>
 
+
+            </section>
+            <div className='flex justify-center items-center text-center'>
+                <span><Dot size={30} /></span>
+                <p className="text-gray-700 text-xs md:text-xl font-medium ">
+                    For any inquiries about Futurity and the services we provide, please fill out the form below. We will respond shortly.
+                </p>
+            </div>
         </div>
     );
-}
+};
 
 export default Contact;
