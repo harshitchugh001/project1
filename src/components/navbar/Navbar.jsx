@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/Logo.svg';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="flex flex-wrap items-center justify-between mx-auto p-4 ">
                 {/* Logo */}
                 <a href="/" className="flex items-center space-x-3">
-                    <img src={logo} className="h-16 md:h-20" alt="Logo" />
+                    <img src={logo} className="h-16 w-32 md:h-20 md:w-44" alt="Logo" />
                 </a>
 
                 {/* Hamburger Button */}
