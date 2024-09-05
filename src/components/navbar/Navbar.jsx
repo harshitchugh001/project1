@@ -50,11 +50,6 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="/product" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
-                                Product
-                            </a>
-                        </li>
-                        <li>
                             <a href="/about" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
                                 About Us
                             </a>

@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="footer-right font-semibold first-line:">
             <ul className="flex flex-wrap space-x-6 md:space-x-10 justify-start md:justify-end">
               <li><a href="/services" className="hover:underline">Services</a></li>
-              <li><a href="/product" className="hover:underline">Product</a></li>
+              {/* <li><a href="/product" className="hover:underline">Product</a></li> */}
               {/* <li><a href="/" className="hover:underline">News</a></li> */}
               <li><a href="/about" className="hover:underline">About Us</a></li>
               <li><a href="/team" className="hover:underline">Team</a></li>
