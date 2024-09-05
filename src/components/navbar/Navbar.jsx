@@ -85,11 +85,11 @@ const Navbar = () => {
                                 Services
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="/product" className="py-2 px-3 hover:font-semibold">
                                 Product
                             </a>
-                        </li>
+                        </li> */}
                         <li>
                             <a href="/about" className="py-2 px-3 hover:font-semibold">
                                 About Us
