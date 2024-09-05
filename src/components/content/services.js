@@ -1,6 +1,6 @@
 import { LiquidationSvg, InOutTestingSvg, FairnessOpinionSvg, INDAScomplianceSvg, allocationSvg, ImpairmentTestingSvg, ExpertWitnessTestimonySvg, FamilySettlementSvg, LigitationSvg, DissentingShareholderSvg, ClaimsDamageAssessmentSvg, MergersAcquisationSvg, CorporateRestructoringSvg, FundNavComputationSvg, EsopValuationSvg, DebtRestructoringSvg, sharesSvg, debtDerivativeSvg, disputeArbitrationSvg, PropertyPlantSvg, intangibleSvg, claimsSvg, LossEvaluationSvg, DistressSvg } from "../svgs/SvgData"
 
-export const ServicesData = [
+export const ServicesDataCompliance = [
     {
         name: 'Liquidation(IBC)',
         image:  LiquidationSvg,
@@ -31,6 +31,9 @@ export const ServicesData = [
         image: ImpairmentTestingSvg,
         area: 'Compliance Valuation'
     },
+]
+
+export const ServicesDataDisputes = [ 
     {
         name: 'Expert Witness Testimony',
         image: ExpertWitnessTestimonySvg,
@@ -56,6 +59,8 @@ export const ServicesData = [
         image: ClaimsDamageAssessmentSvg,
         area: 'Disputes'
     },
+]
+export const ServicesDataTransactions = [ 
     {
         name: 'Mergers & Acquisitions',
         image: MergersAcquisationSvg,
@@ -81,6 +86,9 @@ export const ServicesData = [
         image: DebtRestructoringSvg,
         area: 'Transactions'
     },
+]
+
+export const ServicesDataInstruments = [
     {
         name: 'Shares',
         image: sharesSvg,
