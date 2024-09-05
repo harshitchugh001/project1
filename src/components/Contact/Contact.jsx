@@ -208,7 +208,7 @@ const Contact = () => {
             </section>
 
 
-            <p className="text-gray-700 text-xs md:text-xl font-medium text-center">
+            <p className="text-gray-700 text-xs md:text-base font-medium text-center">
                 <span className='font-bold'>Note:</span> For any inquiries about Futurity and the services we provide, please fill out the form above. We will respond shortly.
             </p>
 

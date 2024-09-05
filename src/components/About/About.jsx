@@ -18,12 +18,12 @@ const About = () => {
 
         {/* Centered heading */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl md:text-6xl font-bold opacity-70">Who are we?</h1>
+          <h1 className="text-white text-4xl md:text-6xl font-bold opacity-70">Welcome to futurity group?</h1>
         </div>
       </div>
       <div className="mb-8">
         <h2 className="block md:hidden text-2xl md:text-4xl font-semibold mb-8 animate-fadeIn text-center">Who We Are</h2>
-        <p className="text-lg text-gray-700 animate-fadeIn my-16">
+        <p className="text-xs md:text-base text-gray-700 animate-fadeIn my-16 text-center">
           <strong>Futurity</strong> is a unified team of leading technocommercial experts dedicated to delivering
           simple solutions to complex issues within a seamless and time-bound framework. Operating under the aegis of
           <strong> IBBI (The Insolvency & Bankruptcy Board of India)</strong>, Futurity works as one integrated team,
@@ -34,7 +34,7 @@ const About = () => {
         <div>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-8">
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-28 h-28 md:w-48 md:h-48'>
+              <span className='w-16 h-16 md:w-24 md:h-24'>
                 {IntegritySvg}
               </span>
 
@@ -45,7 +45,7 @@ const About = () => {
             </div>
 
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-28 h-28 md:w-48 md:h-48'>
+              <span className='w-16 h-16 md:w-24 md:h-24'>
                 {InnovationSvg}
               </span>
 
@@ -56,7 +56,7 @@ const About = () => {
             </div>
 
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-24 h-24 md:w-48 md:h-48'>
+              <span className='w-16 h-16 md:w-24 md:h-24'>
                 {CoherenceSvg}
               </span>
 
@@ -67,7 +67,7 @@ const About = () => {
             </div>
 
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-28 h-28 md:w-48 md:h-48'>
+              <span className='w-16 h-16 md:w-24 md:h-24'>
                 {DiligenceSvg}
               </span>
 

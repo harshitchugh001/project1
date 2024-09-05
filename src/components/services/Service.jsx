@@ -61,8 +61,8 @@ export default function Services() {
             <div className='mt-10'>
                 <h2 className="text-center text-3xl font-bold text-gray-700 mt-8 mb-16 italic">Futurity specializes in the following areas</h2>
 
-                <h1 className='text-gray-700 font-medium text-2xl text-center mt-16 mb-8'>1. {ServicesDataCompliance[0].area}</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  container mx-auto ">
+                <h1 className='text-gray-700 font-medium text-2xl text-center mt-16 mb-8'> {ServicesDataCompliance[0].area}</h1>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4 w-5/6 container mx-auto ">
 
                     {
                         ServicesDataCompliance.map((service, index) => (
@@ -70,8 +70,8 @@ export default function Services() {
                                 onClick={() => {
                                     navigate(`/contact?service=${encodeURIComponent(service.name)}`);
                                 }}>
-                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-16 md:w-28 '>{service.image}</span>
-                                <h3 className="text-center text-xs md:text-base font-medium text-gray-800">{service.name}</h3>
+                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-14 md:w-20 '>{service.image}</span>
+                                <h3 className="text-center text-xs md:text-[13px] font-medium text-gray-800">{service.name}</h3>
                             </div>
                         ))
                     }
@@ -79,17 +79,17 @@ export default function Services() {
 
                 </div>
 
-                <h1 className='text-gray-700 font-medium text-2xl text-center mt-16 mb-8'>2. {ServicesDataDisputes[0].area}</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  container mx-auto ">
+                <h1 className='text-gray-700 font-medium text-2xl text-center mt-16 mb-8'>{ServicesDataDisputes[0].area}</h1>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  w-5/6 container mx-auto ">
 
                     {
                         ServicesDataDisputes.map((service, index) => (
-                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-gray-100 p-2 rounded-lg shadow-md" data-aos="fade-up"
+                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-gray-100 p-2 rounded-lg shadow-md gap-y-2" data-aos="fade-up"
                                 onClick={() => {
                                     navigate(`/contact?service=${encodeURIComponent(service.name)}`);
                                 }}>
-                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-16 md:w-28 '>{service.image}</span>
-                                <h3 className="text-center text-xs md:text-base font-medium text-gray-800">{service.name}</h3>
+                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-14 md:w-20 '>{service.image}</span>
+                                <h3 className="text-center text-xs md:text-[13px] font-medium text-gray-800">{service.name}</h3>
                             </div>
                         ))
                     }
@@ -97,8 +97,8 @@ export default function Services() {
 
                 </div>
 
-                <h1 className='text-gray-700 font-medium text-2xl text-center mt-16 mb-8'>3. {ServicesDataTransactions[0].area}</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  container mx-auto ">
+                <h1 className='text-gray-700 font-medium text-2xl text-center mt-16 mb-8'>{ServicesDataTransactions[0].area}</h1>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  w-5/6 container mx-auto ">
 
                     {
                         ServicesDataTransactions.map((service, index) => (
@@ -106,8 +106,8 @@ export default function Services() {
                                 onClick={() => {
                                     navigate(`/contact?service=${encodeURIComponent(service.name)}`);
                                 }}>
-                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-16 md:w-28 '>{service.image}</span>
-                                <h3 className="text-center text-xs md:text-base font-medium text-gray-800">{service.name}</h3>
+                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-14 md:w-20 '>{service.image}</span>
+                                <h3 className="text-center text-xs md:text-[13px] font-medium text-gray-800">{service.name}</h3>
                             </div>
                         ))
                     }
@@ -115,8 +115,8 @@ export default function Services() {
 
                 </div>
 
-                <h1 className='text-gray-700 font-medium text-2xl text-center mt-16 mb-8'>4. {ServicesDataInstruments[0].area}</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  container mx-auto ">
+                <h1 className='text-gray-700 font-medium text-2xl text-center mt-16 mb-8'>{ServicesDataInstruments[0].area}</h1>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-16 px-4 md:px-0 lg:px-4  w-5/6 container mx-auto ">
 
                     {
                         ServicesDataInstruments.map((service, index) => (
@@ -124,8 +124,8 @@ export default function Services() {
                                 onClick={() => {
                                     navigate(`/contact?service=${encodeURIComponent(service.name)}`);
                                 }}>
-                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-16 md:w-28 '>{service.image}</span>
-                                <h3 className="text-center text-xs md:text-base font-medium text-gray-800">{service.name}</h3>
+                                <span className='text-gray-700 hover:text-gray-500 transition duration-150 cursor-pointer w-14 md:w-20 '>{service.image}</span>
+                                <h3 className="text-center text-xs md:text-[13px] font-medium text-gray-800">{service.name}</h3>
                             </div>
                         ))
                     }

@@ -69,7 +69,6 @@ const experts = [
         title: "Asst Vice President – Futurity Valuation Advisory LLP.",
         roles: [
             "Associate Member – Institute of Valuers.",
-            "Registered Valuer – Income Tax.",
             "Chartered Engineer"
         ],
         description: "Deepanshu has over 8 years of experience in technical studies, viability assessments, and asset valuations. As a Chartered Engineer, he ensures that his engineering solutions are both innovative and compliant with industry regulations."
@@ -89,11 +88,11 @@ const Team = () => {
     return (
         <section className="py-12 bg-gray-100">
             {/* Here BackGround Image */}
-            <div className="relative hidden md:block">
+            <div className="relative hidden md:block rounded-lg">
                 <img
                     src={Conference} // Replace with your image path
                     alt="Team background"
-                    className="w-full h-[600px] object-cover" // Adjust height as needed
+                    className="w-full h-[600px] object-cover rounded-lg" // Adjust height as needed
                 />
 
                 {/* Transparent mask */}
@@ -110,7 +109,7 @@ const Team = () => {
                     {experts.map((expert, index) => (
                         <motion.div
                             key={index}
-                            className={`bg-white p-6 rounded-lg shadow-lg h-[550px] ${index === experts.length - 1 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''}`}
+                            className={`bg-white p-6 rounded-lg shadow-lg h-fit md:min-h-[550px] ${index === experts.length - 1 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''}`}
                             whileHover={{ scale: 1.05 }}
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -122,7 +121,7 @@ const Team = () => {
                                 className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
                             />
                             <h3 className="md:text-xl text-lg font-semibold text-gray-700 mb-2 text-center">{expert.name}</h3>
-                            <p className="text-gray-600 mb-4 text-xs md:text-base text-center">{expert.title}</p>
+                            <p className="text-gray-600 mb-6 text-xs md:text-base text-center ">{expert.title}</p>
                             <div >
                                 <ul className="text-gray-600 mb-4 text-xs md:text-base ">
                                     {expert.roles.map((role, i) => (
