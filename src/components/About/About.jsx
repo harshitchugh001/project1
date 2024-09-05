@@ -18,7 +18,7 @@ const About = () => {
 
         {/* Centered heading */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl md:text-6xl font-bold opacity-70">Welcome to futurity group?</h1>
+          <h1 className="text-white text-4xl md:text-6xl font-bold opacity-70">Welcome to futurity group</h1>
         </div>
       </div>
       <div className="mb-8">
@@ -34,44 +34,44 @@ const About = () => {
         <div>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-8">
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-16 h-16 md:w-24 md:h-24'>
+              <span className='w-12 h-12 md:w-20 md:h-20'>
                 {IntegritySvg}
               </span>
 
-              <span className='font-medium text-base md:text-xl'>
+              <span className='font-medium text-base md:text-lg'>
                 Integrity
               </span>
 
             </div>
 
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-16 h-16 md:w-24 md:h-24'>
+              <span className='w-12 h-12 md:w-20 md:h-20'>
                 {InnovationSvg}
               </span>
 
-              <span className='font-medium text-base md:text-xl '>
+              <span className='font-medium text-base md:text-lg '>
                 Innovation
               </span>
 
             </div>
 
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-16 h-16 md:w-24 md:h-24'>
+              <span className='w-12 h-12 md:w-20 md:h-20'>
                 {CoherenceSvg}
               </span>
 
-              <span className='font-medium text-base md:text-xl '>
+              <span className='font-medium text-base md:text-lg '>
                 Coherence
               </span>
 
             </div>
 
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-16 h-16 md:w-24 md:h-24'>
+              <span className='w-12 h-12 md:w-20 md:h-20'>
                 {DiligenceSvg}
               </span>
 
-              <span className='font-medium text-base md:text-xl'>
+              <span className='font-medium text-base md:text-lg'>
                 Diligence
               </span>
 
