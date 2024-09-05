@@ -107,40 +107,30 @@ const Team = () => {
                 <h2 className="block md:hidden text-4xl font-extrabold text-center text-gray-900 mb-10 mt-24">Our Administration</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center md:mt-16">
                     {experts.map((expert, index) => (
-                        <div
+                        <motion.div
                             key={index}
-                            className={`relative w-full rounded-xl ${index === experts.length - 1 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''}`}
+                            className={`bg-white p-6 rounded-lg shadow-lg h-fit md:min-h-[550px] ${index === experts.length - 1 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''}`}
+                            whileHover={{ scale: 1.05 }}
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-
-                            <div className='card rounded-lg border-2 bg-white min-h-[420px] '>
-                                <div className="front  text-gray-800 p-5 rounded-xl font-medium  ">
-                                    <img
-                                        src={expert.image}
-                                        alt={expert.name}
-                                        className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
-                                    />
-                                    <h3 className="md:text-lg text-base font-semibold text-gray-700 mb-2 text-center h-8">{expert.name}</h3>
-                                    <p className="text-gray-600 mb-6 text-xs md:text-[14px] text-center h-8">{expert.title}</p>
-                                    <div className='h-16'>
-                                        <ul className="text-gray-600 mb-4 text-xs md:text-base ">
-                                            {expert.roles.map((role, i) => (
-                                                <li key={i} className="list-disc list-inside text-[14px]">{role}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div className='back bg-white rounded-xl flex flex-col justify-center items-center'>
-                                    <img
-                                        src={expert.image}
-                                        alt={expert.name}
-                                        className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
-                                    />
-                                    <p className="text-gray-600 text-xs md:text-base text-center font-medium p-4 h-[238px]">{expert.description}</p>
-                                </div>
+                            <img
+                                src={expert.image}
+                                alt={expert.name}
+                                className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+                            />
+                            <h3 className="md:text-xl text-lg font-semibold text-gray-700 mb-2 text-center">{expert.name}</h3>
+                            <p className="text-gray-600 mb-6 text-xs md:text-base text-center ">{expert.title}</p>
+                            <div >
+                                <ul className="text-gray-600 mb-4 text-xs md:text-base ">
+                                    {expert.roles.map((role, i) => (
+                                        <li key={i} className="list-disc list-inside">{role}</li>
+                                    ))}
+                                </ul>
+                                <p className="text-gray-600 text-xs md:text-base">{expert.description}</p>
                             </div>
-
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
