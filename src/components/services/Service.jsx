@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Women from '../../assets/women.jpg'
 import { useNavigate } from 'react-router-dom';
 import GreyButton from '../buttons/GreyButton'
-import { ServicesDataCompliance,ServicesDataDisputes,ServicesDataTransactions,ServicesDataInstruments } from '../content/services';
+import { ServicesDataCompliance, ServicesDataDisputes, ServicesDataTransactions, ServicesDataInstruments } from '../content/services';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -14,25 +14,27 @@ export default function Services() {
     }, [])
 
 
-    function handleClick () {
+    function handleClick() {
         navigate('/contact')
     }
 
     return (
 
         <div className='mt-28 px-4 md:px-0 mb-10'>
-            {/* //upper section */}
-            <div className="flex flex-col md:flex-row items-center justify-between bg-gray-100 p-6 shadow-md">
 
-                {/* Left Side Image */}
-                <div className="md:w-3/5 w-full mb-6 md:mb-0 md:mr-6">
+
+            <div className="flex flex-col md:flex-row items-center justify-between bg-gray-100 p-6 rounded-lg shadow-md">
+                <div className="md:w-3/5 w-full">
                     <img
                         src={Women}
                         alt="Our Services"
-                        className="w-full h-fit rounded-lg shadow-lg"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                        style={{
+                            maskImage: 'linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',
+                            WebkitMaskImage: 'linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',
+                        }}
                     />
                 </div>
-
                 <div className="md:w-2/5 w-full gap-y-8 flex flex-col justify-evenly items-center ">
 
                     <h1 className='text-gray-700 py-8 text-3xl font-semibold'>Expert Valuations for Strategic Insights</h1>
@@ -52,6 +54,8 @@ export default function Services() {
                     </p>
                 </div>
             </div>
+
+
 
 
             <div className='mt-10'>
