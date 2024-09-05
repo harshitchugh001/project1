@@ -89,7 +89,7 @@ const Team = () => {
     return (
         <section className="py-12 bg-gray-100">
             {/* Here BackGround Image */}
-            <div className="relative">
+            <div className="relative hidden md:block">
                 <img
                     src={Conference} // Replace with your image path
                     alt="Team background"
