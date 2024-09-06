@@ -177,6 +177,7 @@ const Contact = () => {
                                         <option value="Claims">Claims</option>
                                         <option value="Losses - Financial Evaluations">Losses - Financial Evaluations</option>
                                         <option value="Distress Deals">Distress Deals</option>
+                                        <option value="Others">Others</option>
                                     </select>
                                 </div>
                                 <div className="md:col-span-2">
