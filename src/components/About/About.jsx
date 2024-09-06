@@ -10,15 +10,16 @@ const About = () => {
         <img
           src={WhoAreWe} // Replace with your image path
           alt="Team background"
-          className="w-full h-[600px] object-cover" // Adjust height as needed
+          className="w-full h-[600px] object-cover " // Adjust height as needed
         />
 
         {/* Transparent mask */}
-        <div className="absolute h-[600px] inset-0 bg-black opacity-50"></div>
+        {/* <div className="absolute h-[600px] inset-0 bg-black opacity-50"></div> */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black to-slate-500 opacity-70"></div>
 
         {/* Centered heading */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl md:text-6xl font-bold opacity-70">Welcome to futurity group</h1>
+        <div className="absolute inset-0 flex items-start mt-10 justify-center">
+          <h1 className="text-white text-4xl md:text-6xl font-bold opacity-70">Welcome to Futurity group</h1>
         </div>
       </div>
       <div className="mb-8">
