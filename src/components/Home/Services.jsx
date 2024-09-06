@@ -59,7 +59,7 @@ const Services = () => {
                                     <h3 className="text-base text-gray-700 text-center font-semibold mb-3">
                                         <Link to={service.link}>{service.title}</Link>
                                     </h3>
-                                    <p className='text-gray-600'>{service.description}</p>
+                                    <p className='text-gray-600 text-center'>{service.description}</p>
                                 </div>
                             </div>
                         ))}
