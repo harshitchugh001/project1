@@ -19,7 +19,7 @@ const About = () => {
 
         {/* Centered heading */}
         <div className="absolute inset-0 flex items-start mt-10 justify-center">
-          <h1 className="text-white  sm:text-4xl lg:text-5xl font-bold opacity-70">Welcome to Futurity group</h1>
+          <h1 className="text-white  sm:text-4xl lg:text-5xl font-bold opacity-70 text-center  ">Welcome to <br/> Futurity group</h1>
         </div>
       </div>
       <div className="mb-8">
