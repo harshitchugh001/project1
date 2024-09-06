@@ -10,15 +10,16 @@ const About = () => {
         <img
           src={WhoAreWe} // Replace with your image path
           alt="Team background"
-          className="w-full h-[600px] object-cover" // Adjust height as needed
+          className="w-full h-[600px] object-cover " // Adjust height as needed
         />
 
         {/* Transparent mask */}
-        <div className="absolute h-[600px] inset-0 bg-black opacity-50"></div>
+        {/* <div className="absolute h-[600px] inset-0 bg-black opacity-50"></div> */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black to-slate-500 opacity-70"></div>
 
         {/* Centered heading */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl md:text-6xl font-bold opacity-70">Welcome to futurity group</h1>
+        <div className="absolute inset-0 flex items-start mt-10 justify-center">
+          <h1 className="text-white  sm:text-4xl lg:text-5xl font-bold opacity-70 text-center  ">WELCOME TO <br/> FUTURITY GROUP</h1>
         </div>
       </div>
       <div className="mb-8">
@@ -56,7 +57,7 @@ const About = () => {
             </div>
 
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-12 h-12 md:w-20 md:h-20'>
+              <span className='w-16 h-16 md:w-24 md:h-24'>
                 {CoherenceSvg}
               </span>
 

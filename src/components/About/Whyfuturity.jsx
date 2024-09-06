@@ -53,22 +53,16 @@ const strengths = [
 export default function WhyFuturity() {
     return (
         <section className=" py-12">
-            <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">Why Futurity</h2>
+            <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">Why Futurity?</h2>
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {strengths.map((strength, index) => (
                     <div
                         key={index}
-                        className={`relative w-full h-64 ${index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}>
-                        <div className="card">
-                            <div className="front bg-gray-300 text-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
-                                <div className="text-4xl mb-4">{strength.icon}</div>
-                                <h3 className="text-xl font-semibold mb-2 text-center">{strength.title}</h3>
-                                <p className="text-center">{strength.details}</p>
-                            </div>
-                            <div className="back bg-gray-800 text-gray-300 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
-                                <h3 className="text-xl font-semibold mb-2">More Info</h3>
-                                <p className="text-center">Additional information about {strength.title}.</p>
-                            </div>
+                        className={`relative w-full h-64 cursor-pointer ${index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}>
+                        <div className="front bg-gray-300 text-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
+                            <div className="text-4xl mb-4">{strength.icon}</div>
+                            <h3 className="text-xl font-semibold mb-2 text-center">{strength.title}</h3>
+                            <p className="text-center">{strength.details}</p>
                         </div>
                     </div>
                 ))}
