@@ -57,7 +57,7 @@ const About = () => {
             </div>
 
             <div className='flex flex-col justify-center items-center gap-y-4'>
-              <span className='w-12 h-12 md:w-20 md:h-20'>
+              <span className='w-16 h-16 md:w-24 md:h-24'>
                 {CoherenceSvg}
               </span>
 
