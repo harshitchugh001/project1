@@ -15,8 +15,8 @@ const Hero = () => {
         <div className='flex flex-col justify-center text-center items-center h-[400px] md:h-[850px]'>
             <div className="block md:hidden">
                 <Lottie animationData={HeroPageAnimation} loop={true} style={{
-                    width: 400,
-                    height: 400,
+                    width: 300,
+                    height: 300,
                 }} />
             </div>
             <div className="hidden md:block">

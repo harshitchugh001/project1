@@ -59,10 +59,11 @@ export default function WhyFuturity() {
                     <div
                         key={index}
                         className={`relative w-full h-64 cursor-pointer ${index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'}`}>
-                        <div className="front bg-gray-300 text-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
+                        <div className="front bg-gray-300 text-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center  transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-1000 relative">
                             <div className="text-4xl mb-4">{strength.icon}</div>
                             <h3 className="text-xl font-semibold mb-2 text-center">{strength.title}</h3>
                             <p className="text-center">{strength.details}</p>
+                            <div className="absolute inset-0 bg-blue-50 rounded-lg opacity-30"></div>
                         </div>
                     </div>
                 ))}
