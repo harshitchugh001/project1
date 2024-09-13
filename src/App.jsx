@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Services from './components/services/Service';
+import FooterNew from './components/Footer/FooterNew';
 import Product from './components/Product/Product';
 import Team from './components/team/Team';
 import Contact from './components/Contact/Contact';
@@ -28,7 +29,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
-        <Footer />
+        <FooterNew />
       </Router>
     </div>
   )
