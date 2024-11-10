@@ -66,7 +66,7 @@ export default function Services() {
 
                     {
                         ServicesDataCompliance.map((service, index) => (
-                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-gray-100 p-2 rounded-lg shadow-md" data-aos="fade-up"
+                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-blue-100 p-2 rounded-lg shadow-md" data-aos="fade-up"
                                 onClick={() => {
                                     navigate(`/contact?service=${encodeURIComponent(service.name)}`);
                                 }}>
@@ -84,7 +84,7 @@ export default function Services() {
 
                     {
                         ServicesDataDisputes.map((service, index) => (
-                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-gray-100 p-2 rounded-lg shadow-md gap-y-2" data-aos="fade-up"
+                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-blue-100 p-2 rounded-lg shadow-md gap-y-2" data-aos="fade-up"
                                 onClick={() => {
                                     navigate(`/contact?service=${encodeURIComponent(service.name)}`);
                                 }}>
@@ -102,7 +102,7 @@ export default function Services() {
 
                     {
                         ServicesDataTransactions.map((service, index) => (
-                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-gray-100 p-2 rounded-lg shadow-md" data-aos="fade-up"
+                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-blue-100 p-2 rounded-lg shadow-md" data-aos="fade-up"
                                 onClick={() => {
                                     navigate(`/contact?service=${encodeURIComponent(service.name)}`);
                                 }}>
@@ -120,7 +120,7 @@ export default function Services() {
 
                     {
                         ServicesDataInstruments.map((service, index) => (
-                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-gray-100 p-2 rounded-lg shadow-md" data-aos="fade-up"
+                            <div key={index} className="flex flex-col justify-center items-center text-center md:-space-y-3  bg-blue-100 p-2 rounded-lg shadow-md" data-aos="fade-up"
                                 onClick={() => {
                                     navigate(`/contact?service=${encodeURIComponent(service.name)}`);
                                 }}>
