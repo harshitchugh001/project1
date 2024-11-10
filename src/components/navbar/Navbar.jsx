@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import logo from '../../assets/Logo1.svg';
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b shadow-sm">
+        <nav className="bg-blue fixed w-full z-20 top-0 left-0 border-b shadow-sm">
             <div className="flex flex-wrap items-center justify-between mx-auto p-4 ">
                 {/* Logo */}
                 <a href="/" className="flex items-center space-x-3">

@@ -1,8 +1,8 @@
 import React from 'react'
 import Lottie from 'lottie-react';
-// import animationData from '../../assets/Animation - 1724827126639.json';
+import HeroPageAnimation from '../../assets/Animation - 1724827126639.json';
 // import Test from '../../assets/Test.json'
-import HeroPageAnimation from '../../assets/HeroPageAnimation.json'
+// import HeroPageAnimation from '../../assets/HeroPageAnimation.json'
 import GreyButton from '../buttons/GreyButton';
 import { useNavigate } from 'react-router-dom';
 const Hero = () => {

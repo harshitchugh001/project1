@@ -1,7 +1,7 @@
 import { FaSearch, FaClipboardList, FaChartLine } from 'react-icons/fa';
 export default function OurApproachSection() {
     return (
-        <section className="mb-12 bg-gray-50 py-16">
+        <section className="mb-12 bg-blue-50 py-16">
             <h2 className="text-xl md:text-2xl lg:text-4xl font-extrabold text-center text-gray-800 mb-12">Our Approach</h2>
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">

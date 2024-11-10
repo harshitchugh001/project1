@@ -48,7 +48,7 @@ const Services = () => {
                     <div className="flex flex-wrap justify-between pt-12">
                         {services.map((service, index) => (
                             <div key={index} className="w-full lg:w-1/3 md:w-full px-4 mb-8">
-                                <div className="bg-white p-4 rounded-lg shadow-md h-full">
+                                <div className="bg-blue p-4 rounded-lg shadow-md h-full">
                                     <Link to={service.link}>
                                         <img
                                             src={service.imgSrc}

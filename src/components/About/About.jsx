@@ -25,11 +25,15 @@ const About = () => {
       <div className="mb-8">
         <h2 className="block md:hidden text-2xl md:text-4xl font-semibold mb-8 animate-fadeIn text-center">Who We Are</h2>
         <p className="text-xs md:text-base text-gray-700 animate-fadeIn my-16 text-center">
-          <strong>Futurity</strong> is a unified team of leading technocommercial experts dedicated to delivering
-          simple solutions to complex issues within a seamless and time-bound framework. Operating under the aegis of
-          <strong> IBBI (The Insolvency & Bankruptcy Board of India)</strong>, Futurity works as one integrated team,
-          leveraging diverse domain expertise, scale, and a deep understanding to offer exceptional and tailored
-          services to our clients.
+          <strong>Futurity</strong> is a cohesive team of seasoned financial,
+          technical and techno-commercial experts, united by a
+          shared vision of delivering straightforward solutions to
+          even the most complex business challenges.
+          As a trusted partner operating under the regulatory
+          oversight of the Insolvency & Bankruptcy Board of India
+          (IBBI), Futurity brings together a diverse group of
+          professionals with deep expertise across multiple domains,
+          including finance, law, technology, and business strategy.
         </p>
         <h3 className="text-xl md:text-3xl font-semibold mt-10 mb-4 animate-fadeIn text-center">Our Core Values</h3>
         <div>
@@ -88,52 +92,52 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Method 1 */}
-            <div className="cursor-pointer relative flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-200">
+            <div className="cursor-pointer relative flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-200">
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-4 text-center">Book Value</h3>
               <p className="text-xs md:text-sm lg:text-base text-gray-600 text-center">Considered where there is no significant movement in the actual value of assets.</p>
-              <div className="absolute inset-0 bg-blue-50 rounded-lg opacity-30"></div>
+              <div className="absolute inset-0 bg-blue-100-50 rounded-lg opacity-30"></div>
             </div>
 
             {/* Method 2 */}
-            <div className="cursor-pointer relative flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-400">
+            <div className="cursor-pointer relative flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-400">
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-4 text-center">Realizable Value</h3>
               <p className="text-xs md:text-sm lg:text-base text-gray-600 text-center">Used when the valuation is carried out on an ordinary or distress sale basis.</p>
-              <div className="absolute inset-0 bg-blue-50 rounded-lg opacity-30"></div>
+              <div className="absolute inset-0 bg-blue-100-50 rounded-lg opacity-30"></div>
             </div>
 
             {/* Method 3 */}
-            <div className="cursor-pointer relative flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-600">
+            <div className="cursor-pointer relative flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-600">
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-4 text-center">Replacement Value</h3>
               <p className="text-xs md:text-sm lg:text-base text-gray-600 text-center">Estimates the fair value of assets on a going concern basis.</p>
-              <div className="absolute inset-0 bg-blue-50 rounded-lg opacity-30"></div>
+              <div className="absolute inset-0 bg-blue-100-50 rounded-lg opacity-30"></div>
             </div>
 
             {/* Method 4 */}
-            <div className="cursor-pointer relative flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-800">
+            <div className="cursor-pointer relative flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-800">
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-4 text-center">Discounted Cash Flow Method</h3>
               <p className="text-xs md:text-sm lg:text-base text-gray-600 text-center">Projects expected after-tax free cash flows and discounts them to determine the value.</p>
-              <div className="absolute inset-0 bg-blue-50 rounded-lg opacity-30"></div>
+              <div className="absolute inset-0 bg-blue-100-50 rounded-lg opacity-30"></div>
             </div>
 
             {/* Method 5 */}
-            <div className="cursor-pointer relative flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-1000">
+            <div className="cursor-pointer relative flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-1000">
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-4 text-center">Earning Capitalization Method</h3>
               <p className="text-xs md:text-sm lg:text-base text-gray-600 text-center">Looks at earning potential based on historical and current financial information.</p>
-              <div className="absolute inset-0 bg-blue-50 rounded-lg opacity-30"></div>
+              <div className="absolute inset-0 bg-blue-100-50 rounded-lg opacity-30"></div>
             </div>
 
             {/* Method 6 */}
-            <div className="cursor-pointer relative flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-1200">
+            <div className="cursor-pointer relative flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-1200">
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-4 text-center">Comparable Company Multiples</h3>
               <p className="text-xs md:text-sm lg:text-base text-gray-600 text-center">Compares operational metrics and valuation multiples of listed peer companies.</p>
-              <div className="absolute inset-0 bg-blue-50 rounded-lg opacity-30"></div>
+              <div className="absolute inset-0 bg-blue-100-50 rounded-lg opacity-30"></div>
             </div>
 
             {/* Method 7 */}
-            <div className="cursor-pointer relative flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-1400 lg:col-start-2">
+            <div className="cursor-pointer relative flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 animate-fade-in animation-delay-1400 lg:col-start-2">
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-4 text-center">Recent Transactions Method</h3>
               <p className="text-xs md:text-sm lg:text-base text-gray-600 text-center">Estimates the value based on recent transactions involving the subject company.</p>
-              <div className="absolute inset-0 bg-blue-50 rounded-lg opacity-30"></div>
+              <div className="absolute inset-0 bg-blue-100-50 rounded-lg opacity-30"></div>
             </div>
           </div>
         </div>

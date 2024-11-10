@@ -71,6 +71,37 @@ const experts = [
             "Associate Member – Institute of Valuers.",
             "Chartered Engineer"
         ],
+        description: "Ajay is an accomplished professional with more than 20 years of experienceacross banking, finance, and businessdevelopment."
+    },
+    {
+        name: "Ajay Yadav",
+        image: DeepanshuTyagi,
+        title: "Head - Client Relations",
+        roles: [
+            "Associate Member – Institute of Valuers.",
+            "Chartered Engineer"
+        ],
+        description: "Over 10+ years of experience in financial consulting to large clients for transactions inlcuidng valuations, due diligence and viabuility studies"
+    },
+    {
+        name: "Aayushi Gupta",
+        image: DeepanshuTyagi,
+        title: "Asst. Vice President",
+        roles: [
+            "Associate Member – Institute of Valuers.",
+            "Chartered Engineer"
+        ],
+        description: "brings over 5 years of extensiveexperience in valuation and financial consulting in Big4s (Deloitte, Ernst & Young and Duff & Phelps)."
+    },
+    
+    {
+        name: "Karan Chadha",
+        image: DeepanshuTyagi,
+        title: "Head - Client Relations",
+        roles: [
+            "Associate Member – Institute of Valuers.",
+            "Chartered Engineer"
+        ],
         description: "Deepanshu has over 8 years of experience in technical studies, viability assessments, and asset valuations. As a Chartered Engineer, he ensures that his engineering solutions are both innovative and compliant with industry regulations."
     },
     {
@@ -86,7 +117,7 @@ const experts = [
 
 const Team = () => {
     return (
-        <section className="py-12 bg-gray-100">
+        <section className="py-16 bg-gray-100">
             {/* Here BackGround Image */}
             <div className="relative hidden md:block rounded-lg">
                 <img
