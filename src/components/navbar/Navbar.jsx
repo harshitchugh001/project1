@@ -5,14 +5,12 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-blue fixed w-full z-20 top-0 left-0 border-b shadow-sm">
+        <nav className="bg-blue  w-full z-20 top-0 left-0 h-20 border-b shadow-sm">
             <div className="flex flex-wrap items-center justify-between mx-auto p-4 ">
-                {/* Logo */}
                 <a href="/" className="flex items-center space-x-3">
                     <img src={logo} className="h-16 w-32 md:h-20 md:w-44" alt="Logo" />
                 </a>
 
-                {/* Hamburger Button */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     type="button"
@@ -38,83 +36,25 @@ const Navbar = () => {
                     </svg>
                 </button>
 
-                {/* Mobile View Items */}
-                <div
-                    className={`${isOpen ? "block" : "hidden"} w-full md:hidden`}
-                    id="navbar-sticky"
-                >
+                <div className={`${isOpen ? "block" : "hidden"} w-full md:hidden`} id="navbar-sticky">
                     <ul className="flex flex-col p-4 mt-4 space-y-2 font-bold text-gray-500 bg-gray-50 rounded-lg">
-                        <li>
-                            <a href="/services" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/about" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/team" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
-                                Team
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/career" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
-                                Careers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/client" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">
-                                Clients
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/contact" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline" >
-                                Contact
-                            </a>
-                        </li>
+                        <li><a href="/services" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Services</a></li>
+                        <li><a href="/about" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">About Us</a></li>
+                        <li><a href="/team" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Team</a></li>
+                        <li><a href="/career" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Careers</a></li>
+                        <li><a href="/client" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Clients</a></li>
+                        <li><a href="/contact" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Contact</a></li>
                     </ul>
                 </div>
 
-                {/* Laptop View Items */}
                 <div className="hidden md:flex md:items-center md:w-auto">
                     <ul className="flex flex-row space-x-8 font-medium text-black">
-                        <li>
-                            <a href="/services" className="py-2 px-3 hover:font-semibold">
-                                Services
-                            </a>
-                        </li>
-                        {/* <li>
-                            <a href="/product" className="py-2 px-3 hover:font-semibold">
-                                Product
-                            </a>
-                        </li> */}
-                        <li>
-                            <a href="/about" className="py-2 px-3 hover:font-semibold">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/team" className="py-2 px-3 hover:font-semibold">
-                                Team
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/career" className="py-2 px-3 hover:font-semibold">
-                                Careers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/client" className="py-2 px-3 hover:font-semibold">
-                                Clients
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/contact" className="py-2 px-3 hover:font-semibold">
-                                Contact
-                            </a>
-                        </li>
+                        <li><a href="/services" className="py-2 px-3 hover:font-semibold">Services</a></li>
+                        <li><a href="/about" className="py-2 px-3 hover:font-semibold">About Us</a></li>
+                        <li><a href="/team" className="py-2 px-3 hover:font-semibold">Team</a></li>
+                        <li><a href="/career" className="py-2 px-3 hover:font-semibold">Careers</a></li>
+                        <li><a href="/client" className="py-2 px-3 hover:font-semibold">Clients</a></li>
+                        <li><a href="/contact" className="py-2 px-3 hover:font-semibold">Contact</a></li>
                     </ul>
                 </div>
             </div>

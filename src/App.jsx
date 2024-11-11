@@ -18,6 +18,7 @@ const App = () => {
     <div className='mx-auto font-Mons'>
       <Router>
         <Navbar />
+        <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -28,7 +29,7 @@ const App = () => {
           <Route path="/career" element={<Career/>} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-
+        </div>
         <FooterNew />
       </Router>
     </div>

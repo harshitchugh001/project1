@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* Global padding to offset navbar height */
+.content {
+  padding-top: 80px; /* Navbar ki height ke hisaab se adjust karen */
+}
