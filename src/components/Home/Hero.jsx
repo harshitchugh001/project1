@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'lottie-react';
-import HeroPageAnimation from '../../assets/Animation - 1724827126639.json';
+import HeroPageAnimation from '../../assets/Animation - 1725615516390.json';
 // import Test from '../../assets/Test.json'
 // import HeroPageAnimation from '../../assets/HeroPageAnimation.json'
 import GreyButton from '../buttons/GreyButton';

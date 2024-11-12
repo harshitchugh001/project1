@@ -54,7 +54,7 @@ const strengths = [
 export default function WhyFuturity() {
     return (
         <section className="py-12 flex flex-col lg:flex-row items-center justify-center">
-            <div className="lg:w-2/3 px-4">
+            <div className="px-4">
                 <h2 className="text-xl md:text-2xl lg:text-4xl font-extrabold text-center text-gray-800 mb-12">Why Futurity?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {strengths.map((strength, index) => (
@@ -71,9 +71,9 @@ export default function WhyFuturity() {
                     ))}
                 </div>
             </div>
-            <div className="lg:w-1/3 flex justify-center mt-8 lg:mt-0">
+            {/* <div className="lg:w-1/3 flex justify-center mt-8 lg:mt-0">
                 <img src={pdfImage} alt="PDF Download" className="w-full h-auto max-w-sm rounded-lg shadow-lg hover:shadow-2xl transition-transform hover:scale-105" />
-            </div>
+            </div> */}
         </section>
     );
 }
