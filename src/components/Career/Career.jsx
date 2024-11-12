@@ -1,6 +1,7 @@
 import React from 'react'
 import Productimage from '../../assets/product.jpg';
 import CareerImage from '../../assets/CareerImage.jpg'
+import pdfImage from '../../assets/aboutpdf.png';
 import CoreValues from './CoreValues'
 import OpenPositions from './OpenPosition';
 import GreyButton from '../buttons/GreyButton';
