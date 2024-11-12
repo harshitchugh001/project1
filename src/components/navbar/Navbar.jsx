@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import logo from '../../assets/logo.png';
 
 const Navbar = () => {
+    // const [isOpen, setIsOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    // Scroll effect for navbar and backdrop
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
 
     return (
-        <nav className="bg-blue  w-full z-20 top-0 left-0 h-20 border-b shadow-sm">
+        <nav className={`bg-blue fixed ${isScrolled ? 'backdrop-blur-md' : 'bg-transparent'} w-full z-20 top-0 left-0 h-20 border-b shadow-sm`}>
             <div className="flex flex-wrap items-center justify-between mx-auto p-4 ">
                 <a href="/" className="flex items-center space-x-3">
                     <img src={logo} className="h-16 w-32 md:h-20 md:w-44" alt="Logo" />
