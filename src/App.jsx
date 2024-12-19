@@ -15,6 +15,7 @@ import Find from './components/Find/FInd';
 import Valuation from './components/Valuation/Valuation'
 import Risk from './components/Risk/Risk.jsx';
 import Disputes from './components/Disputes/Disputes'
+import Corporate from './components/Corporate/Corporate'
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
           <Route path='/valuation' element={<Valuation/>}/>
           <Route path='/risk-consulting' element={<Risk/>}/>
           <Route path='/disputes-litigation' element={<Disputes/>}/>
+          <Route path='/corporate-finance' element={<Corporate/>}/>
         </Routes>
         </div>
         <FooterNew />
