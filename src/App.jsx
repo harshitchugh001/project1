@@ -12,6 +12,7 @@ import Contact from './components/Contact/Contact';
 import Career from './components/Career/Career';
 import Client from './components/Client/Client';
 import Find from './components/Find/FInd';
+import Valuation from './components/Valuation/Valuation'
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/client" element={<Client />} />
           <Route path="/career" element={<Career/>} />
           <Route path="/contact" element={<Contact />} />
+          <Route path='/valuation' element={<Valuation/>}/>
         </Routes>
         </div>
         <FooterNew />
