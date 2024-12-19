@@ -93,7 +93,7 @@ const experts = [
         ],
         description: "brings over 5 years of extensiveexperience in valuation and financial consulting in Big4s (Deloitte, Ernst & Young and Duff & Phelps)."
     },
-    
+
     {
         name: "Karan Chadha",
         image: DeepanshuTyagi,
@@ -115,11 +115,35 @@ const experts = [
     }
 ];
 
+
+const advisoryBoard = [
+    {
+        name: 'Ajay Yadav',
+        title: 'Advisory Board Member',
+        description: 'Ajay brings extensive experience in financial consulting, risk management, and strategic advisory roles.',
+    },
+    {
+        name: 'Aayushi Gupta',
+        title: 'Advisory Board Member',
+        description: 'Aayushi specializes in valuation and financial consulting with experience at Big4 firms.',
+    },
+    {
+        name: 'Karan Chadha',
+        title: 'Advisory Board Member',
+        description: 'Karan has over 10 years of experience in client relations and business development.',
+    },
+    {
+        name: 'Vaibhav Jain',
+        title: 'Advisory Board Member',
+        description: 'Vaibhav is an expert in equity valuation, financial modeling, and mergers & acquisitions.',
+    },
+];
+
 const Team = () => {
     return (
         <section className="py-16 bg-gray-100">
             {/* Here BackGround Image */}
-            <div className="relative hidden md:block rounded-lg">
+            <div className="relative hidden md:block rounded-lg py-8">
                 <img
                     src={Conference} // Replace with your image path
                     alt="Team background"
@@ -171,6 +195,19 @@ const Team = () => {
                                 </div>
                             </div>
 
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="container mx-auto px-6 py-16  mt-4 bg-white">
+                <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-10">Advisory Board</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {advisoryBoard.map((member, index) => (
+                        <div key={index} className="bg-gray-100 rounded-lg shadow p-6 text-center">
+                            <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
+                            <p className="text-sm text-gray-600 mb-4">{member.title}</p>
+                            <p className="text-sm text-gray-700">{member.description}</p>
                         </div>
                     ))}
                 </div>

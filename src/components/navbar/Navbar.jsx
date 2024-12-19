@@ -1,82 +1,262 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../assets/logo.png';
 
 const Navbar = () => {
-    // const [isOpen, setIsOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     // Scroll effect for navbar and backdrop
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
+            setIsScrolled(window.scrollY > 50);
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-
     return (
-        <nav className={`bg-blue fixed ${isScrolled ? 'backdrop-blur-md' : 'bg-transparent'} w-full z-20 top-0 left-0 h-20 border-b shadow-sm`}>
-            <div className="flex flex-wrap items-center justify-between mx-auto p-4 ">
+        <nav
+            className={`fixed top-0 left-0 z-20 w-full h-20 border-b ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+                } transition-all`}
+        >
+            <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-full">
+                {/* Logo */}
                 <a href="/" className="flex items-center space-x-3">
                     <img src={logo} className="h-16 w-32 md:h-20 md:w-44" alt="Logo" />
                 </a>
 
+                {/* Desktop Menu */}
+                <div className="hidden md:flex items-center space-x-8">
+                    <a
+                        href="/"
+                        className="text-gray-800 hover:font-semibold transition"
+                    >
+                        Home
+                    </a>
+                    <div className="relative">
+                        <button
+                            onClick={() => setDropdownOpen(!dropdownOpen)}
+                            className="flex items-center text-gray-800 hover:font-semibold transition"
+                        >
+                            What We Do
+                            <svg
+                                className="w-4 h-4 ml-1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d={dropdownOpen ? 'M19 9l-7 7-7-7' : 'M9 5l7 7-7 7'}
+                                />
+                            </svg>
+                        </button>
+                        {dropdownOpen && (
+                            <ul className="absolute top-10 left-0 w-56 bg-white shadow-lg rounded-lg border py-2">
+                                <li>
+                                    <a
+                                        href="/valuation"
+                                        className="block px-4 py-2 hover:bg-gray-100"
+                                    >
+                                        Valuation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/risk-consulting"
+                                        className="block px-4 py-2 hover:bg-gray-100"
+                                    >
+                                        Risk Consulting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/disputes-litigation"
+                                        className="block px-4 py-2 hover:bg-gray-100"
+                                    >
+                                        Disputes & Litigation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/corporate-finance"
+                                        className="block px-4 py-2 hover:bg-gray-100"
+                                    >
+                                        Corporate Finance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/transaction-advisory"
+                                        className="block px-4 py-2 hover:bg-gray-100"
+                                    >
+                                        Transaction Advisory
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/digital-transformation"
+                                        className="block px-4 py-2 hover:bg-gray-100"
+                                    >
+                                        Digital Transformation
+                                    </a>
+                                </li>
+                            </ul>
+                        )}
+                    </div>
+                    <a
+                        href="/who-we-are"
+                        className="text-gray-800 hover:font-semibold transition"
+                    >
+                        Who We Are
+                    </a>
+                    <a
+                        href="/where-to-find-us"
+                        className="text-gray-800 hover:font-semibold transition"
+                    >
+                        Where to Find Us
+                    </a>
+                </div>
+
+                {/* Mobile Menu Button */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    type="button"
-                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-                    aria-controls="navbar-sticky"
-                    aria-expanded={isOpen ? "true" : "false"}
+                    className="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-gray-800 hover:bg-gray-100"
                 >
-                    <span className="sr-only">Open main menu</span>
                     <svg
-                        className="w-5 h-5"
-                        aria-hidden="true"
+                        className="w-6 h-6"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
-                        viewBox="0 0 17 14"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
                     >
                         <path
-                            stroke="currentColor"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth="2"
-                            d={isOpen ? "M2 2l12 12M2 14L14 2" : "M1 1h15M1 7h15M1 13h15"}
+                            d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
                         />
                     </svg>
                 </button>
 
-                <div className={`${isOpen ? "block" : "hidden"} w-full md:hidden`} id="navbar-sticky">
-                    <ul className="flex flex-col p-4 mt-4 space-y-2 font-bold text-gray-500 bg-gray-50 rounded-lg">
-                        <li><a href="/services" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Services</a></li>
-                        <li><a href="/about" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">About Us</a></li>
-                        <li><a href="/team" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Team</a></li>
-                        <li><a href="/career" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Careers</a></li>
-                        <li><a href="/client" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Clients</a></li>
-                        <li><a href="/contact" className="block py-2 px-3 rounded hover:bg-gray-100 hover:underline">Contact</a></li>
-                    </ul>
-                </div>
+                {/* Mobile Dropdown */}
+                {isOpen && (
+                    <div className="absolute top-full left-0 w-full bg-white shadow-md md:hidden">
+                        <ul className="flex flex-col space-y-1 py-4 px-6">
 
-                <div className="hidden md:flex md:items-center md:w-auto">
-                    <ul className="flex flex-row space-x-8 font-medium text-black">
-                        <li><a href="/services" className="py-2 px-3 hover:font-semibold">Services</a></li>
-                        <li><a href="/about" className="py-2 px-3 hover:font-semibold">About Us</a></li>
-                        <li><a href="/team" className="py-2 px-3 hover:font-semibold">Team</a></li>
-                        <li><a href="/career" className="py-2 px-3 hover:font-semibold">Careers</a></li>
-                        <li><a href="/client" className="py-2 px-3 hover:font-semibold">Clients</a></li>
-                        <li><a href="/contact" className="py-2 px-3 hover:font-semibold">Contact</a></li>
-                    </ul>
-                </div>
+                            <li>
+                                <a
+                                    href="/"
+                                    className="block text-gray-800 hover:font-semibold"
+                                >
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                                    className="flex justify-between items-center w-full text-gray-800 hover:font-semibold"
+                                >
+                                    What We Do
+                                    <svg
+                                        className="w-4 h-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d={
+                                                dropdownOpen
+                                                    ? 'M19 9l-7 7-7-7'
+                                                    : 'M9 5l7 7-7 7'
+                                            }
+                                        />
+                                    </svg>
+                                </button>
+                                {dropdownOpen && (
+                                    <ul className="mt-2 pl-4 space-y-2">
+                                        <li>
+                                            <a
+                                                href="/valuation"
+                                                className="block text-gray-800 hover:underline"
+                                            >
+                                                Valuation
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/risk-consulting"
+                                                className="block text-gray-800 hover:underline"
+                                            >
+                                                Risk Consulting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/disputes-litigation"
+                                                className="block text-gray-800 hover:underline"
+                                            >
+                                                Disputes & Litigation
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/corporate-finance"
+                                                className="block text-gray-800 hover:underline"
+                                            >
+                                                Corporate Finance
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/transaction-advisory"
+                                                className="block text-gray-800 hover:underline"
+                                            >
+                                                Transaction Advisory
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/digital-transformation"
+                                                className="block text-gray-800 hover:underline"
+                                            >
+                                                Digital Transformation
+                                            </a>
+                                        </li>
+                                    </ul>
+                                )}
+                            </li>
+                            <li>
+                                <a
+                                    href="/who-we-are"
+                                    className="block text-gray-800 hover:font-semibold"
+                                >
+                                    Who We Are
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/where-to-find-us"
+                                    className="block text-gray-800 hover:font-semibold"
+                                >
+                                    Where to Find Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                )}
             </div>
         </nav>
     );
-}
+};
 
 export default Navbar;

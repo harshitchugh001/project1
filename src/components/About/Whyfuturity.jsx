@@ -33,22 +33,7 @@ const strengths = [
         icon: <FaLightbulb />,
         title: 'Deep Domain Knowledge',
         details: 'Extensive knowledge across various sectors.',
-    },
-    // {
-    //     icon: <FaSearch />,
-    //     title: 'Research-Backed Expertise',
-    //     details: 'Our team is backed by thorough research, ensuring informed decision-making.',
-    // },
-    // {
-    //     icon: <FaUsers />,
-    //     title: 'Experienced Team',
-    //     details: 'A team with unmatched exposure and expertise in domain-related services.',
-    // },
-    // {
-    //     icon: <FaGlobe />,
-    //     title: 'Cross-Border Experience',
-    //     details: 'Proven track record in executing international advisory deals.',
-    // },
+    }
 ];
 
 export default function WhyFuturity() {
