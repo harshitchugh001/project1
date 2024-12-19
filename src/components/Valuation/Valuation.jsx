@@ -28,10 +28,10 @@ export default function Valuation() {
 
     return (
         <div className="mt-28">
-            {/* Valuation Advisory Section */}
+            
             <div className="bg-white p-8">
                 <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8">
-                    {/* Text Section */}
+            
                     <div>
                         <h1 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
                             Valuation Advisory
@@ -59,7 +59,6 @@ export default function Valuation() {
                         </p>
                     </div>
 
-                    {/* Image Section */}
                     <div className="relative">
                         <div className="w-full rounded-lg overflow-hidden shadow-md">
                             <img
@@ -72,7 +71,6 @@ export default function Valuation() {
                 </div>
             </div>
 
-            {/* Financial Reporting & Compliance Section */}
             <div className="bg-white py-8 px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="flex items-center mb-8">
@@ -96,13 +94,11 @@ export default function Valuation() {
                 </div>
             </div>
 
-            {/* Valuation & Litigation Sections */}
             <div className="bg-white py-8 px-4">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-3 gap-4 p-6">
                         {sections.map((section, index) => (
                             <React.Fragment key={index}>
-                                {/* Section Title */}
                                 <div className={sectionTitleStyles}>
                                     <div className="bg-blue-600 w-4 h-4 mr-2"></div>
                                     <h2 className="text-2xl font-bold text-blue-800">{section.title}</h2>

@@ -30,7 +30,6 @@ const industries = [
 export default function Industries() {
     return (
         <div className="relative w-full overflow-hidden bg-white py-8">
-            {/* Scrolling Container */}
             <div
                 className="flex animate-scroll gap-12 items-center"
                 style={{ animation: "scroll 20s linear infinite" }}
@@ -49,8 +48,6 @@ export default function Industries() {
                     </div>
                 ))}
             </div>
-
-            {/* Animation Styles */}
             <style jsx="true">{`
                 @keyframes scroll {
                     from {
