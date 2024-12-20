@@ -5,7 +5,6 @@ const AdvisoryComponent = () => {
     return (
         <div className='mt-28'>
             <div className="max-w-6xl mx-auto p-6 space-y-12">
-                {/* Corporate Finance Section */}
                 <div className="flex flex-col md:flex-row items-center md:items-start">
                     <div className="md:w-1/2 space-y-4">
                         <h2 className="text-2xl font-bold text-indigo-800">Corporate</h2>
@@ -17,14 +16,13 @@ const AdvisoryComponent = () => {
                     </div>
                     <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
                         <img
-                            src={IpoImg} // Replace with actual image path
+                            src={IpoImg} 
                             alt="Corporate Finance"
                             className="rounded-full w-3/4 md:w-1/2"
                         />
                     </div>
                 </div>
 
-                {/* IPO Advisory and Corporate Debt Section */}
                 <div className="grid md:grid-cols-2 gap-6">
                     <div className="bg-white shadow-md rounded-lg p-6 border-t-4 border-indigo-600">
                         <h3 className="text-xl font-bold text-indigo-800">IPO Advisory</h3>

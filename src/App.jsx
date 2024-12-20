@@ -16,6 +16,7 @@ import Valuation from './components/Valuation/Valuation'
 import Risk from './components/Risk/Risk.jsx';
 import Disputes from './components/Disputes/Disputes'
 import Corporate from './components/Corporate/Corporate'
+import Transaction from './components/Transaction/Transaction'
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
           <Route path='/risk-consulting' element={<Risk/>}/>
           <Route path='/disputes-litigation' element={<Disputes/>}/>
           <Route path='/corporate-finance' element={<Corporate/>}/>
+          <Route path='/transaction-advisory' element={<Transaction/>}/>
         </Routes>
         </div>
         <FooterNew />
