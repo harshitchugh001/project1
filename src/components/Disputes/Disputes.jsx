@@ -22,8 +22,8 @@ const DisputesAndLitigations = () => {
         },
     ];
     return (
-        <div className="mt-28">
-            <div className="flex flex-col lg:flex-row items-center px-6 lg:px-20">
+        <div className=" max-w-6xl mx-auto mt-28">
+            <div className=" flex flex-col lg:flex-row items-center px-6 lg:px-20">
                 <div className="lg:w-1/2 mb-8 lg:mb-0">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">Disputes & Litigations</h2>
                     <div className="h-1 w-16 bg-orange-400 mb-6"></div>

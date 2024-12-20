@@ -31,7 +31,7 @@ const RiskConsulting = () => {
         },
     ];
     return (
-        <div className="mt-28">
+        <div className="mt-28 max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center bg-white py-10 px-6 lg:px-20">
                 <div className="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">Risk <span className="text-orange-500">Consulting</span></h2>
