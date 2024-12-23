@@ -43,7 +43,6 @@ export default function Home() {
                 <div>
                     <CoreVisionMission />
                 </div>
-
             </div>
             <MovingText />
         </div>
