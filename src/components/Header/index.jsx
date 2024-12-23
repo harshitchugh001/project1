@@ -141,8 +141,8 @@ export default function Header({ variant }) {
                       
                     </li> */}
                     <li className="">
-                      <Link to="blog" onClick={() => setMobileToggle(false)}>
-                        Blog
+                      <Link to="career" onClick={() => setMobileToggle(false)}>
+                        career
                       </Link>
                       {/* <DropDown>
                         <ul>

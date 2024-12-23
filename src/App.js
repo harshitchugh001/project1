@@ -3,6 +3,7 @@ import AboutPage from './components/Pages/AboutPage';
 import BlogPage from './components/Pages/BlogPage';
 import BlogDetailsPage from './components/Pages/BlogDetailsPage';
 import ContactPage from './components/Pages/ContactPage';
+import CareerPage from './components/Pages/CareerPage';
 import ErrorPage from './components/Pages/ErrorPage';
 import Home from './components/Pages/Home';
 // import PortfolioDetailsPage from './components/Pages/PortfolioDetailsPage';
@@ -123,6 +124,7 @@ function App() {
           <Route path="blog/blog2" element={<Blog2 />} />
           <Route path="blog/blog3" element={<Blog3 />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="career" element={<CareerPage />} />
           <Route path="team" element={<TeamPage />} />
           <Route path="team/:teamDetails" element={<TeamDetails />} />
           <Route
