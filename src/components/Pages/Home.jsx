@@ -7,7 +7,7 @@ import SectionHeading from '../SectionHeading';
 import Spacing from '../Spacing';
 // import PortfolioSlider from '../Slider/PortfolioSlider';
 
-import TestimonialSlider from '../Slider/TestimonialSlider';
+// import TestimonialSlider from '../Slider/TestimonialSlider';
 
 // import TimelineSlider from '../Slider/TimelineSlider';
 import { pageTitle } from '../../helper';
@@ -395,7 +395,7 @@ export default function Home() {
       {/* End Team Section */}
 
       {/* Start Testimonial Section */}
-      <TestimonialSlider />
+      {/* <TestimonialSlider /> */}
 
 
 
