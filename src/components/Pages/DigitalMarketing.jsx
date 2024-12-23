@@ -35,9 +35,7 @@ export default function DigitalMarketing() {
                         <IconBox
                             icon='/images/icons/service_icon_1.svg'
                             title='Search Engine Optimization (SEO)'
-                            subtitle='Enhance your online visibility and organic search
-              rankings with our SEO services. We employ industry-leading strategies to optimize your
-              website, increase organic traffic, and drive results'
+                            subtitle='Enhance your online visibility and organic search rankings with our SEO services.'
                         />
                         <Spacing lg='30' md='30' />
                     </Div>
@@ -45,9 +43,7 @@ export default function DigitalMarketing() {
                         <IconBox
                             icon='/images/icons/service_icon_2.svg'
                             title='Content Marketing'
-                            subtitle='Our content marketing experts craft compelling, high-quality
-              content that resonates with your target audience. From blog posts to infographics, we
-              help you tell your brand story effectively.'
+                            subtitle='Craft compelling content to resonate with your target audience. We help tell your brand story effectively.'
                         />
                         <Spacing lg='30' md='30' />
                     </Div>
@@ -55,69 +51,49 @@ export default function DigitalMarketing() {
                         <IconBox
                             icon='/images/icons/service_icon_3.svg'
                             title='Social Media Marketing'
-                            subtitle='Harness the power of social media to engage with your
-              audience, build brand loyalty, and drive conversions. Our social media specialists create
-              and execute tailored strategies across various platforms..'
+                            subtitle='Engage with your audience through tailored social media strategies to drive conversions.'
                         />
                         <Spacing lg='30' md='30' />
                     </Div>
                 </Div>
             </Div>
 
-
-
+            {/* New Section with Moving Service Boxes */}
             <Spacing lg='120' md='50' />
             <Div className="container">
-                <Div className="row align-items-center">
-                    <Div className="col-xl-5 col-lg-6">
-                        <Div className="cs-radius_15 cs-shine_hover_1">
-                            <img src="/images/digital.jpeg"  height="150px" width="200px" alt="Service" className='cs-radius_15 w-100' />
-                        </Div>
-                        <Spacing lg='0' md='40' />
+                <SectionHeading title="Our Services" subtitle="Explore our wide range of digital marketing services" />
+                <Spacing lg='55' md='30' />
+                <Div className="row service-boxes">
+                    <Div className="col-lg-3 col-sm-6">
+                        <div className="service-box cs-hover-effect">
+                            <img src='/images/icons/service_icon_1.svg' alt="PPC" />
+                            <h4>Pay-Per-Click (PPC) Advertising</h4>
+                            <p>Get immediate results with PPC advertising campaigns, maximizing ROI.</p>
+                        </div>
                     </Div>
-                    <Div className="col-lg-6 offset-xl-1">
-                        <h6 className="cs-font_50 cs-m0">Our digital marketing experts are ready to boost your online presence, drive traffic, and
-                            increase conversions. From SEO and content marketing to social media advertising, we
-                            have the expertise to take your brand to the next level.</h6>
-
+                    <Div className="col-lg-3 col-sm-6">
+                        <div className="service-box cs-hover-effect">
+                            <img src='/images/icons/service_icon_2.svg' alt="Email Marketing" />
+                            <h4>Email Marketing</h4>
+                            <p>Boost customer retention with personalized email campaigns and higher sales.</p>
+                        </div>
+                    </Div>
+                    <Div className="col-lg-3 col-sm-6">
+                        <div className="service-box cs-hover-effect">
+                            <img src='/images/icons/service_icon_3.svg' alt="Influencer Marketing" />
+                            <h4>Influencer Marketing</h4>
+                            <p>Partner with influencers to broaden your reach and create authentic campaigns.</p>
+                        </div>
+                    </Div>
+                    <Div className="col-lg-3 col-sm-6">
+                        <div className="service-box cs-hover-effect">
+                            <img src='/images/icons/service_icon_4.svg' alt="Video Marketing" />
+                            <h4>Video Marketing</h4>
+                            <p>Engage and captivate your audience with impactful video content strategies.</p>
+                        </div>
                     </Div>
                 </Div>
             </Div>
-            <Spacing lg='90' md='45' />
-            <div className='container'>
-                <Div className="row">
-                    <Div className="col-lg-4">
-                        <IconBox
-                            icon='/images/icons/service_icon_1.svg'
-                            title='Pay-Per-Click (PPC) Advertising'
-                            subtitle=': Get immediate results with PPC advertising
-              campaigns. We create and manage cost-effective campaigns to maximize your ROI,
-              targeting the right audience at the right time.'
-                        />
-                        <Spacing lg='30' md='30' />
-                    </Div>
-                    <Div className="col-lg-4">
-                        <IconBox
-                            icon='/images/icons/service_icon_2.svg'
-                            title='Email Marketing'
-                            subtitle='Stay connected with your customers through personalized email
-              campaigns. Our email marketing strategies help you nurture leads, boost customer
-              retention, and drive sales.'
-                        />
-                        <Spacing lg='30' md='30' />
-                    </Div>
-                    <Div className="col-lg-4">
-                        <IconBox
-                            icon='/images/icons/service_icon_3.svg'
-                            title='Influencer Marketing'
-                            subtitle='Partner with influencers who align with your brand to reach a
-              broader audience. We identify and collaborate with influencers to create authentic and
-              impactful campaigns.'
-                        />
-                        <Spacing lg='30' md='30' />
-                    </Div>
-                </Div>
-            </div>
 
             <Spacing lg='150' md='80' />
             <TestimonialSlider />
@@ -140,7 +116,6 @@ export default function DigitalMarketing() {
                     </Div>
                 </Div>
             </Div>
-            
         </>
     )
 }

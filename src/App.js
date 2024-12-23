@@ -62,7 +62,7 @@ function App() {
           />
           <Route
           key={2}
-            path="service/digitalmarketing"
+            path="services"
             element={<DigitalMarketing />}
           />
           <Route
