@@ -5,7 +5,7 @@ import FunFact from '../FunFact';
 import PageHeading from '../PageHeading';
 import Div from '../Div';
 import SectionHeading from '../SectionHeading';
-import TeamSlider from '../Slider/TeamSlider';
+// import TeamSlider from '../Slider/TeamSlider';
 import Spacing from '../Spacing';
 
 export default function AboutPage() {
