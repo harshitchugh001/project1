@@ -49,11 +49,11 @@ const Navbar = () => {
                         )}
                     </div>
                     <a href="/partners" className="text-gray-800 hover:text-blue-600 font-medium">
-                        Partners
+                        About Us
                     </a>
-                    <a href="/featured" className="text-gray-800 hover:text-blue-600 font-medium">
+                    {/* <a href="/featured" className="text-gray-800 hover:text-blue-600 font-medium">
                         Featured
-                    </a>
+                    </a> */}
                     <a href="/contact-us" className="text-gray-800 hover:text-blue-600 font-medium">
                         Contact Us
                     </a>

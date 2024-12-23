@@ -78,7 +78,7 @@ export default function Footer() {
                 <div className="space-y-4" data-aos="fade-up" data-aos-duration="1600">
                     <h3 className="font-bold text-lg">Pages</h3>
                     <ul className="space-y-2">
-                        {["Home", "About Us", "Services", "Blogs", "Careers", "Contact Us"].map(
+                        {["Home", "About Us", "Services",   "Contact Us"].map(
                             (page, index) => (
                                 <li
                                     key={index}
