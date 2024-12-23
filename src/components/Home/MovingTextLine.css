@@ -1,0 +1,38 @@
+/* Container for the moving text */
+.moving-text-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f9ff; /* Light blue background */
+    border-top: 2px solid #93c5fd; /* Accent border */
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+  /* Track for the moving text */
+  .moving-text-track {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-text 12s linear infinite; /* Infinite smooth scrolling */
+  }
+  
+  /* Text Styling */
+  .moving-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #3b82f6; /* Blue text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    padding-right: 50%; /* Adds space between repetitions */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%); /* Start off-screen on the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move completely off-screen to the left */
+    }
+  }
+  
