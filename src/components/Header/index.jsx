@@ -24,18 +24,17 @@ export default function Header({ variant }) {
   return (
     <>
       <header
-        className={`cs-site_header cs-style1 text-uppercase ${
-          variant ? variant : ''
-        } cs-sticky_header ${isSticky ? 'cs-sticky_header_active' : ''}`}
+        className={`cs-site_header cs-style1 text-uppercase ${variant ? variant : ''
+          } cs-sticky_header ${isSticky ? 'cs-sticky_header_active' : ''}`}
       >
         <Div className="cs-main_header">
           <Div className="container">
             <Div className="cs-main_header_in">
               <Div className="cs-main_header_left">
                 <Link className="cs-site_branding" to="/">
-                  <img src="/images/logo_only.png"  alt="Logo"></img>
-                  {/* <img src="/images/logo1.png" className='mx-4' alt="Logo" /> */}
+                  <img src="/images/logo_only.png" alt="Logo" style={{ width: '90px', height: 'auto' }} />
                 </Link>
+
               </Div>
               <Div className="cs-main_header_center mx-2">
                 <Div className="cs-nav cs-primary_font cs-medium">
@@ -47,16 +46,16 @@ export default function Header({ variant }) {
                       <NavLink to="/" onClick={() => setMobileToggle(false)}>
                         Home
                       </NavLink>
-                      
+
                     </li>
-                    <li className="menu-item-has-children" >
+                    <li className="" >
                       <NavLink
-                        to="service/blockchaindevelopment"
+                        to="services"
                         onClick={() => setMobileToggle(false)}
                       >
                         Services
                       </NavLink>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link to="/service/digitalmarketing" onClick={() => setMobileToggle(false)}>
@@ -78,8 +77,8 @@ export default function Header({ variant }) {
                             >
                              Web Development
                             </Link>
-                          </li>
-                          {/* <li>
+                          </li> */}
+                      {/* <li>
                             <Link
                               to="service/brandstrategizing"
                               onClick={() => setMobileToggle(false)}
@@ -87,7 +86,7 @@ export default function Header({ variant }) {
                               Brand Strategizing
                             </Link>
                           </li> */}
-                          {/* <li>
+                      {/* <li>
                             <Link
                               to="service/creativedirection"
                               onClick={() => setMobileToggle(false)}
@@ -95,7 +94,7 @@ export default function Header({ variant }) {
                               Creative Direction
                             </Link>
                           </li> */}
-                          {/* <li>
+                      {/* <li>
                             <Link
                               to="service/cms"
                               onClick={() => setMobileToggle(false)}
@@ -103,7 +102,7 @@ export default function Header({ variant }) {
                               CMS (Content Management Systems)
                             </Link>
                           </li> */}
-                          {/* <li>
+                      {/* <li>
                             <Link
                               to="service/erp"
                               onClick={() => setMobileToggle(false)}
@@ -111,7 +110,7 @@ export default function Header({ variant }) {
                               ERP (Enterprise Resource Planning)
                             </Link>
                           </li> */}
-                          <li>
+                      {/* <li>
                             <Link
                               to="service/blockchaindevelopment"
                               onClick={() => setMobileToggle(false)}
@@ -121,7 +120,7 @@ export default function Header({ variant }) {
                           </li>
                           
                         </ul>
-                      </DropDown>
+                      </DropDown> */}
                     </li>
                     {/* <li >
                       <NavLink
@@ -132,7 +131,7 @@ export default function Header({ variant }) {
                       </NavLink>
                       
                     </li> */}
-                    <li>
+                    {/* <li>
                       <NavLink
                         to="portfolio"
                         
@@ -140,12 +139,12 @@ export default function Header({ variant }) {
                         Portfolio
                       </NavLink>
                       
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    <li className="">
                       <Link to="blog" onClick={() => setMobileToggle(false)}>
                         Blog
                       </Link>
-                      <DropDown>
+                      {/* <DropDown>
                         <ul>
                           <li>
                             <Link
@@ -180,8 +179,8 @@ export default function Header({ variant }) {
                             </Link>
                           </li>
                         </ul>
-                      </DropDown>
-                      
+                      </DropDown> */}
+
                     </li>
                     <li >
                       <Link to="/contact" onClick={() => setMobileToggle(false)}>
@@ -236,7 +235,7 @@ export default function Header({ variant }) {
                       <Link to="/" onClick={() => setMobileToggle(false)}>
                         About
                       </Link>
-                      
+
                     </li>
                   </ul>
                   <span
