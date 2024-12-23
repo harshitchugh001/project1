@@ -1,0 +1,48 @@
+/* Fade-in Animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+/* Link Hover Effects */
+a:hover {
+    color: #2563eb; /* Tailwind Blue-500 */
+    text-decoration: underline;
+}
+
+/* Social Icons Hover */
+a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover i {
+    transform: scale(1.2);
+    color: #2563eb; /* Tailwind Blue-500 */
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 768px) {
+    footer .grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+    }
+
+    footer .grid-cols-4 {
+        grid-template-columns: 1fr; /* Single column on smaller devices */
+    }
+}
+
+@media (max-width: 640px) {
+    footer .grid {
+        grid-template-columns: 1fr; /* Single column for mobile screens */
+    }
+}
