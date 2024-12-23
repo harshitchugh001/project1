@@ -10,7 +10,7 @@ import TestimonialSlider from '../Slider/TestimonialSlider'
 import Spacing from '../Spacing'
 
 export default function DigitalMarketing() {
-    pageTitle('Digital Marketing');
+    pageTitle('Services');
     const params = useParams();
     useEffect(() => {
         window.scrollTo(0, 0)

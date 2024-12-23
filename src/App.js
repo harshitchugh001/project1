@@ -21,7 +21,7 @@ import CaseStudyShowcaseHome from './components/Pages/CaseStudyShowcaseHome';
 import Layout from './components/Layout';
 import CaseStudyDetailsPage from './components/Pages/CaseStudyDetailsPage';
 import FaqPage from './components/Pages/FaqPage';
-import DigitalMarketing from './components/Pages/DigitalMarketing';
+import DigitalMarketing from './components/Pages/Services';
 import AppDevelopment from './components/Pages/AppDevelopment';
 import WebsiteDevelopment from './components/Pages/WebsiteDevelopment';
 import BrandStrategizing from './components/Pages/BrandStrategizing';
