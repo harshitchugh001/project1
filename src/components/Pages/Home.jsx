@@ -142,7 +142,7 @@ export default function Home() {
                 title="Services we can help you with"
                 subtitle="What Can We Do"
                 btnText="See All Services"
-                btnLink=""
+                btnLink="/services"
               />
               <Spacing lg="90" md="45" />
             </Div>
@@ -151,7 +151,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Web Development"
+                    title="Skill Development"
                     link="/service/service-details"
                     src="/images/service_1.jpeg"
                     alt="Service"
@@ -161,7 +161,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="App Development"
+                    title="Financial Compliance"
                     link="/service/service-details"
                     src="/images/service_2.jpeg"
                     alt="Service"
@@ -170,7 +170,7 @@ export default function Home() {
                 </Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Digital Marketing"
+                    title="Legal Compliance"
                     link="/service/service-details"
                     src="/images/service_3.jpeg"
                     alt="Service"
@@ -180,7 +180,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="BlockChain Development"
+                    title="Digital Transformation"
                     link="/service/service-details"
                     src="/images/service_4.jpeg"
                     alt="Service"
@@ -197,7 +197,7 @@ export default function Home() {
 
       {/* Start Portfolio Section */}
       <Spacing lg="150" md="50" />
-      <Div>
+      {/* <Div>
         <Div className="container">
           <SectionHeading
             title="Portfolio to explore"
@@ -207,7 +207,7 @@ export default function Home() {
           <Spacing lg="90" md="45" />
         </Div>
         <PortfolioSlider />
-      </Div>
+      </Div> */}
       {/* End Portfolio Section */}
 
 
