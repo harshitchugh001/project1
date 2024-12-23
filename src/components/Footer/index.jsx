@@ -7,7 +7,7 @@ import SocialWidget from '../Widget/SocialWidget'
 import TextWidget from '../Widget/TextWidget'
 import './footer.scss'
 
-export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
+export default function Footer({ copyrightText, logoSrc, logoAlt, text }) {
   const copyrightLinks = [
     {
       title: 'Terms of Use',
@@ -18,24 +18,21 @@ export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
       href: '/'
     }
   ]
-  
+
   const serviceMenu = [
     {
-      title: 'Digital Marketing',
-      href: '/service/digitalmarketing'
+      title: 'About',
+      href: '/about'
     },
     {
-      title: 'App Development',
-      href: '/service/appdevelopment'
+      title: 'careers',
+      href: '/careers'
     },
     {
-      title: 'Website Development',
-      href: '/service/websitedevelopment'
+      title: 'Contact Us',
+      href: '/contact'
     },
-    {
-      title: 'Brand Strategizing',
-      href: '/service/brandstrategizing'
-    },
+    
   ]
 
   return (
@@ -45,29 +42,30 @@ export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
           <Div className="row">
             <Div className="col-lg-3 col-sm-6">
               <Div className="cs-footer_item">
-                <TextWidget 
-                  logoSrc='/images/logo_side.png' 
+                <TextWidget
+                  logoSrc='/images/logo_only.png'
                   logoAlt='Logo'
-                  // text ='Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.'
+                  logoStyle={{ height: '50px' }}  // Adjust the height as needed
                 />
-                <SocialWidget/>
+
+                {/* <SocialWidget /> */}
               </Div>
             </Div>
             <Div className="col-lg-3 col-sm-6">
               <Div className="cs-footer_item">
-                <MenuWidget menuItems={serviceMenu} menuHeading='Services'/>
+                <MenuWidget menuItems={serviceMenu} menuHeading='Services' />
               </Div>
             </Div>
             <Div className="col-lg-3 col-sm-6">
               <Div className="cs-footer_item">
-                <ContactInfoWidget title='Contact Us'/>
+                <ContactInfoWidget title='Contact Us' />
               </Div>
             </Div>
             <Div className="col-lg-3 col-sm-6">
               <Div className="cs-footer_item">
-                <Newsletter 
-                  title='Subscribe' 
-                  subtitle='At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.' 
+                <Newsletter
+                  title='Subscribe'
+                  subtitle='At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.'
                   placeholder='example@gmail.com'
                 />
               </Div>
@@ -81,7 +79,7 @@ export default function Footer({copyrightText, logoSrc, logoAlt, text}) {
             <Div className="cs-copyright">Copyright © 2022 Laralink.</Div>
           </Div>
           <Div className="cs-bottom_footer_right">
-            <MenuWidget menuItems={copyrightLinks} variant=' cs-style2'/>
+            <MenuWidget menuItems={copyrightLinks} variant=' cs-style2' />
           </Div>
         </Div>
       </Div>
