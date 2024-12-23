@@ -47,25 +47,25 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route
+          {/* <Route
             path="photography-agency"
             element={<PhotographyAgencyHome />}
-          />
-          <Route path="digital-agency" element={<DigitalAgencyHome />} />
-          <Route path="marketing-agency" element={<MarketingAgencyHome />} />
+          /> */}
+          {/* <Route path="digital-agency" element={<DigitalAgencyHome />} />
+          <Route path="marketing-agency" element={<MarketingAgencyHome />} /> */}
           <Route path="about" element={<AboutPage />} />
-          <Route path="service" element={<ServicesPage />} />
-          <Route
+          {/* <Route path="service" element={<ServicesPage />} /> */}
+          {/* <Route
             key={1}
             path="service/:serviceDetailsId"
             element={<ServiceDetailsPage />}
-          />
+          /> */}
           <Route
           key={2}
             path="services"
             element={<DigitalMarketing />}
           />
-          <Route
+          {/* <Route
           key={3}
             path="service/appdevelopment"
             element={<AppDevelopment />}
@@ -100,8 +100,8 @@ function App() {
             path="service/creativedirection"
             element={<CreativeDirection/>}
           />
-
-          <Route path="portfolio" element={<PortfolioPage />} />
+*/}
+          {/* <Route path="portfolio" element={<PortfolioPage />} />  */}
           {/* <Route
             path="/instagramdetail"
             element={<InstagramDetail />}
@@ -114,42 +114,26 @@ function App() {
             path="/facebookdetail"
             element={<Facebookdetail/>}
           /> */}
-          <Route path="blog" element={<BlogPage />} />
-          <Route path="Websiteblog" element={<WebDesignBlog/>}/>
-          <Route path="AppBlog" element={<AppDevelopmentBlog/>}/>
-          <Route path="SeoBlog" element={<SeoBlog/>}/>
+          {/* <Route path="blog" element={<BlogPage />} /> */}
+          {/* <Route path="Websiteblog" element={<WebDesignBlog/>}/> */}
+          {/* <Route path="AppBlog" element={<AppDevelopmentBlog/>}/> */}
+          {/* <Route path="SeoBlog" element={<SeoBlog/>}/> */}
 
-          <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} />
-          <Route path="blog/blog1" element={<Blog1 />} />
-          <Route path="blog/blog2" element={<Blog2 />} />
-          <Route path="blog/blog3" element={<Blog3 />} />
+          {/* <Route path="blog/:blogDetailsId" element={<BlogDetailsPage />} /> */}
+          {/* <Route path="blog/blog1" element={<Blog1 />} /> */}
+          {/* <Route path="blog/blog2" element={<Blog2 />} /> */}
+          {/* <Route path="blog/blog3" element={<Blog3 />} /> */}
           <Route path="contact" element={<ContactPage />} />
           <Route path="career" element={<CareerPage />} />
-          <Route path="team" element={<TeamPage />} />
-          <Route path="team/:teamDetails" element={<TeamDetails />} />
-          <Route
+          {/* <Route path="team" element={<TeamPage />} /> */}
+          {/* <Route path="team/:teamDetails" element={<TeamDetails />} /> */}
+          {/* <Route
             path="/case-study/:caseStudyDetailsId"
             element={<CaseStudyDetailsPage />}
-          />
-          <Route path="faq" element={<FaqPage />} />
-        </Route>
-        <Route
-          path="/"
-          element={<Layout headerVariant="cs-site_header_full_width" />}
-        >
-          {/* <Route
-            path="/courses"
-            element={<CreativePortfolioHome />}
           /> */}
-          <Route
-            path="showcase-portfolio"
-            element={<ShowcasePortfolioHome />}
-          />
-          <Route
-            path="case-study-showcase"
-            element={<CaseStudyShowcaseHome />}
-          />
+          {/* <Route path="faq" element={<FaqPage />} /> */}
         </Route>
+
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
