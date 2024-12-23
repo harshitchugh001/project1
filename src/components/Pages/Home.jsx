@@ -7,7 +7,7 @@ import SectionHeading from '../SectionHeading';
 import Spacing from '../Spacing';
 import LogoList from '../LogoList';
 import MovingText from '../MovingText';
-import PortfolioSlider from '../Slider/PortfolioSlider';
+// import PortfolioSlider from '../Slider/PortfolioSlider';
 import PostSlider from '../Slider/PostSlider';
 import TestimonialSlider from '../Slider/TestimonialSlider';
 import TeamSlider from '../Slider/TeamSlider';
