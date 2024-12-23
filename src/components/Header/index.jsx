@@ -5,7 +5,7 @@ import Newsletter from '../Widget/Newsletter';
 import './header.scss';
 import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import Div from '../Div';
-import DropDown from './DropDown';
+// import DropDown from './DropDown';
 
 export default function Header({ variant }) {
   const [isSticky, setIsSticky] = useState(false);

@@ -5,7 +5,7 @@ import Div from '../Div';
 import PageHeading from '../PageHeading';
 import SectionHeading from '../SectionHeading';
 import Spacing from '../Spacing';
-import ContactInfoWidget from '../Widget/ContactInfoWidget';
+// import ContactInfoWidget from '../Widget/ContactInfoWidget';
 
 export default function CareersPage() {
   pageTitle('Careers');

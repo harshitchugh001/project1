@@ -3,7 +3,7 @@ import Div from '../Div'
 import ContactInfoWidget from '../Widget/ContactInfoWidget'
 import MenuWidget from '../Widget/MenuWidget'
 import Newsletter from '../Widget/Newsletter'
-import SocialWidget from '../Widget/SocialWidget'
+// import SocialWidget from '../Widget/SocialWidget'
 import TextWidget from '../Widget/TextWidget'
 import './footer.scss'
 
