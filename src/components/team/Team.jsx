@@ -141,9 +141,9 @@ const advisoryBoard = [
 
 const Team = () => {
     return (
-        <section className="py-16 bg-gray-100">
+        <section className="pb-16 pt-20  bg-gray-100">
             {/* Here BackGround Image */}
-            <div className="relative hidden md:block rounded-lg py-8">
+            <div className="relative hidden md:block rounded-lg ">
                 <img
                     src={Conference} // Replace with your image path
                     alt="Team background"
