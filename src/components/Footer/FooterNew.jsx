@@ -27,7 +27,7 @@ const FooterNew = () => {
               <li><a href="/" className="hover:text-blue-600">Disputes & Litigation</a></li>
               <li><a href="/" className="hover:text-blue-600">Corporate Finance</a></li>
               <li><a href="/" className="hover:text-blue-600">Transaction Advisory</a></li>
-              <li><a href="/" className="hover:text-blue-600">Digital Transformation</a></li>
+              {/* <li><a href="/" className="hover:text-blue-600">Digital Transformation</a></li> */}
             </ul>
           </div>
 

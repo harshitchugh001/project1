@@ -1,29 +1,34 @@
 import React from "react";
-
+import Infrastructure from '../../assets/Industries/Infrastructure.jpg'
+import OilAndGas from '../../assets/Industries/OilAndGas.jpg'
+import Mines from '../../assets/Industries/Mines.jpg'
+import Technology from '../../assets/Industries/Technology.jpg'
+import Automotive from  '../../assets/Industries/Automotive.jpg'
+import Banks from '../../assets/Industries/Banks.jpg'
 const industries = [
     {
         title: "Infrastructure",
-        svg: "your-infrastructure-svg-path.svg",
+        svg: Infrastructure
     },
     {
         title: "Oil & Gas",
-        svg: "your-oil-gas-svg-path.svg",
+        svg: OilAndGas,
     },
     {
         title: "Mines",
-        svg: "your-mines-svg-path.svg",
+        svg: Mines,
     },
     {
         title: "Technology, IT, ITeS",
-        svg: "your-technology-svg-path.svg",
+        svg: Technology,
     },
     {
         title: "Banks / FI's",
-        svg: "your-banks-svg-path.svg",
+        svg: Banks,
     },
     {
         title: "Automotive",
-        svg: "your-automotive-svg-path.svg",
+        svg: Automotive,
     },
 ];
 
@@ -32,17 +37,17 @@ export default function Industries() {
         <div className="relative w-full overflow-hidden bg-white py-8">
             <div
                 className="flex animate-scroll gap-12 items-center"
-                style={{ animation: "scroll 20s linear infinite" }}
+                style={{ animation: "scroll 35s linear infinite" }}
             >
                 {industries.map((industry, index) => (
                     <div
                         key={index}
-                        className="flex flex-col items-center text-center w-48"
+                        className="flex flex-col items-center text-center w-48 "
                     >
                         <img
                             src={industry.svg}
                             alt={industry.title}
-                            className="w-32 h-32 object-contain mb-4"
+                            className="w-32 h-32 object-contain mb-4 "
                         />
                         <p className="text-blue-700 font-medium">{industry.title}</p>
                     </div>
