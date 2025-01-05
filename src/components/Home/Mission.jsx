@@ -4,16 +4,17 @@ export default function Mission() {
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-12 py-12">
       {/* Title Section */}
-      <div className="text-left mb-8">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
-          <span className="text-black">Our</span> <span className="text-blue-600">Mission</span> <br /> and Vision
-        </h2>
-      </div>
+
 
       {/* Content Section */}
       <div className="flex flex-col md:flex-row items-start justify-between gap-8">
         {/* Left Content */}
         <div className="w-full md:w-1/2 text-gray-700 text-lg leading-relaxed">
+          <div className="text-left mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
+              <span className="text-black">Our</span> <span className="text-blue-600">Mission</span> <br /> and Vision
+            </h2>
+          </div>
           <p>
             At Futurity, we strive not only to meet expectations but to exceed them, delivering exceptional, tailored
             services that empower our clients to overcome obstacles, capitalize on opportunities, and thrive in today’s

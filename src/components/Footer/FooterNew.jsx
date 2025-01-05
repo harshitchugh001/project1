@@ -33,11 +33,11 @@ const FooterNew = () => {
 
           {/* Column 3 - Subscribe */}
           <div>
-            <h4 className="text-black font-bold mb-4">SUBSCRIBE</h4>
+            {/* <h4 className="text-black font-bold mb-4">SUBSCRIBE</h4>
             <button className="w-full bg-gray-200 text-blue-800 font-bold text-sm py-2 rounded-lg">
               TO OUR NEWSLETTER
-            </button>
-            <div className="mt-6">
+            </button> */}
+            <div className="">
               <h4 className="text-black font-bold mb-1">Privacy Policy</h4>
               {/* <p className="text-sm italic text-gray-600">
                 -------------------------------- abcdefghijklmnopqrstuvwxyz --------------------------------
