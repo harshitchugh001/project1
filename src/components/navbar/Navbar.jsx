@@ -98,14 +98,14 @@ const Navbar = () => {
                                         Transaction Advisory
                                     </a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a
                                         href="/digital-transformation"
                                         className="block px-4 py-2 hover:bg-gray-100"
                                     >
                                         Digital Transformation
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
                         )}
                     </div>
@@ -224,14 +224,14 @@ const Navbar = () => {
                                                 Transaction Advisory
                                             </a>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <a
                                                 href="/digital-transformation"
                                                 className="block text-gray-800 hover:underline"
                                             >
                                                 Digital Transformation
                                             </a>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 )}
                             </li>
