@@ -12,97 +12,97 @@ export default function Find() {
             <div className="find-page">
                 <div className="grid-container grid grid-rows-3 gap-4 p-4 mx-auto max-w-7xl">
                     {/* Row 1 */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {/* New Delhi */}
-                        <div className="location-box  rounded-lg relative">
+                        <div className="location-box rounded-lg relative group">
                             <div className="image-container h-60 w-full">
                                 <img
                                     src={NewDelhiImg}
                                     alt="New Delhi Office"
-                                    className="w-full h-full object-cover rounded-lg"
+                                    className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <p className="sm:text-xs address-btn absolute top-4 left-1/2 md:left-1/3 lg:left-1/4 transform -translate-x-1/2 px-8 sm:px-6 py-1 sm:py-2 bg-white border rounded-lg shadow-md">
-                                    <h2 className='text-base font-medium '>New Delhi</h2>
-                                    <p className='text-[10px] sm:text-xs'>1st Floor, Surya Kiran Building,<br />K G Marg, Connaught Place,<br />New Delhi-110001.</p>
-                                </p>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1'>New Delhi</h2>
+                                    <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>1st Floor, Surya Kiran Building,<br />K G Marg, Connaught Place,<br />New Delhi-110001.</p>
+                                </div>
                             </div>
                         </div>
                         {/* Mumbai */}
-                        <div className="location-box  rounded-lg relative">
+                        <div className="location-box rounded-lg relative group">
                             <div className="image-container h-60 w-full">
                                 <img
                                     src={MumbaiImg}
                                     alt="Mumbai Office"
-                                    className="w-full h-full object-cover rounded-lg"
+                                    className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <p className="text-xs address-btn absolute top-4 left-1/2 md:left-1/3 lg:left-1/4 transform -translate-x-1/2 px-6 py-2 bg-white border rounded-lg shadow-md">
-                                    <h2 className='text-base font-medium '>Mumbai</h2>
-                                    <p>17, Building No. A8,<br />Parasnath Complex,<br />Thane - 421302.</p>
-                                </p>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Mumbai</h2>
+                                    <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>17, Building No. A8,<br />Parasnath Complex,<br />Thane - 421302.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     {/* Row 2 */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {/* Kolkata */}
-                        <div className="location-box border rounded-lg relative">
+                        <div className="location-box rounded-lg relative group">
                             <div className="image-container h-60 w-full">
                                 <img
                                     src={KolkataImg}
                                     alt="Kolkata Office"
-                                    className="w-full h-full object-cover rounded-lg"
+                                    className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <p className="text-xs address-btn absolute top-4 left-1/2 md:left-1/3 lg:left-1/4 transform -translate-x-1/2 px-6 py-2 bg-white border rounded-lg shadow-md">
-                                    <h2 className='text-base font-medium '>Kolkata</h2>
-                                    <p>7th Floor, Room No. 3,<br />224A AJC Bose Road,<br />Kolkata - 700017.</p>
-                                </p>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Kolkata</h2>
+                                    <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>7th Floor, Room No. 3,<br />224A AJC Bose Road,<br />Kolkata - 700017.</p>
+                                </div>
                             </div>
                         </div>
                         {/* Gurugram */}
-                        <div className="location-box  rounded-lg relative">
+                        <div className="location-box rounded-lg relative group">
                             <div className="image-container h-60 w-full">
                                 <img
                                     src={GurgramImg}
                                     alt="Gurugram Office"
-                                    className="w-full h-full object-cover rounded-lg"
+                                    className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <p className="text-xs address-btn absolute top-4 left-1/2 md:left-1/3 lg:left-1/4 transform -translate-x-1/2 px-6 py-2 bg-white border rounded-lg shadow-md">
-                                    <h2 className='text-base font-medium '>Gurugram</h2>
-                                    <p>46, 1st Floor, Jacaranda Marg,<br />Gurugram, Haryana - 122022.</p>
-                                </p>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Gurugram</h2>
+                                    <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>46, 1st Floor, Jacaranda Marg,<br />Gurugram, Haryana - 122022.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     {/* Row 3 */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {/* Ludhiana */}
-                        <div className="location-box  rounded-lg relative">
+                        <div className="location-box rounded-lg relative group">
                             <div className="image-container h-60 w-full">
                                 <img
                                     src={LudhianaImg}
                                     alt="Ludhiana Office"
-                                    className="w-full h-full object-cover rounded-lg"
+                                    className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <p className="text-xs address-btn absolute top-4 left-1/2 md:left-1/3 lg:left-1/4 transform -translate-x-1/2 px-6 py-2 bg-white border rounded-lg shadow-md">
-                                    <h2 className='text-base font-medium'>Ludhiana</h2>
-                                    <p>271, Maya Nagar, Civil Lines,<br />Ludhiana - 141001.</p>
-                                </p>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Ludhiana</h2>
+                                    <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>271, Maya Nagar, Civil Lines,<br />Ludhiana - 141001.</p>
+                                </div>
                             </div>
                         </div>
                         {/* Chandigarh */}
-                        <div className="location-box  rounded-lg relative">
+                        <div className="location-box rounded-lg relative group">
                             <div className="image-container h-60 w-full">
                                 <img
                                     src={ChandigarhImg}
                                     alt="Chandigarh Office"
-                                    className="w-full h-full object-cover rounded-lg"
+                                    className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <p className="text-xs address-btn absolute top-4 left-1/2 md:left-1/3 lg:left-1/4 transform -translate-x-1/2 px-6 py-2 bg-white border rounded-lg shadow-md">
-                                    <h2 className='text-base font-medium'>Chandigarh</h2>
-                                    <p>1839, Sector 22-B, 01st Floor,<br />Chandigarh - 160022.</p>
-                                </p>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Chandigarh</h2>
+                                    <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>1839, Sector 22-B, 01st Floor,<br />Chandigarh - 160022.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
