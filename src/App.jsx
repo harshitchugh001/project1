@@ -21,10 +21,10 @@ import Transaction from './components/Transaction/Transaction'
 
 const App = () => {
   return (
-    <div className='mx-auto font-Mons'>
+    <div className='mx-auto font-Mons min-h-screen flex flex-col'>
       <Router>
         <Navbar />
-        <div className="content">
+        <div className="content flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
