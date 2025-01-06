@@ -25,21 +25,21 @@ const App = () => {
       <Router>
         <Navbar />
         <div className="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/where-to-find-us" element={<Find />} />
-          <Route path="/who-we-are" element={<Team />} />
-          <Route path="/client" element={<Client />} />
-          <Route path="/career" element={<Career/>} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path='/valuation' element={<Valuation/>}/>
-          <Route path='/risk-consulting' element={<Risk/>}/>
-          <Route path='/disputes-litigation' element={<Disputes/>}/>
-          <Route path='/corporate-finance' element={<Corporate/>}/>
-          <Route path='/transaction-advisory' element={<Transaction/>}/>
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/where-to-find-us" element={<Find />} />
+            <Route path="/who-we-are" element={<Team />} />
+            <Route path="/client" element={<Client />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path='/valuation' element={<Valuation />} />
+            <Route path='/risk-consulting' element={<Risk />} />
+            <Route path='/disputes-litigation' element={<Disputes />} />
+            <Route path='/corporate-finance' element={<Corporate />} />
+            <Route path='/transaction-advisory' element={<Transaction />} />
+          </Routes>
         </div>
         <FooterNew />
       </Router>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+import logo from '../../assets/logo.png';
 
 const FooterNew = () => {
   return (
@@ -8,7 +9,20 @@ const FooterNew = () => {
         {/* Grid Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-800">
 
-          {/* Column 1 - About Us */}
+          {/* Column 1 - Logo */}
+          <div>
+            <div className="mb-4">
+              <img src={logo} className="h-16 w-32 md:h-20 md:w-44" alt="Logo" />
+            </div>
+
+            <h2 className="text-lg font-semibold mb-1"> Address</h2>
+            <p className="text-sm text-gray-600">
+              E-12, 2nd Floor, Naraina<br />
+              Vihar, New Delhi 110028
+            </p>
+          </div>
+
+          {/* Column 2 - About Us */}
           <div>
             <h4 className="text-black font-bold mb-4">About Us</h4>
             <ul className="space-y-2 text-sm">
@@ -18,7 +32,7 @@ const FooterNew = () => {
             </ul>
           </div>
 
-          {/* Column 2 - Services */}
+          {/* Column 3 - Services */}
           <div>
             <h4 className="text-black font-bold mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
@@ -27,22 +41,7 @@ const FooterNew = () => {
               <li><a href="/" className="hover:text-blue-600">Disputes & Litigation</a></li>
               <li><a href="/" className="hover:text-blue-600">Corporate Finance</a></li>
               <li><a href="/" className="hover:text-blue-600">Transaction Advisory</a></li>
-              {/* <li><a href="/" className="hover:text-blue-600">Digital Transformation</a></li> */}
             </ul>
-          </div>
-
-          {/* Column 3 - Subscribe */}
-          <div>
-            {/* <h4 className="text-black font-bold mb-4">SUBSCRIBE</h4>
-            <button className="w-full bg-gray-200 text-blue-800 font-bold text-sm py-2 rounded-lg">
-              TO OUR NEWSLETTER
-            </button> */}
-            <div className="">
-              <h4 className="text-black font-bold mb-1">Privacy Policy</h4>
-              {/* <p className="text-sm italic text-gray-600">
-                -------------------------------- abcdefghijklmnopqrstuvwxyz --------------------------------
-              </p> */}
-            </div>
           </div>
 
           {/* Column 4 - Follow Us */}
@@ -58,6 +57,8 @@ const FooterNew = () => {
             </div>
             <div className="mt-6">
               <h4 className="text-black font-bold">Contact US</h4>
+              <p className="mt-1">Email: <a href="mailto:info@futurity.co.in" className="underline">info@futurity.co.in</a></p>
+              <p>Phone: +91-9811284282</p>
             </div>
           </div>
         </div>
