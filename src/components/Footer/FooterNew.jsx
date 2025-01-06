@@ -4,26 +4,19 @@ import logo from '../../assets/logo.png';
 
 const FooterNew = () => {
   return (
-    <footer className="bg-white py-10 border-t border-gray-200">
+    <footer className="bg-gray-300 py-10 border-t border-gray-200">
       <div className="container mx-auto px-4 lg:px-12">
         {/* Grid Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-800">
-
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-10 text-gray-800">
           {/* Column 1 - Logo */}
-          <div>
-            <div className="mb-4">
-              <img src={logo} className="h-16 w-32 md:h-20 md:w-44" alt="Logo" />
+          <div className="flex justify-center items-start col-span-2 md:col-span-1">
+            <div>
+              <img src={logo} className="h-24 w-40 md:h-28 md:w-52" alt="Logo" />
             </div>
-
-            <h2 className="text-lg font-semibold mb-1"> Address</h2>
-            <p className="text-sm text-gray-600">
-              E-12, 2nd Floor, Naraina<br />
-              Vihar, New Delhi 110028
-            </p>
           </div>
 
           {/* Column 2 - About Us */}
-          <div>
+          <div className="md:pl-8">
             <h4 className="text-black font-bold mb-4">About Us</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="/" className="hover:text-blue-600">Home</a></li>
@@ -33,7 +26,7 @@ const FooterNew = () => {
           </div>
 
           {/* Column 3 - Services */}
-          <div>
+          <div className="md:pl-8">
             <h4 className="text-black font-bold mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="/" className="hover:text-blue-600">Valuations</a></li>
@@ -45,7 +38,7 @@ const FooterNew = () => {
           </div>
 
           {/* Column 4 - Follow Us */}
-          <div>
+          <div className="md:pl-8">
             <h4 className="text-black font-bold mb-4">Follow Us</h4>
             <div className="flex space-x-4 mt-2">
               <a href="/" className="w-8 h-8 bg-blue-600 text-white flex items-center justify-center rounded-md hover:bg-blue-800">

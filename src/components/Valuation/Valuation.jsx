@@ -124,7 +124,7 @@ export default function Valuation() {
                 </div>
             </div>
 
-            <Industries />
+            {/* <Industries /> */}
         </div>
     );
 }

@@ -12,7 +12,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center text-center px-4  md:py-16 bg-gray-50">
+        <div className="flex flex-col items-center justify-center text-center px-4  md:py-16 ">
             {/* Lottie Animation */}
             <div className="">
                 <div className="block md:hidden">
