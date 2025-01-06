@@ -21,8 +21,8 @@ export default function Find() {
                                     alt="New Delhi Office"
                                     className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
-                                    <h2 className='text-base md:text-lg font-semibold mb-1'>New Delhi</h2>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-gradient-to-r from-white/95 via-white/90 to-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl hover:from-white/98 hover:to-white/98">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1 text-gray-800'>New Delhi</h2>
                                     <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>1st Floor, Surya Kiran Building,<br />K G Marg, Connaught Place,<br />New Delhi-110001.</p>
                                 </div>
                             </div>
@@ -35,8 +35,8 @@ export default function Find() {
                                     alt="Mumbai Office"
                                     className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
-                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Mumbai</h2>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-gradient-to-r from-white/95 via-white/90 to-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl hover:from-white/98 hover:to-white/98">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1 text-gray-800'>Mumbai</h2>
                                     <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>17, Building No. A8,<br />Parasnath Complex,<br />Thane - 421302.</p>
                                 </div>
                             </div>
@@ -53,8 +53,8 @@ export default function Find() {
                                     alt="Kolkata Office"
                                     className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
-                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Kolkata</h2>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-gradient-to-r from-white/95 via-white/90 to-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl hover:from-white/98 hover:to-white/98">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1 text-gray-800'>Kolkata</h2>
                                     <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>7th Floor, Room No. 3,<br />224A AJC Bose Road,<br />Kolkata - 700017.</p>
                                 </div>
                             </div>
@@ -67,8 +67,8 @@ export default function Find() {
                                     alt="Gurugram Office"
                                     className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
-                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Gurugram</h2>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-gradient-to-r from-white/95 via-white/90 to-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl hover:from-white/98 hover:to-white/98">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1 text-gray-800'>Gurugram</h2>
                                     <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>46, 1st Floor, Jacaranda Marg,<br />Gurugram, Haryana - 122022.</p>
                                 </div>
                             </div>
@@ -85,8 +85,8 @@ export default function Find() {
                                     alt="Ludhiana Office"
                                     className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
-                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Ludhiana</h2>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-gradient-to-r from-white/95 via-white/90 to-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl hover:from-white/98 hover:to-white/98">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1 text-gray-800'>Ludhiana</h2>
                                     <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>271, Maya Nagar, Civil Lines,<br />Ludhiana - 141001.</p>
                                 </div>
                             </div>
@@ -99,8 +99,8 @@ export default function Find() {
                                     alt="Chandigarh Office"
                                     className="w-full h-full object-cover rounded-lg brightness-90"
                                 />
-                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl">
-                                    <h2 className='text-base md:text-lg font-semibold mb-1'>Chandigarh</h2>
+                                <div className="address-btn absolute top-4 left-4 md:left-4 lg:left-4 px-4 py-3 bg-gradient-to-r from-white/95 via-white/90 to-white/95 backdrop-blur-sm border rounded-lg shadow-lg max-w-[80%] transition-all duration-300 hover:shadow-xl hover:from-white/98 hover:to-white/98">
+                                    <h2 className='text-base md:text-lg font-semibold mb-1 text-gray-800'>Chandigarh</h2>
                                     <p className='text-[11px] md:text-xs leading-relaxed text-gray-600'>1839, Sector 22-B, 01st Floor,<br />Chandigarh - 160022.</p>
                                 </div>
                             </div>
