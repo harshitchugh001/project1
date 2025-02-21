@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,8 @@ const ContactForm = () => {
     companyName: "",
     message: "",
   });
+
+  const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
@@ -78,11 +81,11 @@ const ContactForm = () => {
       <nav className="bg-blue-900 text-white py-4 px-4 md:px-16 flex justify-between items-center">
         <h1 className="text-2xl font-bold">IFLEX.</h1>
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-gray-300">Products</a>
+          <a href="#" className="hover:text-gray-300" onClick={() => navigate("/products") }>Products</a>
           <a href="#" className="hover:text-gray-300">About Us</a>
           <a href="#" className="hover:text-gray-300 border-b-2 border-white">Contact Us</a>
         </div>
-        <button className="bg-white text-blue-900 px-4 py-2 rounded-md">Make an Enquiry</button>
+        <button className="bg-white text-blue-900 px-4 py-2 rounded-md" onClick={() => navigate("/") }>Make an Enquiry</button>
       </nav>
 
       {/* Contact Section */}
@@ -166,6 +169,7 @@ const ContactForm = () => {
               type="submit"
               className="bg-blue-900 text-white w-full py-2 rounded-md"
               disabled={loading}
+              
             >
               {loading ? "Submitting..." : "Submit Enquiry"}
             </button>
