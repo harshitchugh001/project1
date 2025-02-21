@@ -86,6 +86,13 @@ const ContactForm = () => {
           <a href="#" className="hover:text-gray-300 border-b-2 border-white">Contact Us</a>
         </div>
         <button className="bg-white text-blue-900 px-4 py-2 rounded-md" onClick={() => navigate("/") }>Make an Enquiry</button>
+        <button 
+    className="bg-white text-blue-900 py-2 rounded-md"
+    onClick={() => window.location.href = "https://iflex.frappe.cloud/"}
+>
+    Login
+</button>
+
       </nav>
 
       {/* Contact Section */}
