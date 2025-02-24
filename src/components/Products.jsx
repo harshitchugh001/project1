@@ -15,8 +15,9 @@ const ProductList = () => {
             try {
                 const response = await axios.get("https://iflex.frappe.cloud/api/resource/Item", {
                     params: {
-                        fields: JSON.stringify(["name", "description", "image","disabled"]),
-                        filters: JSON.stringify([["disabled", "=", 0]])
+                        fields: JSON.stringify(["name", "description", "image","disabled","custom_add_to_website"
+                            ]),
+                        filters: JSON.stringify([["custom_add_to_website", "=", 1]])
                     },
                     headers: {
                         "Content-Type": "application/json",
