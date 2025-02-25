@@ -31,7 +31,7 @@ const ContactForm = () => {
     setLoading(true);
     setSuccessMessage("");
     setErrorMessage("");
-  
+
     try {
       const response = await axios.post(
         "https://iflex.frappe.cloud/api/resource/Lead",
@@ -52,15 +52,25 @@ const ContactForm = () => {
           },
         }
       );
-      console.log("✅ Lead Created:", response.data);
-      setSuccessMessage("Your enquiry has been submitted successfully!");
+      alert("✅ Your enquiry has been submitted successfully!");
+
+    // Reset form state after successful submission
+    setFormData({
+      lookingFor:"",
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      email: "",
+      companyName: "",
+      message: "",
+    });
     } catch (error) {
       console.error("❌ Error Creating Lead:", error.response?.data || error.message);
-      setErrorMessage("Failed to submit the enquiry. Please try again.");
+      alert("❌ Failed to submit the enquiry. Please try again.");
     }
     setLoading(false);
   };
-  
+
   return (
     <div className="bg-white w-full">
       {/* Header Section */}
@@ -81,17 +91,17 @@ const ContactForm = () => {
       <nav className="bg-blue-900 text-white py-4 px-4 md:px-16 flex justify-between items-center">
         <h1 className="text-2xl font-bold">IFLEX.</h1>
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-gray-300" onClick={() => navigate("/products") }>Products</a>
-          <a href="#" className="hover:text-gray-300">About Us</a>
-          <a href="#" className="hover:text-gray-300 border-b-2 border-white">Contact Us</a>
+          <a href="#" className="hover:text-gray-300" onClick={() => navigate("/products")}>Products</a>
+          <a href="#" className="hover:text-gray-300" onClick={() => navigate("/about")}>About Us</a>
+          <a href="#" className="hover:text-gray-300" onClick={() => navigate("/")}>Contact Us</a>
         </div>
-        <button className="bg-white text-blue-900 px-4 py-2 rounded-md" onClick={() => navigate("/") }>Make an Enquiry</button>
-        <button 
-    className="bg-white text-blue-900 py-2 rounded-md"
-    onClick={() => window.location.href = "https://iflex.frappe.cloud/"}
->
-    Login
-</button>
+        <button className="bg-white text-blue-900 px-4 py-2 rounded-md" onClick={() => navigate("/")}>Make an Enquiry</button>
+        <button
+          className="bg-white text-blue-900 py-2 rounded-md"
+          onClick={() => window.location.href = "https://iflex.frappe.cloud/"}
+        >
+          Login
+        </button>
 
       </nav>
 
@@ -176,7 +186,7 @@ const ContactForm = () => {
               type="submit"
               className="bg-blue-900 text-white w-full py-2 rounded-md"
               disabled={loading}
-              
+
             >
               {loading ? "Submitting..." : "Submit Enquiry"}
             </button>

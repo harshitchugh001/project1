@@ -24,10 +24,10 @@ const WPCDecorFlexiBoards = () => {
             <nav className="bg-blue-900 text-white py-4 px-4 md:px-16 flex justify-between items-center">
                 <h1 className="text-2xl font-bold">IFLEX.</h1>
                 <div className="hidden md:flex space-x-6">
-                    <a href="#" className="hover:text-gray-300">Products</a>
-                    <a href="#" className="hover:text-gray-300">About Us</a>
-                    <a href="#" className="hover:text-gray-300">Insights & News</a>
-                    <a href="#" className="hover:text-gray-300 border-b-2 border-white">Contact Us</a>
+                    <a href="#" className="hover:text-gray-300" onClick={() => navigate("/products")}>Products</a>
+                    <a href="#" className="hover:text-gray-300" onClick={() => navigate("/about")}>About Us</a>
+                    {/* <a href="#" className="hover:text-gray-300">Insights & News</a> */}
+                    <a href="#" className="hover:text-gray-300" onClick={() => navigate("/")}>Contact Us</a>
                 </div>
                 <button className="bg-white text-blue-900 px-4 py-2 rounded-md" onClick={() => navigate("/")}>Make an Enquiry</button>
                 <button 
